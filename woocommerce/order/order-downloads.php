@@ -19,7 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 ?>
-<section class="woocommerce-order-downloads">
+<section class="woocommerce-order-downloads section-grid">
 	<?php if ( isset( $show_title ) ) : ?>
 		<h2 class="woocommerce-order-downloads__title lined-heading"><?php esc_html_e( 'Downloads', 'woocommerce' ); ?></h2>
 	<?php endif; ?>

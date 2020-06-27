@@ -31,7 +31,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 </form> -->
 
 
-<form class="search form-inline animated reveal">
+<!-- <form class="search form-inline animated reveal">
 	<button class="btn" type="submit">
 		<img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/search.svg">
 	</button>
@@ -42,4 +42,4 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<button class="btn" type="reset">
 		<img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/close.svg">
 	</button>
-</form>
+</form> -->
