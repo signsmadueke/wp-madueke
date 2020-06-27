@@ -927,13 +927,17 @@ Author: Prayer M. Madueke
 .woocommerce .blockUI.blockOverlay::before {
 	animation: none;
 	background: url(assets/images/icons/loader.svg) center center;
-	/* width: 100px;
-	height: auto; */
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 100px;
 }
 
 .woocommerce .loader::before {
 	animation: none;
 	background: url(assets/images/icons/loader.svg) center center;
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 100px;
 }
 
 
@@ -981,4 +985,72 @@ Author: Prayer M. Madueke
 	float: none;
 	border: 1px dashed rgba(0, 0, 0, 0.1) !important;
 	padding: 20px;
+}
+
+
+
+
+#add_payment_method #payment div.payment_box .form-row, .woocommerce-cart #payment div.payment_box .form-row, .woocommerce-checkout #payment div.payment_box .form-row {
+	clear: none;
+	float: none;
+	margin: 0;
+	width: 100%;
+	padding: 0;
+}
+
+#add_payment_method #payment div.payment_box, .woocommerce-cart #payment div.payment_box, .woocommerce-checkout #payment div.payment_box {
+	width: 100%;
+	padding: 0px;
+	margin: 0;
+	margin-top: 20px;
+	font-size: inherit;
+	border-radius: 0;
+	line-height: inherit;
+	border: none;
+	color: #222222;
+	background: transparent;
+}
+
+#add_payment_method #payment ul.payment_methods, .woocommerce-cart #payment ul.payment_methods, .woocommerce-checkout #payment ul.payment_methods {
+	padding: 20px;
+	padding-bottom: 0;
+	margin: 0;
+}
+
+#add_payment_method #payment, .woocommerce-cart #payment, .woocommerce-checkout #payment {
+	border-radius: 0;
+	border: 1px solid rgba(0, 0, 0, 0.2) !important;
+}
+
+#add_payment_method #payment div.form-row.place-order, .woocommerce-cart #payment div.form-row.place-order, .woocommerce-checkout #payment div.form-row.place-order {
+	padding: 20px;
+}
+
+#add_payment_method #payment ul.payment_methods li img.stripe-icon, .woocommerce-checkout #payment ul.payment_methods li img.stripe-icon {
+	max-width: 45px;
+	padding-left: 10px;
+}
+
+.wc-stripe-elements-field, .wc-stripe-iban-element-field {
+	background-color: #fff;
+	padding: 15px 25px !important;
+	border: 1px solid rgba(68, 68, 68, 0.2);
+	color: #444444;
+	font-size: 16px;
+	line-height: 16px;
+	font-weight: 500;
+	outline: 0;
+	-webkit-appearance: none;
+	border-radius: 0;
+	cursor: text;
+}
+
+#add_payment_method #payment ul.payment_methods li .stripe-card-brand, .woocommerce-checkout #payment ul.payment_methods li .stripe-card-brand {
+	right: 20px;
+}
+
+.woocommerce #payment #place_order, .woocommerce-page #payment #place_order {
+	float: none;
+	display: block;
+	width: 100%;
 }
