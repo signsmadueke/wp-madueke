@@ -86,8 +86,8 @@ Author: Prayer M. Madueke
 	grid-gap: 15px;
 } */
 
-.woocommerce-checkout #payment div.form-row {
-	padding: 0 !important;
+.woocommerce .woocommerce-checkout #payment div.form-row {
+	padding: 0;
 }
 
 .woocommerce .checkout.woocommerce-checkout .woocommerce-billing-fields {
