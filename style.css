@@ -1015,11 +1015,13 @@ Author: Prayer M. Madueke
 	padding: 20px;
 	padding-bottom: 0;
 	margin: 0;
+	border-bottom: none;
 }
 
 #add_payment_method #payment, .woocommerce-cart #payment, .woocommerce-checkout #payment {
 	border-radius: 0;
-	border: 1px solid rgba(0, 0, 0, 0.2) !important;
+	border: 1px solid rgba(0, 0, 0, 0.1) !important;
+	background: transparent;
 }
 
 #add_payment_method #payment div.form-row.place-order, .woocommerce-cart #payment div.form-row.place-order, .woocommerce-checkout #payment div.form-row.place-order {
@@ -1053,4 +1055,8 @@ Author: Prayer M. Madueke
 	float: none;
 	display: block;
 	width: 100%;
+}
+
+#add_payment_method #payment div.payment_box::before, .woocommerce-cart #payment div.payment_box::before, .woocommerce-checkout #payment div.payment_box::before {
+	display: none;
 }
