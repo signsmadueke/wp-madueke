@@ -769,7 +769,6 @@ span {
 }
 
 input:not([type="checkbox"]),
-input:not([type="radio"]),
 textarea {
 	padding: 15px 25px !important;
 	border: 1px solid rgba(68, 68, 68, 0.2);
@@ -4096,5 +4095,6 @@ body.sidebar-opened {
 @media (max-width: 320px) {
 	.logo-text {
 		display: none !important;
+		grid-template-columns: repeat(auto-fit, minmax(calc(100%), calc(100%))) !important;
 	}
 }
