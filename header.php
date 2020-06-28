@@ -57,7 +57,7 @@
 <section id="sidebar">
     <section id="navigation">
         <div id="logo">
-            <a href="http://localhost/madueke">
+            <a href="https://madueke.com">
                 <div class="logo-icon">
                     <img src="<?php bloginfo('template_directory');?>/assets/images/madueke/icon.png'; ?>" alt="Prayer M. Madueke">
                 </div>
