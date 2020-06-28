@@ -1009,6 +1009,19 @@ Author: Prayer M. Madueke
 	border: none;
 	color: #222222;
 	background: transparent;
+	border-top: 1px solid rgba(0, 0, 0, 0.1) !important;
+	padding-top: 20px;
+}
+
+[type="checkbox"] {
+	padding: 0;
+	height: 20px;
+	width: 20px;
+	display: inline;
+	margin: -5px 10px 0 0;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
 }
 
 #add_payment_method #payment ul.payment_methods, .woocommerce-cart #payment ul.payment_methods, .woocommerce-checkout #payment ul.payment_methods {
@@ -1055,6 +1068,7 @@ Author: Prayer M. Madueke
 	float: none;
 	display: block;
 	width: 100%;
+	margin: 0;
 }
 
 #add_payment_method #payment div.payment_box::before, .woocommerce-cart #payment div.payment_box::before, .woocommerce-checkout #payment div.payment_box::before {
