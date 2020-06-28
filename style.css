@@ -54,8 +54,15 @@ Author: Prayer M. Madueke
 .woocommerce .checkout.woocommerce-checkout {
 	display: grid;
 	grid-gap: 50px;
-	max-width: 800px;
-	margin: 0 left;
+	grid-auto-flow: column;
+	width: 100%;
+	margin: 0;
+}
+
+@media (max-width: 800px){
+	.woocommerce .checkout.woocommerce-checkout {
+		grid-auto-flow: row;
+	}
 }
 
 .woocommerce form.checkout_coupon {
@@ -1073,4 +1080,19 @@ Author: Prayer M. Madueke
 
 #add_payment_method #payment div.payment_box::before, .woocommerce-cart #payment div.payment_box::before, .woocommerce-checkout #payment div.payment_box::before {
 	display: none;
+}
+
+.woocommerce .woocommerce-form-login .woocommerce-form-login__submit {
+	float: none;
+	margin-right: 0;
+	margin: 0;
+}
+
+.woocommerce form.checkout_coupon, .woocommerce form.login, .woocommerce form.register {
+	padding: 20px;
+	margin: 20px 0;
+	text-align: left;
+	border-radius: 0;
+	border: 1px solid rgba(0, 0, 0, 0.1) !important;
+	max-width: 800px;
 }
