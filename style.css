@@ -1096,3 +1096,42 @@ Author: Prayer M. Madueke
 	border: 1px solid rgba(0, 0, 0, 0.1) !important;
 	max-width: 800px;
 }
+
+.woocommerce nav.woocommerce-pagination {
+	justify-self: center;
+}
+
+.woocommerce nav.woocommerce-pagination ul {
+	padding: 0;
+	clear: none;
+	border: none;
+	margin: 0px;
+	grid-auto-flow: column;
+	grid-auto-columns: max-content;
+	width: 100%;
+	grid-gap: 20px;
+}
+
+.woocommerce nav.woocommerce-pagination ul li {
+	border: none;
+	padding: 0;
+	margin: 0;
+	float: none;
+	display: block;
+	padding: 0;
+}
+
+.woocommerce nav.woocommerce-pagination ul li a, .woocommerce nav.woocommerce-pagination ul li span {
+	display: block;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0;
+	margin: 0;
+	float: none;
+	padding: 15px 20px;
+}
+
+.woocommerce nav.woocommerce-pagination ul li a:focus, .woocommerce nav.woocommerce-pagination ul li a:hover, .woocommerce nav.woocommerce-pagination ul li span.current {
+	background: rgba(0, 0, 0, 0.08);
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	color: #222;
+}
