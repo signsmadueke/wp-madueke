@@ -1109,7 +1109,8 @@ Author: Prayer M. Madueke
 	grid-auto-flow: column;
 	grid-auto-columns: max-content;
 	width: 100%;
-	grid-gap: 20px;
+	grid-gap: 5px;
+	display: grid;
 }
 
 .woocommerce nav.woocommerce-pagination ul li {
