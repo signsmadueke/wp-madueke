@@ -258,13 +258,13 @@ Author: Prayer M. Madueke
 	align-items: start;
 }
 
-@media (max-width: 800px){
+@media (max-width: 1000px){
 	.woocommerce-page ul.products {
 		grid-template-columns: repeat(auto-fit, minmax(calc(calc(100%/3) - 20px), calc(calc(100%/3)  - 20px))) !important;
 	}
 }
 
-@media (max-width: 576px){
+@media (max-width: 700px){
 	.woocommerce-page ul.products {
 		grid-template-columns: repeat(auto-fit, minmax(calc(calc(100%/2) - 15px), calc(calc(100%/2)  - 15px))) !important;
 	}
@@ -283,7 +283,7 @@ Author: Prayer M. Madueke
 	position: relative !important;
 	width: 100% !important;
 	display: grid;
-	grid-gap: 0px;
+	grid-gap: 10px;
 	align-items: start;
 	grid-auto-rows: max-content;
 }
@@ -293,7 +293,32 @@ Author: Prayer M. Madueke
 	line-height: 25px;
 	margin: 0;
 	padding: 0;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
 }
+
+@media (max-width: 700px){
+	.woocommerce ul.products li.product .woocommerce-loop-category__title, .woocommerce ul.products li.product .woocommerce-loop-product__title, .woocommerce ul.products li.product h3 {
+		font-weight: 500;
+		letter-spacing: -0.5px;
+		font-style: italic;
+	}
+
+	.woocommerce ul.products li.product a {
+		grid-row-gap: 10px;
+	}
+
+	.woocommerce ul.products li.product .price {
+		color: #222222;
+		display: block;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 21px;
+		margin: 0;
+	}
+}
+
 
 .woocommerce-error li, .woocommerce-info li, .woocommerce-message li {
 	line-height: 23px;
@@ -357,7 +382,7 @@ Author: Prayer M. Madueke
 .woocommerce ul.products li.product a {
 	display: grid;
 	grid-auto-flow: row;
-	grid-row-gap: 20px;
+	grid-row-gap: 10px;
 	grid-column-gap: 7px;
 	grid-auto-rows: max-content;
 }
@@ -365,21 +390,32 @@ Author: Prayer M. Madueke
 .woocommerce ul.products li.product .price {
 	color: #222222;
 	display: block;
-	font-weight: 600;
-	font-size: 18px;
+	font-weight: 500;
+	font-size: 16px;
 	line-height: 24px;
 	margin: 0;
-	opacity: 0.7;
+	opacity: 0.5;
+}
+
+.woocommerce ul.products li.product:hover .price {
+	opacity: 1;
 }
 
 .woocommerce ul.products li.product .btn-chevron {
-	opacity: 0.7;
-	padding: 15px 0;
+	opacity: 0.5;
+	padding: 0;
+}
+
+.woocommerce ul.products li.product:hover .btn-chevron {
+	opacity: 1;
+	grid-column-gap: 10px;
 }
 
 .woocommerce ul.products li.product .btn-chevron span {
-	font-size: 14px;
-	line-height: 21px;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 18px;
+	color: #222222;
 }
 
 .woocommerce ul.products li.product .btn-chevron svg {
