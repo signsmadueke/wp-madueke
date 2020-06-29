@@ -789,7 +789,7 @@ span {
   grid-gap: 15px;
 }
 
-input:not([type="checkbox"]),
+input:not([type=checkbox]):not([type=radio]),
 textarea {
   padding: 15px 25px !important;
   border: 1px solid rgba(68, 68, 68, 0.2);
@@ -802,7 +802,7 @@ textarea {
   border-radius: 0;
 }
 
-input:not([type="checkbox"])::-webkit-input-placeholder,
+input:not([type=checkbox]):not([type=radio])::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   opacity: 0;
   font-weight: 500;
@@ -814,7 +814,7 @@ textarea::-webkit-input-placeholder {
           user-select: none;
 }
 
-input:not([type="checkbox"]):-ms-input-placeholder,
+input:not([type=checkbox]):not([type=radio]):-ms-input-placeholder,
 textarea:-ms-input-placeholder {
   opacity: 0;
   font-weight: 500;
@@ -826,7 +826,7 @@ textarea:-ms-input-placeholder {
       user-select: none;
 }
 
-input:not([type="checkbox"])::-ms-input-placeholder,
+input:not([type=checkbox]):not([type=radio])::-ms-input-placeholder,
 textarea::-ms-input-placeholder {
   opacity: 0;
   font-weight: 500;
@@ -838,7 +838,7 @@ textarea::-ms-input-placeholder {
       user-select: none;
 }
 
-input:not([type="checkbox"])::placeholder,
+input:not([type=checkbox]):not([type=radio])::placeholder,
 textarea::placeholder {
   opacity: 0;
   font-weight: 500;
@@ -852,19 +852,19 @@ textarea::placeholder {
           user-select: none;
 }
 
-input:not([type="checkbox"]):hover,
+input:not([type=checkbox]):not([type=radio]):hover,
 textarea:hover {
   background-color: rgba(68, 68, 68, 0.05);
   border: 1px solid rgba(68, 68, 68, 0.3);
 }
 
-input:not([type="checkbox"]):focus,
+input:not([type=checkbox]):not([type=radio]):focus,
 textarea:focus {
   background-color: rgba(68, 68, 68, 0.05);
   border: 1px solid rgba(68, 68, 68, 0.3);
 }
 
-input:not([type="checkbox"]):active,
+input:not([type=checkbox]):not([type=radio]):active,
 textarea:active {
   background-color: rgba(68, 68, 68, 0.05);
   border: 1px solid rgba(68, 68, 68, 0.3);
@@ -4436,7 +4436,7 @@ body.sidebar-opened .copyright {
     font-size: 10px;
   }
   p {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 30px;
   }
 }
