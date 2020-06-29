@@ -447,12 +447,6 @@ Author: Prayer M. Madueke
 	grid-auto-rows: max-content;
 }
 
-.woocommerce div.product .woocommerce-product-details__short-description p {
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 30px;
-}
-
 .woocommerce div.product .product_title {
 	padding-bottom: 20px;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
