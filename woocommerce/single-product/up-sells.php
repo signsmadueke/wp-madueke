@@ -23,7 +23,7 @@ if ( $upsells ) : ?>
 
 	<section class="up-sells upsells products section-grid">
 		<?php
-		$heading = apply_filters( 'woocommerce_product_upsells_products_heading', __( 'Other Books', 'woocommerce' ) );
+		$heading = apply_filters( 'woocommerce_product_upsells_products_heading', __( 'Related Books', 'woocommerce' ) );
 
 		if ( $heading ) :
 			?>
