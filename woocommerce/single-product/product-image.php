@@ -51,7 +51,5 @@ $wrapper_classes   = apply_filters(
 
 		do_action( 'woocommerce_product_thumbnails' );
 		?>
-
-		<a href="https://read.amazon.com/litb/<?= $book_kindle_asin; ?>" target="_blank" class="w-icon button outline"><img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/eye.svg"><span>Preview Book</span></a>
 	</div>
 </section>

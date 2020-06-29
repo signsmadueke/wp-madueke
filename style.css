@@ -471,11 +471,11 @@ Author: Prayer M. Madueke
 }
 
 .woocommerce div.product .single_add_to_cart_button {
-	display: grid;
-	grid-template-columns: auto 1fr;
-	grid-gap: 15px;
-	width: max-content;
-	align-items: center;
+	display: block !important;
+}
+
+.woocommerce div.product .single_add_to_cart_button svg {
+	margin-right: 15px;
 }
 
 .woocommerce div.product form.cart {

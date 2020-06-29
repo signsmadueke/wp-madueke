@@ -45,7 +45,7 @@ global $product;
 		do_action( 'woocommerce_after_add_to_cart_quantity' );
 		?>
 
-		<button type="submit" name="add-to-cart" value="<?php echo esc_attr( $product->get_id() ); ?>" class="w-icon button single_add_to_cart_button button alt">
+		<button type="submit" name="add-to-cart" value="<?php echo esc_attr( $product->get_id() ); ?>" class="w-icon single_add_to_cart_button button alt">
 			<img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/cart.svg">
 			<span>Add to Cart</span>
 		</button>
@@ -55,24 +55,3 @@ global $product;
 	
 	
 </section>
-
-<div class="channels animate reveal section-grid">
-	<h6 class="lined-title">Buy on Amazon</h6>
-	<div class="formats">
-		<div class="format">
-			<p class="name small-caps">Ebook</p>
-
-			<a href="https://www.amazon.com/dp/<?= $book_kindle_asin; ?>" target="_blank" class="buy-btn" >
-				<img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/formats/kindle.svg">
-			</a>
-		</div>
-
-		<div class="format">
-			<p class="name">Paperback</p>
-
-			<a href="https://www.amazon.com/dp/<?= $book_paperback_asin; ?>" target="_blank" class="buy-btn" >
-				<img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/formats/amazon.svg">
-			</a>
-		</div>
-	</div>
-</div>
