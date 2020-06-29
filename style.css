@@ -1056,7 +1056,8 @@ Author: Prayer M. Madueke
 	padding-top: 20px;
 }
 
-[type="checkbox"] {
+[type="checkbox"],
+[type="radio"] {
 	padding: 0;
 	height: 20px  !important;
 	width: 20px  !important;

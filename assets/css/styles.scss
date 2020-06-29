@@ -833,7 +833,7 @@ span {
 	// }
 }
 
-input:not([type="checkbox"]),
+input:not([type=checkbox]):not([type=radio]),
 textarea {
 	padding: 15px 25px !important;
 	border: 1px solid rgba(68, 68, 68, 0.2);
