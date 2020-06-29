@@ -426,8 +426,8 @@ Author: Prayer M. Madueke
 	grid-template-areas:
 		"gallery	summary"
 		"tabs		tabs"
-		"upsells		upsells"
-		"related		related";
+		"related		related"
+		"upsells		upsells";
 }
 
 @media (max-width: 800px){
@@ -441,8 +441,8 @@ Author: Prayer M. Madueke
 			"gallery"
 			"summary"
 			"tabs"
-			"upsells"
-			"related";
+			"related"
+			"upsells";
 	}
 }
 
