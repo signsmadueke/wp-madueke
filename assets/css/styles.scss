@@ -4014,6 +4014,10 @@ body.sidebar-opened {
 	justify-self: center;
 	text-align: center;
 
+	@media (max-width: 800px) {
+		padding: 100px 30px;
+	}
+
 	.error404-text {
 		display: grid;
 		grid-auto-rows: max-content;
@@ -4025,6 +4029,11 @@ body.sidebar-opened {
 			font-weight: bold;
 			font-size: 100px;
 			line-height: 133px;
+
+			@media (max-width: 800px) {
+				font-size: 75px;
+				line-height: 100px;
+			}
 		}
 
 		p {

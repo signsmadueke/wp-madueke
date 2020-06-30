@@ -4328,6 +4328,12 @@ body.sidebar-opened .copyright {
   text-align: center;
 }
 
+@media (max-width: 800px) {
+  #error404-hero {
+    padding: 100px 30px;
+  }
+}
+
 #error404-hero .error404-text {
   display: -ms-grid;
   display: grid;
@@ -4342,6 +4348,13 @@ body.sidebar-opened .copyright {
   font-weight: bold;
   font-size: 100px;
   line-height: 133px;
+}
+
+@media (max-width: 800px) {
+  #error404-hero .error404-text h1 {
+    font-size: 75px;
+    line-height: 100px;
+  }
 }
 
 #error404-hero .error404-text p {
