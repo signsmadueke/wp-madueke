@@ -1387,8 +1387,8 @@ body.sidebar-opened {
 	}
 
 	.logo-icon {
-		width: 50px;
-		height: 50px;
+		width: 65px;
+		height: 65px;
 	}
 
 	img {
@@ -2676,7 +2676,7 @@ body.sidebar-opened {
 	}
 
 	input.mce_inline_error {
-		border: 1px solid rgb(127, 0, 0);
+		border: 1px solid rgb(218, 18, 51);
 		// color: rgba(127, 0, 0, 1);
 
 		// &::placeholder {
@@ -2690,10 +2690,10 @@ body.sidebar-opened {
 		font-size: 12px;
 		padding-left: 30px;
 		position: relative;
-		color: rgb(127, 0, 0) !important;
+		color: rgb(218, 18, 51) !important;
 
 		a {
-			color: rgb(127, 0, 0) !important;
+			color: rgb(218, 18, 51) !important;
 		}
 
 		&:before {
@@ -2721,10 +2721,10 @@ body.sidebar-opened {
 
 			&#mce-success-response {
 				position: relative;
-				color: rgb(0, 127, 0) !important;
+				color: rgb(103, 218, 18) !important;
 
 				a {
-					color: rgb(0, 127, 0) !important;
+					color: rgb(103, 218, 18) !important;
 				}
 
 				&:before {
@@ -2734,10 +2734,10 @@ body.sidebar-opened {
 
 			&#mce-error-response {
 				position: relative;
-				color: rgb(127, 0, 0) !important;
+				color: rgb(218, 18, 51) !important;
 
 				a {
-					color: rgb(127, 0, 0) !important;
+					color: rgb(218, 18, 51) !important;
 				}
 
 				&:before {
@@ -2796,7 +2796,7 @@ body.sidebar-opened {
 	}
 
 	input.mce_inline_error {
-		border: 1px solid rgb(127, 0, 0);
+		border: 1px solid rgb(218, 18, 51);
 		// color: rgba(127, 0, 0, 1);
 
 		// &::placeholder {
@@ -4005,6 +4005,49 @@ body.sidebar-opened {
 
 
 
+#error404-hero {
+	padding: 100px 150px;
+	border: 1px solid rgba(34, 34, 34, 0.2);
+	display: grid;
+	grid-auto-rows: max-content;
+	grid-gap: 30px;
+	justify-self: center;
+	text-align: center;
+
+	.error404-text {
+		display: grid;
+		grid-auto-rows: max-content;
+		grid-gap: 0px;
+		place-self: center;
+
+		h1 {
+			font-style: normal;
+			font-weight: bold;
+			font-size: 100px;
+			line-height: 133px;
+		}
+
+		p {
+			font-size: 16px;
+			line-height: 26px;
+		}
+	}
+
+	.btn-chevron {
+		place-self: center;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
 
 #disqus_thread .nav-tab>a {
 	font-family: "Gilroy", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
@@ -4084,8 +4127,8 @@ body.sidebar-opened {
 	
 	#logo {
 		.logo-icon {
-			width: 45px !important;
-			height: 45px !important;
+			width: 50px !important;
+			height: 50px !important;
 		}
 	}
 	

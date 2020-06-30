@@ -1446,8 +1446,8 @@ body.sidebar-opened .copyright {
 }
 
 #logo .logo-icon {
-  width: 50px;
-  height: 50px;
+  width: 65px;
+  height: 65px;
 }
 
 #logo img {
@@ -2931,7 +2931,7 @@ body.sidebar-opened .copyright {
 }
 
 #mc-embedded-subscribe-form input.mce_inline_error {
-  border: 1px solid #7f0000;
+  border: 1px solid #da1233;
 }
 
 #mc-embedded-subscribe-form div.mce_inline_error {
@@ -2940,11 +2940,11 @@ body.sidebar-opened .copyright {
   font-size: 12px;
   padding-left: 30px;
   position: relative;
-  color: #7f0000 !important;
+  color: #da1233 !important;
 }
 
 #mc-embedded-subscribe-form div.mce_inline_error a {
-  color: #7f0000 !important;
+  color: #da1233 !important;
 }
 
 #mc-embedded-subscribe-form div.mce_inline_error:before {
@@ -2971,11 +2971,11 @@ body.sidebar-opened .copyright {
 
 #mc-embedded-subscribe-form #mce-responses .response#mce-success-response {
   position: relative;
-  color: #007f00 !important;
+  color: #67da12 !important;
 }
 
 #mc-embedded-subscribe-form #mce-responses .response#mce-success-response a {
-  color: #007f00 !important;
+  color: #67da12 !important;
 }
 
 #mc-embedded-subscribe-form #mce-responses .response#mce-success-response:before {
@@ -2984,11 +2984,11 @@ body.sidebar-opened .copyright {
 
 #mc-embedded-subscribe-form #mce-responses .response#mce-error-response {
   position: relative;
-  color: #7f0000 !important;
+  color: #da1233 !important;
 }
 
 #mc-embedded-subscribe-form #mce-responses .response#mce-error-response a {
-  color: #7f0000 !important;
+  color: #da1233 !important;
 }
 
 #mc-embedded-subscribe-form #mce-responses .response#mce-error-response:before {
@@ -3003,7 +3003,7 @@ body.sidebar-opened .copyright {
 }
 
 #mc-embedded-subscribe-form input.mce_inline_error {
-  border: 1px solid #7f0000;
+  border: 1px solid #da1233;
 }
 
 #download-book-modal .form {
@@ -4315,6 +4315,44 @@ body.sidebar-opened .copyright {
   text-align: center;
 }
 
+#error404-hero {
+  padding: 100px 150px;
+  border: 1px solid rgba(34, 34, 34, 0.2);
+  display: -ms-grid;
+  display: grid;
+  grid-auto-rows: -webkit-max-content;
+  grid-auto-rows: max-content;
+  grid-gap: 30px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  text-align: center;
+}
+
+#error404-hero .error404-text {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-rows: -webkit-max-content;
+  grid-auto-rows: max-content;
+  grid-gap: 0px;
+  place-self: center;
+}
+
+#error404-hero .error404-text h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 133px;
+}
+
+#error404-hero .error404-text p {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+#error404-hero .btn-chevron {
+  place-self: center;
+}
+
 #disqus_thread .nav-tab > a {
   font-family: "Gilroy", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
@@ -4383,8 +4421,8 @@ body.sidebar-opened .copyright {
     line-height: 19px !important;
   }
   #logo .logo-icon {
-    width: 45px !important;
-    height: 45px !important;
+    width: 50px !important;
+    height: 50px !important;
   }
   body.dark #logo a {
     -ms-grid-columns: auto !important;
