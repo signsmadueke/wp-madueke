@@ -2,42 +2,49 @@
   font-family: 'Bookerly';
   src: url("../fonts/Bookerly/BookerlyDisplay-Rg.woff") format("woff");
   font-weight: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Bookerly';
   src: url("../fonts/Bookerly/BookerlyDisplay-Rg.woff2") format("woff2");
   font-weight: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Bookerly';
   src: url("../fonts/Bookerly/BookerlyDisplay-Bd.woff2") format("woff2");
   font-weight: bold;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Gilroy';
   src: url("../fonts/Gilroy/Gilroy-Regular.ttf") format("truetype");
   font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Gilroy';
   src: url("../fonts/Gilroy/Gilroy-Medium.ttf") format("truetype");
   font-weight: 500;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Gilroy';
   src: url("../fonts/Gilroy/Gilroy-SemiBold.ttf") format("truetype");
   font-weight: 600;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Playfair Display';
   src: url("../fonts/Playfair_Display/PlayfairDisplay-Regular.ttf") format("truetype");
   font-weight: 400;
+  font-display: swap;
   font-style: normal;
 }
 
@@ -45,6 +52,7 @@
   font-family: 'Playfair Display';
   src: url("../fonts/Playfair_Display/PlayfairDisplay-Bold.ttf") format("truetype");
   font-weight: 700;
+  font-display: swap;
   font-style: normal;
 }
 
@@ -52,6 +60,7 @@
   font-family: 'Playfair Display';
   src: url("../fonts/Playfair_Display/PlayfairDisplay-Black.ttf") format("truetype");
   font-weight: 900;
+  font-display: swap;
   font-style: normal;
 }
 
@@ -59,6 +68,7 @@
   font-family: 'Playfair Display';
   src: url("../fonts/Playfair_Display/PlayfairDisplay-Italic.ttf") format("truetype");
   font-weight: 400;
+  font-display: swap;
   font-style: italic;
 }
 
@@ -66,6 +76,7 @@
   font-family: 'Playfair Display';
   src: url("../fonts/Playfair_Display/PlayfairDisplay-BoldItalic.ttf") format("truetype");
   font-weight: 700;
+  font-display: swap;
   font-style: italic;
 }
 
@@ -73,6 +84,7 @@
   font-family: 'Playfair Display';
   src: url("../fonts/Playfair_Display/PlayfairDisplay-BlackItalic.ttf") format("truetype");
   font-weight: 900;
+  font-display: swap;
   font-style: italic;
 }
 
@@ -127,8 +139,8 @@
 }
 
 .reveal {
-  -webkit-animation: reveal ease 1s forwards;
-          animation: reveal ease 1s forwards;
+  -webkit-animation: reveal 1s cubic-bezier(0.7, 0, 0.3, 1) both;
+          animation: reveal 1s cubic-bezier(0.7, 0, 0.3, 1) both;
 }
 
 @-webkit-keyframes fade {
@@ -1653,6 +1665,21 @@ body.sidebar-opened .copyright {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#bestsellers #books .book:nth-child(1) {
+  -webkit-animation-delay: .1s;
+          animation-delay: .1s;
+}
+
+#bestsellers #books .book:nth-child(2) {
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
+}
+
+#bestsellers #books .book:nth-child(3) {
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
 }
 
 .book {
