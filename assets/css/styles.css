@@ -4432,14 +4432,14 @@ body.sidebar-opened .copyright {
   background-color: #F5E1FF;
   background-repeat: no-repeat;
   background-size: 900px;
-  background-position: 600px -350px;
+  background-position: 600px -150px;
 }
 
 @media (max-width: 1200px) {
   #adverts .advert.bg-1 {
     padding: 60px;
     background-size: 800px;
-    background-position: 400px -300px;
+    background-position: 400px -100px;
   }
 }
 
@@ -4447,7 +4447,7 @@ body.sidebar-opened .copyright {
   #adverts .advert.bg-1 {
     padding: 60px 30px;
     background-size: 800px;
-    background-position: -150px 100px;
+    background-position: -100px 200px;
     padding-bottom: 300px;
   }
 }

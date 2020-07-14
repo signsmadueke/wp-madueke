@@ -32,12 +32,12 @@
 <div id="space-50"></div>
 
 <h1>Book Bundles</h1>
-<?php echo do_shortcode('[products limit="8" columns="4" category="book bundles" cat_operator="AND"]'); ?>
+<?php echo do_shortcode('[products limit="9" columns="3" category="book bundles" cat_operator="AND"]'); ?>
 
 <div id="space-50"></div>
 
 <h1>Books</h1>
-<?php echo do_shortcode('[products limit="8" columns="4" category="books" cat_operator="AND"]'); ?>
+<?php echo do_shortcode('[products limit="9" columns="3" category="books" cat_operator="AND"]'); ?>
 
 
 

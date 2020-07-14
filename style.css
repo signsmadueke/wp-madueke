@@ -251,7 +251,8 @@ Author: Prayer M. Madueke
 
 
 
-.woocommerce-page ul.products {
+.woocommerce-page ul.products,
+.woocommerce .products ul, .woocommerce ul.products {
 	float: none;
 	margin: 0 !important;
 	padding: 0;
@@ -269,20 +270,24 @@ Author: Prayer M. Madueke
 }
 
 @media (max-width: 1000px){
-	.woocommerce-page ul.products {
+	.woocommerce-page ul.products,
+	.woocommerce .products ul, .woocommerce ul.products {
 		grid-template-columns: repeat(auto-fit, minmax(calc(calc(100%/2) - 15px), calc(calc(100%/2)  - 15px))) !important;
 	}
 }
 
 @media (max-width: 700px){
-	.woocommerce-page ul.products {
+	.woocommerce-page ul.products,
+	.woocommerce .products ul, .woocommerce ul.products {
 		/* grid-template-columns: repeat(auto-fit, minmax(calc(calc(100%/2) - 15px), calc(calc(100%/2)  - 15px))) !important; */
 		grid-template-columns: repeat(auto-fit, minmax(100%, 100%)) !important;
 	}
 }
 
+
 /* @media (max-width: 400px){
-	.woocommerce-page ul.products {
+	.woocommerce-page ul.products,
+	.woocommerce .products ul, .woocommerce ul.products {
 		grid-template-columns: repeat(auto-fit, minmax(100%, 100%)) !important;
 	}
 } */

@@ -30,18 +30,18 @@ $(document).keypress(function(e) {
     } 
 });
 
-$('#adverts').owlCarousel({
-    loop: false,
-    margin: 0,
-    nav: false,
-    autoplay: true,
-    autoplayHoverPause: true,
-    autoHeight: false,
-    items: 1,
-    dots: false,
-    navText: ['', ''],
-    rewind: true
-});
+// $('#adverts').owlCarousel({
+//     loop: false,
+//     margin: 0,
+//     nav: false,
+//     autoplay: true,
+//     autoplayHoverPause: true,
+//     autoHeight: false,
+//     items: 1,
+//     dots: false,
+//     navText: ['', ''],
+//     rewind: true
+// });
 
 // $("#download-btn").click(function () {
 //     var $body = $('body');

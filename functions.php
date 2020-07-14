@@ -30,8 +30,8 @@ function load_javascripts() {
 	wp_register_script('animations', get_template_directory_uri() . '/assets/js/animations.js', '', 1, true);
 	wp_enqueue_script('animations');
 
-	wp_register_script('owl-carousel', get_template_directory_uri() . '/assets/js/owl.carousel.min.js', '', 1, true);
-	wp_enqueue_script('owl-carousel');
+	// wp_register_script('owl-carousel', get_template_directory_uri() . '/assets/js/owl.carousel.min.js', '', 1, true);
+	// wp_enqueue_script('owl-carousel');
 }
 // Run Javascripts
 add_action('wp_enqueue_scripts', 'load_javascripts');
