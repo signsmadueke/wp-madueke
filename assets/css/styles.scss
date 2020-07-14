@@ -1253,47 +1253,47 @@ body.sidebar-opened {
 
 		nav {
 			li {
-				animation: slideIn .5s ease forwards;
+				animation: slideIn 500ms ease forwards;
 				opacity: 0;
 
 				&:nth-child(1) {
-					animation-delay: .5s;
+					animation-delay: 500ms;
 				}
 
 				&:nth-child(2) {
-					animation-delay: .6s;
+					animation-delay: 550ms;
 				}
 
 				&:nth-child(3) {
-					animation-delay: .7s;
+					animation-delay: 600ms;
 				}
 
 				&:nth-child(4) {
-					animation-delay: .8s;
+					animation-delay: 650ms;
 				}
 
 				&:nth-child(5) {
-					animation-delay: .9s;
+					animation-delay: 700ms;
 				}
 
 				&:nth-child(6) {
-					animation-delay: 1s;
+					animation-delay: 750ms;
 				}
 
 				&:nth-child(7) {
-					animation-delay: 1.1s;
+					animation-delay: 800ms;
 				}
 
 				&:nth-child(8) {
-					animation-delay: 1.2s;
+					animation-delay: 850ms;
 				}
 
 				&:nth-child(9) {
-					animation-delay: 1.3s;
+					animation-delay: 900ms;
 				}
 
 				&:nth-child(10) {
-					animation-delay: 1.4s;
+					animation-delay: 950ms;
 				}
 			}
 		}
@@ -1301,31 +1301,31 @@ body.sidebar-opened {
 
 	#social {
 		li {
-			animation: slideIn .5s ease forwards;
+			animation: slideIn 1000ms ease forwards;
 			opacity: 0;
 
 			&:nth-child(1) {
-				animation-delay: 1.3s;
+				animation-delay: 1000ms;
 			}
 
 			&:nth-child(2) {
-				animation-delay: 1.4s;
+				animation-delay: 1050ms;
 			}
 
 			&:nth-child(3) {
-				animation-delay: 1.5s;
+				animation-delay: 1100ms;
 			}
 
 			&:nth-child(4) {
-				animation-delay: 1.6s;
+				animation-delay: 1150ms;
 			}
 		}
 	}
 
 	.copyright {
-		animation: slideIn .5s ease forwards;
+		animation: slideIn 1200ms ease forwards;
 		opacity: 0;
-		animation-delay: 1.7s;
+		animation-delay: 1200ms;
 	}
 }
 
