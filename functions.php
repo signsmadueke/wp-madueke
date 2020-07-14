@@ -29,6 +29,9 @@ function load_javascripts() {
 
 	wp_register_script('animations', get_template_directory_uri() . '/assets/js/animations.js', '', 1, true);
 	wp_enqueue_script('animations');
+
+	wp_register_script('owl-carousel', get_template_directory_uri() . '/assets/js/owl.carousel.min.js', '', 1, true);
+	wp_enqueue_script('owl-carousel');
 }
 // Run Javascripts
 add_action('wp_enqueue_scripts', 'load_javascripts');
@@ -44,7 +47,7 @@ register_nav_menus(
 );
 
 // Add Image Sizes
-add_image_size('post_image', 1100, 750, false);
+add_image_size('post_image', 1500, 600, false);
 
 // Allow Woocomerce
 function mytheme_add_woocommerce_support() {
@@ -147,3 +150,79 @@ function remove_stripe_payment_request_from_cart_20200608() {
 	remove_action( 'woocommerce_proceed_to_checkout', array( WC_Stripe_Payment_Request::instance(), 'display_payment_request_button_html' ), 1 );
 	remove_action( 'woocommerce_proceed_to_checkout', array( WC_Stripe_Payment_Request::instance(), 'display_payment_request_button_separator_html' ), 2 );
 }
+
+//* Make Font Awesome available
+add_action( 'wp_enqueue_scripts', 'enqueue_font_awesome' );
+function enqueue_font_awesome() {
+
+	wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css' );
+
+}
+
+/**
+ * Place a cart icon with number of items and total cost in the menu bar.
+ *
+ * Source: http://wordpress.org/plugins/woocommerce-menu-bar-cart/
+ */
+add_filter('wp_nav_menu_items','sk_wcmenucart', 10, 2);
+function sk_wcmenucart($menu, $args) {
+
+	// Check if WooCommerce is active and add a new item to a menu assigned to Primary Navigation Menu location
+	if ( !in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) || 'primary' !== $args->theme_location )
+		return $menu;
+
+	ob_start();
+		global $woocommerce;
+		$viewing_cart = __('View your shopping cart', 'your-theme-slug');
+		$start_shopping = __('Start shopping', 'your-theme-slug');
+		$cart_url = $woocommerce->cart->get_cart_url();
+		$shop_page_url = get_permalink( woocommerce_get_page_id( 'shop' ) );
+		$cart_contents_count = $woocommerce->cart->cart_contents_count;
+		$cart_contents = sprintf(_n('%d item', '%d items', $cart_contents_count, 'your-theme-slug'), $cart_contents_count);
+		$cart_total = $woocommerce->cart->get_cart_total();
+		// Uncomment the line below to hide nav menu cart item when there are no items in the cart
+		if ( $cart_contents_count > 0 ) {
+			if ($cart_contents_count == 0) {
+				$menu_item = '<li class="right"><a class="wcmenucart-contents" href="'. $shop_page_url .'" title="'. $start_shopping .'">';
+			}
+			else {
+				$menu_item = '<li class="right"><a class="wcmenucart-contents" href="'. $cart_url .'" title="'. $viewing_cart .'">';
+			}
+
+			$menu_item .= '<i class="fa fa-shopping-cart"></i> ';
+
+			$menu_item .= $cart_contents.' - '. $cart_total;
+			$menu_item .= '</a></li>';
+		// Uncomment the line below to hide nav menu cart item when there are no items in the cart
+		}
+		echo $menu_item;
+	$social = ob_get_clean();
+	return $menu . $social;
+
+}
+
+
+
+
+
+add_filter('woocommerce_sale_flash', 'lw_hide_sale_flash');
+function lw_hide_sale_flash()
+{
+return false;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+remove_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_price', 10 );

@@ -34,30 +34,32 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 	<?php if ( $checkout->get_checkout_fields() ) : ?>
 
 		
-	<section class="" id="customer_details">
-		<?php do_action( 'woocommerce_checkout_before_customer_details' ); ?>
+	<div class="checkout-form-row">
+		<section class="" id="customer_details">
+			<?php do_action( 'woocommerce_checkout_before_customer_details' ); ?>
 
-		<?php do_action( 'woocommerce_checkout_billing' ); ?>
-	
-		<?php do_action( 'woocommerce_checkout_after_customer_details' ); ?>
-	</section>
-
-
-	<?php endif; ?>
-	
-	
-	<section class="section-grid">
-		<?php do_action( 'woocommerce_checkout_before_order_review_heading' ); ?>
+			<?php do_action( 'woocommerce_checkout_billing' ); ?>
 		
-		<h3 class="lined-heading" id="order_review_heading"><?php esc_html_e( 'Your order', 'woocommerce' ); ?></h3>
-		
-		<?php do_action( 'woocommerce_checkout_before_order_review' ); ?>
+			<?php do_action( 'woocommerce_checkout_after_customer_details' ); ?>
+		</section>
 
-		<div id="order_review" class="woocommerce-checkout-review-order">
-			<?php do_action( 'woocommerce_checkout_order_review' ); ?>
-		</div>
-		<?php do_action( 'woocommerce_checkout_after_order_review' ); ?>
-	</section>
+
+		<?php endif; ?>
+		
+		
+		<section class="section-grid">
+			<?php do_action( 'woocommerce_checkout_before_order_review_heading' ); ?>
+			
+			<h3 class="lined-heading" id="order_review_heading"><?php esc_html_e( 'Your order', 'woocommerce' ); ?></h3>
+			
+			<?php do_action( 'woocommerce_checkout_before_order_review' ); ?>
+
+			<div id="order_review" class="woocommerce-checkout-review-order">
+				<?php do_action( 'woocommerce_checkout_order_review' ); ?>
+			</div>
+			<?php do_action( 'woocommerce_checkout_after_order_review' ); ?>
+		</section>
+	</div>
 
 
 </form>

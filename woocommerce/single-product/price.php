@@ -24,8 +24,10 @@ global $product;
 ?>
 
 <section class="animate reveal channels price">
-	<p class="name small-caps">Ebook (PDF)</p>
-	<p class="<?php echo esc_attr( apply_filters( 'woocommerce_product_price_class', 'price' ) ); ?>"><?php echo $product->get_price_html(); ?></p>
+	<div class="section-grid">
+		<p class="name small-caps">Ebook (PDF)</p>
+		<p class="<?php echo esc_attr( apply_filters( 'woocommerce_product_price_class', 'price' ) ); ?>"><?php echo $product->get_price_html(); ?></p>
+	</div>
 	
 	
 	<form class="cart" action="<?php echo esc_url( apply_filters( 'woocommerce_add_to_cart_form_action', $product->get_permalink() ) ); ?>" method="post" enctype='multipart/form-data'>
