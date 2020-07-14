@@ -313,9 +313,11 @@ Author: Prayer M. Madueke
 
 @media (max-width: 700px){
 	.woocommerce ul.products li.product .woocommerce-loop-category__title, .woocommerce ul.products li.product .woocommerce-loop-product__title, .woocommerce ul.products li.product h3 {
-		font-weight: 500;
+		/* font-weight: 500;
 		letter-spacing: -0.5px;
-		font-style: italic;
+		font-style: italic; */
+		font-size: 20px;
+		line-height: 30px;
 	}
 
 	.woocommerce ul.products li.product a {
