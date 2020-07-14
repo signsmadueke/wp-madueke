@@ -424,6 +424,14 @@ Author: Prayer M. Madueke
 	clear: unset;
 }
 
+.woocommerce-page div.product ul {
+	list-style-type: disc;
+}
+
+.woocommerce-page div.product ol {
+	list-style-type: decimal;
+}
+
 .woocommerce-page div.product .woocommerce-tabs {
 	grid-area: tabs;
 }
