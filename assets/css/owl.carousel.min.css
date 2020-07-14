@@ -58,7 +58,7 @@
 }
 
 .owl-carousel .owl-dots.disabled,.owl-carousel .owl-nav.disabled {
-    /* display:none */
+    display: none;
 }
 
 .no-js .owl-carousel,.owl-carousel.owl-loaded {
