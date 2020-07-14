@@ -30,20 +30,39 @@ $(document).keypress(function(e) {
     } 
 });
 
-// $('#adverts').owlCarousel({
-//     loop: false,
-//     margin: 0,
-//     nav: false,
-//     autoplay: true,
-//     autoplayHoverPause: true,
-//     autoHeight: false,
-//     items: 1,
-//     dots: false,
-//     navText: ['', ''],
-//     rewind: true
+// $(document).ready(function () {    
+//     $('.adverts').owlCarousel({
+//         loop: false,
+//         margin: 0,
+//         nav: false,
+//         autoplay: true,
+//         autoplayHoverPause: true,
+//         items: 1,
+//         dots: false,
+//         navText: ['', ''],
+//         rewind: true
+//     });
 // });
-
-// $("#download-btn").click(function () {
+    
+$(document).ready(function () {
+    $('#adverts .owl-carousel').owlCarousel({
+        loop: false,
+        rewind: true,
+        autoplayHoverPause: true,
+        items: 1,
+        nav: false,
+        autoplay: true,
+        dots: false,
+        autoplayTimeout: 8500,
+        smartSpeed: 200,
+        // center: true,
+        // lazyLoad: true,
+        margin: 30,
+        navText: ['<svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.37271 5.89942C0.784586 5.44098 0.78936 4.54574 1.37271 4.08124L5.48059 0.967695C6.00479 0.570382 6.75732 0.94427 6.75732 1.60203C6.75732 1.85256 6.63937 2.08847 6.43894 2.23878L3.20177 4.66667C2.97955 4.83333 2.97955 5.16667 3.20177 5.33333L6.43967 7.76176C6.63964 7.91174 6.75732 8.14711 6.75732 8.39706C6.75732 9.05415 6.00483 9.42695 5.48207 9.02885L1.37271 5.89942Z" fill="#2A2A2A"/></svg>', '<svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.76328 4.10058C6.3514 4.55902 6.34663 5.45426 5.76328 5.91876L1.6554 9.0323C1.1312 9.42962 0.378662 9.05573 0.378662 8.39797C0.378662 8.14744 0.496617 7.91153 0.697041 7.76122L3.93422 5.33333C4.15644 5.16667 4.15644 4.83333 3.93422 4.66667L0.696312 2.23824C0.496347 2.08826 0.378662 1.85289 0.378662 1.60294C0.378662 0.945852 1.13116 0.573052 1.65392 0.971152L5.76328 4.10058Z" fill="#2A2A2A"/></svg>']
+    });
+});
+    
+    // $("#download-btn").click(function () {
 //     var $body = $('body');
 //     var $modal = $('.modal');
 //     $modal.toggleClass("hide");
