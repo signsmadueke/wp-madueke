@@ -426,10 +426,12 @@ Author: Prayer M. Madueke
 
 .woocommerce-page div.product ul {
 	list-style-type: disc;
+	padding-left: 20px;
 }
 
 .woocommerce-page div.product ol {
 	list-style-type: decimal;
+	padding-left: 20px;
 }
 
 .woocommerce-page div.product .woocommerce-tabs {
