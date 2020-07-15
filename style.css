@@ -1208,3 +1208,7 @@ Author: Prayer M. Madueke
 .woocommerce form .form-row label {
 	cursor: pointer;
 }
+
+.wc-facebook-pixel-event-placeholder {
+	display: none;
+}
