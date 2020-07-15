@@ -311,9 +311,9 @@ Author: Prayer M. Madueke
 	letter-spacing: -0.6px;
 	margin: 0;
 	padding: 0;
-	text-overflow: ellipsis;
-	overflow: hidden;
-	white-space: nowrap;
+	/* text-overflow: ellipsis; */
+	/* overflow: hidden; */
+	/* white-space: nowrap;
 }
 
 @media (max-width: 700px){
