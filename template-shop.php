@@ -4,29 +4,51 @@
 ?>
 
 <section id="adverts">
-    <div class="owl-carousel owl-theme">
-        <div class="advert bg-1">
-            <div class="details">
-                <div class="text">
-                    <h1>Prayers for Deliverance Bundle</h1>
-                    <p>We must exercise our faith to walk in the fullness of His protection. Now is the time to stand firm on God's Word and start protecting yourself and your family today!</p>
-                </div>
-                <a class="button btn-link">
-                    <span>Get this today</span>
-                </a>
+    <div class="advert bg-1">
+        <div class="details">
+            <div class="text">
+                <h1>Prayers for Deliverance Bundle</h1>
+                <p>We must exercise our faith to walk in the fullness of His protection. Now is the time to stand firm on God's Word and start protecting yourself and your family today!</p>
             </div>
+            <a class="button btn-link">
+                <span>Get this today</span>
+            </a>
         </div>
+    </div>
 
-        <div class="advert bg-2">
-            <div class="details">
-                <div class="text">
-                    <h1>Prayers for Deliverance Bundle</h1>
-                    <p>We must exercise our faith to walk in the fullness of His protection. Now is the time to stand firm on God's Word and start protecting yourself and your family today!</p>
-                </div>
-                <a class="button btn-link">
-                    <span>Get this today</span>
-                </a>
+    <div class="advert bg-2">
+        <div class="details">
+            <div class="text">
+                <h1>Prayers for Deliverance Bundle</h1>
+                <p>We must exercise our faith to walk in the fullness of His protection. Now is the time to stand firm on God's Word and start protecting yourself and your family today!</p>
             </div>
+            <a class="button btn-link">
+                <span>Get this today</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="advert bg-1">
+        <div class="details">
+            <div class="text">
+                <h1>Prayers for Deliverance Bundle</h1>
+                <p>We must exercise our faith to walk in the fullness of His protection. Now is the time to stand firm on God's Word and start protecting yourself and your family today!</p>
+            </div>
+            <a class="button btn-link">
+                <span>Get this today</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="advert bg-2">
+        <div class="details">
+            <div class="text">
+                <h1>Prayers for Deliverance Bundle</h1>
+                <p>We must exercise our faith to walk in the fullness of His protection. Now is the time to stand firm on God's Word and start protecting yourself and your family today!</p>
+            </div>
+            <a class="button btn-link">
+                <span>Get this today</span>
+            </a>
         </div>
     </div>
 </section>

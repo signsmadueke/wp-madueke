@@ -209,6 +209,18 @@
 	}
 }
 
+@keyframes slideInRight {
+	0% {
+		opacity: 0;
+		transform: translate3d(-50px, 0, 0);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
 @keyframes reveal {
 	0% {
 		transform: translate3d(0, 50px, 0)
@@ -221,7 +233,7 @@
 }
 
 .reveal {
-	animation: reveal 1s cubic-bezier(0.7,0,0.3,1) both;
+	animation: reveal 1s cubic-bezier(0.7, 0, 0.3, 1) both;
 }
 
 @keyframes fade {
@@ -1251,9 +1263,23 @@ body.sidebar-opened {
 	#sidebar {
 		transform: none;
 
+		#logo {
+			.logo-icon {
+				animation: slideInRight 300ms cubic-bezier(0.7, 0, 0.3, 1) forwards;
+				animation-delay: 200ms;
+				opacity: 0;
+			}
+
+			.logo-text {
+				animation: slideInRight 400ms cubic-bezier(0.7, 0, 0.3, 1) forwards;
+				animation-delay: 100ms;
+				opacity: 0;
+			}
+		}
+
 		nav {
 			li {
-				animation: slideIn 500ms ease forwards;
+				animation: slideIn 500ms cubic-bezier(0.7, 0, 0.3, 1) forwards;
 				opacity: 0;
 
 				&:nth-child(1) {
@@ -1301,7 +1327,7 @@ body.sidebar-opened {
 
 	#social {
 		li {
-			animation: slideIn 1000ms ease forwards;
+			animation: slideIn 1000ms cubic-bezier(0.7, 0, 0.3, 1) forwards;
 			opacity: 0;
 
 			&:nth-child(1) {
@@ -1323,7 +1349,7 @@ body.sidebar-opened {
 	}
 
 	.copyright {
-		animation: slideIn 1200ms ease forwards;
+		animation: slideIn 1200ms cubic-bezier(0.7, 0, 0.3, 1) forwards;
 		opacity: 0;
 		animation-delay: 1200ms;
 	}
@@ -1355,7 +1381,7 @@ body.sidebar-opened {
 		transform: translate(0px, -100%);
 		display: none;
 		opacity: 0;
-		transform: all 0.5s cubic-bezier(1, 0, 0, 1) !important;
+		transform: all 0.5s cubic-bezier(0.7, 0, 0.3, 1) !important;
 		
 		@media (max-width: 800px) {
 			position: fixed;
@@ -1478,8 +1504,7 @@ body.sidebar-opened {
 		display: block;
 		width: 35px;
 		height: 1px;
-		-webkit-transition: all 0.5s cubic-bezier(1, 0, 0, 1) !important;
-		transition: all 0.5s cubic-bezier(1, 0, 0, 1) !important;
+		transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1) !important;
 		background: #444;
 		text-align: center;
 		margin: 0 auto;
@@ -4250,6 +4275,9 @@ body.sidebar-opened {
 	}
 }
 
+.flickity-slider {
+	transition: none 0s ease 0s !important;
+}
 
 
 

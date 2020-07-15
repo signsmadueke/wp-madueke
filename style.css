@@ -347,12 +347,15 @@ Author: Prayer M. Madueke
 
 .woocommerce ul.products li.product a img {
 	margin: 0;
-	margin-bottom: 10px;
-	/* border-radius: 5px; */
-	/* box-shadow: 0px 5px 17px 0px rgba(0, 0, 0, 0.1); */
-	border: 1px solid rgba(0, 0, 0, 0.2);
+	margin-bottom: 20px;
+	border-radius: 10px;
+	box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.05);
+	border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
+.woocommerce ul.products li.product:hover a img {
+	box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.05);
+}
 
 .woocommerce div.product .woocommerce-product-gallery__image a {
 	margin: 0;
@@ -365,8 +368,10 @@ Author: Prayer M. Madueke
 	height: 100%;
 	width: 100%;
 	max-width: 100%;
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	border-radius: 0px;
+	border-radius: 10px;
+	box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.05);
+	border: 1px solid rgba(0, 0, 0, 0.05);
+}
 }
 
 .woocommerce ul.products li.product a {
