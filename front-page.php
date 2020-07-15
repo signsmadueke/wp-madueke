@@ -31,7 +31,7 @@
 <div id="space-50"></div>
 
 <h1>eBook Bundles</h1>
-<?php echo do_shortcode('[products limit="9" columns="3" category="ebook bundles" cat_operator="AND"]'); ?>
+<?php echo do_shortcode('[products limit="9" columns="3" category="book bundles" cat_operator="AND"]'); ?>
 
 <div id="space-50"></div>
 
