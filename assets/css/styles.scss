@@ -1182,31 +1182,31 @@ body.sidebar-opened {
 
 	#social {
 		li {
-			animation: slideIn 1000ms cubic-bezier(0.7, 0, 0.3, 1) forwards;
+			animation: slideIn 850ms cubic-bezier(0.7, 0, 0.3, 1) forwards;
 			opacity: 0;
 
 			&:nth-child(1) {
-				animation-delay: 1000ms;
+				animation-delay: 850ms;
 			}
 
 			&:nth-child(2) {
-				animation-delay: 1050ms;
+				animation-delay: 900ms;
 			}
 
 			&:nth-child(3) {
-				animation-delay: 1100ms;
+				animation-delay: 950ms;
 			}
 
 			&:nth-child(4) {
-				animation-delay: 1150ms;
+				animation-delay: 1000ms;
 			}
 		}
 	}
 
 	.copyright {
-		animation: slideIn 1200ms cubic-bezier(0.7, 0, 0.3, 1) forwards;
+		animation: slideIn 1050ms cubic-bezier(0.7, 0, 0.3, 1) forwards;
 		opacity: 0;
-		animation-delay: 1200ms;
+		animation-delay: 1050ms;
 	}
 }
 
@@ -2932,17 +2932,6 @@ body.sidebar-opened {
 		grid-auto-flow: row;
 		grid-gap: 10px;
 		text-align: center;
-
-		h1 {
-			font-family: 'Playfair Display';
-			font-variant-numeric: lining-nums;
-			letter-spacing: -0.6px;
-			font-size: 35px;
-			line-height: 47px;
-			color: #222222;
-			margin: 0;
-			font-weight: bold;
-		}
 		
 		p {
 			line-height: 30px;
@@ -3613,6 +3602,17 @@ body.sidebar-opened {
 		display: grid;
 		grid-auto-flow: row;
 		grid-gap: 10px;
+
+		h1 {
+			font-family: 'Playfair Display';
+			font-variant-numeric: lining-nums;
+			letter-spacing: -0.6px;
+			font-size: 35px;
+			line-height: 47px;
+			color: #222222;
+			margin: 0;
+			font-weight: bold;
+		}
 	}
 
 	form {
@@ -4103,12 +4103,12 @@ body.sidebar-opened {
 				grid-gap: 5px;
 
 				h1 {
-					font-size: 30px;
-					line-height: 40px;
+					font-size: 35px;
+					line-height: 45px;
 
 					@media (max-width: 700px) {
-						font-size: 25px;
-						line-height: 35px;
+						font-size: 30px;
+						line-height: 40px;
 					}
 				}
 
