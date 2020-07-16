@@ -69,6 +69,13 @@ $('#adverts').flickity({
 
 
 });
+
+var wooMessage = $('.woocommerce-notices-wrapper');
+if (wooMessage.text() == '') {
+    wooMessage.hide();
+}
+    
+$('.woocommerce-notices-wrapper:empty').hide();
     
     // $("#download-btn").click(function () {
 //     var $body = $('body');

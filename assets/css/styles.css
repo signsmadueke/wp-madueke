@@ -701,7 +701,7 @@ h6 {
 }
 
 .lined-heading {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   margin-bottom: 20px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -4622,10 +4622,10 @@ body.sidebar-opened .copyright {
 
 @media (max-width: 1000px) {
   h2 {
-    font-size: 30px;
+    font-size: 35px;
   }
   h3 {
-    font-size: 25px;
+    font-size: 30px;
   }
   .logo-tagline {
     font-size: 11px !important;
@@ -4678,16 +4678,16 @@ body.sidebar-opened .copyright {
     background-position: center top !important;
   }
   h1 {
-    font-size: 35px;
+    font-size: 40px;
   }
   h4 {
-    font-size: 20px;
+    font-size: 25px;
   }
   h5 {
-    font-size: 15px;
+    font-size: 20px;
   }
   h6 {
-    font-size: 10px;
+    font-size: 15px;
   }
   p {
     font-size: 15px;
