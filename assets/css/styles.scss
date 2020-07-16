@@ -2932,6 +2932,17 @@ body.sidebar-opened {
 		grid-auto-flow: row;
 		grid-gap: 10px;
 		text-align: center;
+
+		h1 {
+			font-family: 'Playfair Display';
+			font-variant-numeric: lining-nums;
+			letter-spacing: -0.6px;
+			font-size: 35px;
+			line-height: 47px;
+			color: #222222;
+			margin: 0;
+			font-weight: bold;
+		}
 		
 		p {
 			line-height: 30px;

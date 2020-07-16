@@ -431,12 +431,12 @@ Author: Prayer M. Madueke
 	clear: unset;
 }
 
-.woocommerce-page div.product ul {
+.woocommerce-page div.product #tab-description ul {
 	list-style-type: disc;
 	padding-left: 20px;
 }
 
-.woocommerce-page div.product ol {
+.woocommerce-page div.product #tab-description ol {
 	list-style-type: decimal;
 	padding-left: 20px;
 }

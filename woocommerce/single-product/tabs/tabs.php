@@ -38,7 +38,7 @@ if ( ! empty( $product_tabs ) ) : ?>
 		<?php endif; ?>
 
 		<section class="section-grid">
-			<h1 class="lined-heading"><?php echo esc_html( $heading ); ?></h1>
+			<h3 class="lined-heading"><?php echo esc_html( $heading ); ?></h3>
 			<div>
 				<?php the_content(); ?>
 			</div>
