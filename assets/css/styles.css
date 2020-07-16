@@ -1,20 +1,6 @@
 @font-face {
-  font-family: 'Bookerly';
-  src: url("../fonts/Bookerly/BookerlyDisplay-Rg.woff") format("woff");
-  font-weight: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Bookerly';
-  src: url("../fonts/Bookerly/BookerlyDisplay-Rg.woff2") format("woff2");
-  font-weight: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Bookerly';
-  src: url("../fonts/Bookerly/BookerlyDisplay-Bd.woff2") format("woff2");
+  font-family: 'Minion Pro';
+  src: url("../fonts/Minion_Pro/MinionPro-Bold.otf") format("opentype");
   font-weight: bold;
   font-display: swap;
 }
@@ -54,38 +40,6 @@
   font-weight: 700;
   font-display: swap;
   font-style: normal;
-}
-
-@font-face {
-  font-family: 'Playfair Display';
-  src: url("../fonts/Playfair_Display/PlayfairDisplay-Black.ttf") format("truetype");
-  font-weight: 900;
-  font-display: swap;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Playfair Display';
-  src: url("../fonts/Playfair_Display/PlayfairDisplay-Italic.ttf") format("truetype");
-  font-weight: 400;
-  font-display: swap;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Playfair Display';
-  src: url("../fonts/Playfair_Display/PlayfairDisplay-BoldItalic.ttf") format("truetype");
-  font-weight: 700;
-  font-display: swap;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Playfair Display';
-  src: url("../fonts/Playfair_Display/PlayfairDisplay-BlackItalic.ttf") format("truetype");
-  font-weight: 900;
-  font-display: swap;
-  font-style: italic;
 }
 
 @-webkit-keyframes slideIn {
@@ -670,10 +624,11 @@ h1 {
   font-variant-numeric: lining-nums;
   color: #222222;
   margin: 0;
-  line-height: 47px;
+  font-family: 'Minion Pro';
+  letter-spacing: -0.6px;
+  font-size: 50px;
+  line-height: 75px;
   font-weight: bold;
-  font-family: "Playfair Display", sans-serif;
-  font-size: 35px;
 }
 
 h2 {
@@ -681,10 +636,11 @@ h2 {
   font-variant-numeric: lining-nums;
   color: #222222;
   margin: 0;
-  line-height: 30px;
+  font-size: 45px;
+  line-height: 65px;
   font-weight: bold;
-  font-family: "Playfair Display", sans-serif;
-  font-size: 30px;
+  font-family: 'Minion Pro';
+  letter-spacing: -0.6px;
 }
 
 h3 {
@@ -692,10 +648,11 @@ h3 {
   font-variant-numeric: lining-nums;
   color: #222222;
   margin: 0;
-  line-height: 25px;
+  font-size: 35px;
+  line-height: 50px;
   font-weight: bold;
-  font-family: "Playfair Display", sans-serif;
-  font-size: 25px;
+  font-family: 'Minion Pro';
+  letter-spacing: -0.6px;
 }
 
 h4 {
@@ -703,10 +660,11 @@ h4 {
   font-variant-numeric: lining-nums;
   color: #222222;
   margin: 0;
-  line-height: 20px;
+  font-size: 25px;
+  line-height: 40px;
   font-weight: bold;
-  font-family: "Playfair Display", sans-serif;
-  font-size: 20px;
+  font-family: 'Minion Pro';
+  letter-spacing: -0.6px;
 }
 
 h5 {
@@ -714,10 +672,11 @@ h5 {
   font-variant-numeric: lining-nums;
   color: #222222;
   margin: 0;
-  line-height: 15px;
+  font-size: 20px;
+  line-height: 35px;
   font-weight: bold;
-  font-family: "Playfair Display", sans-serif;
-  font-size: 15px;
+  font-family: 'Minion Pro';
+  letter-spacing: -0.6px;
 }
 
 h6 {
@@ -725,10 +684,11 @@ h6 {
   font-variant-numeric: lining-nums;
   color: #222222;
   margin: 0;
-  line-height: 10px;
+  font-size: 15px;
+  line-height: 25px;
   font-weight: bold;
-  font-family: "Playfair Display", sans-serif;
-  font-size: 10px;
+  font-family: 'Minion Pro';
+  letter-spacing: -0.6px;
 }
 
 .lined-title {
@@ -1529,6 +1489,7 @@ body.sidebar-opened .copyright {
 }
 
 .logo-name {
+  font-family: 'Playfair Display';
   font-size: 30px;
   line-height: 30px;
   font-weight: 700;
@@ -2494,7 +2455,7 @@ body.sidebar-opened .copyright {
 }
 
 #book-details .details .channels .formats .format .price {
-  font-family: 'Bookerly';
+  font-family: 'Minion Pro';
   font-weight: 900;
   font-size: 35px;
   line-height: 30px;
