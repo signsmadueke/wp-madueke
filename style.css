@@ -310,8 +310,21 @@ Author: Prayer M. Madueke
 	text-transform: capitalize;
 	margin: 0;
 	padding: 0;
-	padding-bottom: 10px;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	position: relative;
+	max-height: 66px;
+	/* height: 66px; */
+}
+
+.woocommerce ul.products li.product .woocommerce-loop-category__title:after, .woocommerce ul.products li.product .woocommerce-loop-product__title:after, .woocommerce ul.products li.product h3:after {
+	content: "";
+	text-align: right;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 30%;
+	height: 1.2em;
+	background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 90%);
 }
 
 @media (max-width: 700px){
@@ -396,6 +409,8 @@ Author: Prayer M. Madueke
 .woocommerce ul.products li.product .btn-chevron {
 	opacity: 1;
 	padding: 0;
+	padding-top: 10px;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .woocommerce ul.products li.product:hover .btn-chevron {
@@ -582,9 +597,9 @@ Author: Prayer M. Madueke
 	line-height: 27px;
 }
 
-.woocommerce-product-details__short-description {
+/* .woocommerce-product-details__short-description {
 
-}
+} */
 
 .woocommerce-cart .cart-collaterals .cart_totals table td {
 	text-align: right;
