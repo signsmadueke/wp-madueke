@@ -37,7 +37,7 @@
 <div id="space-50"></div>
 
 <h1 class="lined-heading">eBooks</h1>
-<?php echo do_shortcode('[products limit="2" columns="3" category="eBooks" cat_operator="AND"]'); ?>
+<?php echo do_shortcode('[products limit="9" columns="3" category="eBooks" cat_operator="AND"]'); ?>
 
 
 
