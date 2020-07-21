@@ -95,16 +95,16 @@ remove_action( 'woocommerce_before_shop_loop', 'woocommerce_result_count', 20 );
 
 
 
-// remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20 );
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20 );
 
-// function woocommerce_template_single_excerpt() {
-//         return;
-// }
+function woocommerce_template_single_excerpt() {
+        return;
+}
 
-// function remove_short_description() {
-//   remove_meta_box( 'postexcerpt', 'product', 'normal');
-// }
-// add_action('add_meta_boxes', 'remove_short_description', 999);
+function remove_short_description() {
+  remove_meta_box( 'postexcerpt', 'product', 'normal');
+}
+add_action('add_meta_boxes', 'remove_short_description', 999);
 
 
 

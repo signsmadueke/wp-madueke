@@ -22,9 +22,19 @@ if ( ! defined( 'ABSPATH' ) ) {
 if ( $related_products ) : ?>
 
 	<section class="related products section-grid">
+		<?php
+			if( has_term( array( 'eBook Bundles' ), 'product_cat' ) ) :
+
+			$heading = apply_filters( 'woocommerce_product_related_products_heading', __( 'Other eBook Bundles', 'woocommerce' ) );
+
+			else :
+
+			$heading = apply_filters( 'woocommerce_product_related_products_heading', __( 'Other eBooks', 'woocommerce' ) );
+
+			endif;
+		?>
 
 		<?php
-		$heading = apply_filters( 'woocommerce_product_related_products_heading', __( 'Other eBooks', 'woocommerce' ) );
 
 		if ( $heading ) :
 			?>

@@ -23,8 +23,18 @@ if ( $upsells ) : ?>
 
 	<section class="up-sells upsells products section-grid">
 		<?php
-		$heading = apply_filters( 'woocommerce_product_upsells_products_heading', __( 'Related eBooks', 'woocommerce' ) );
+			if( has_term( array( 'eBook Bundles' ), 'product_cat' ) ) :
 
+			$heading = apply_filters( 'woocommerce_product_related_products_heading', __( 'Related eBook Bundles', 'woocommerce' ) );
+
+			else :
+
+			$heading = apply_filters( 'woocommerce_product_upsells_products_heading', __( 'Related eBooks', 'woocommerce' ) );
+
+			endif;
+		?>
+		
+		<?php
 		if ( $heading ) :
 			?>
 			<h3 class="lined-heading"><?php echo esc_html( $heading ); ?></h3>
