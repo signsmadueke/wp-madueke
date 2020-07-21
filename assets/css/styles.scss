@@ -4036,6 +4036,7 @@ body.sidebar-opened {
 		width: 100%;
 		padding:  50px 100px;
 		border: 1px solid rgba(0, 0, 0, 0.1);
+		transition: none 0s ease 0s !important;
 
 		&.bg-1 {
 			background-image: url(../images/adverts//bg-1.png);
@@ -4148,6 +4149,76 @@ body.sidebar-opened {
 
 
 
+
+
+
+
+
+
+.books-in-bundle {
+	display: grid;
+	grid-gap: 30px;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+	.book-in-bundle {
+		display: grid;
+		grid-gap: 10px;
+		grid-template-columns: max-content 1fr;
+		align-items: center;
+		// padding: 10px;
+		// border: 1px solid rgba(0, 0, 0, 0.1);
+		
+		.book-image {
+			img {
+				width: 50px;
+				border: 1px solid rgba(0, 0, 0, 0.15);
+				border-radius: 3px;
+			}
+		}
+
+		.details {
+			display: grid;
+			grid-auto-flow: row;
+			grid-gap: 10px;
+
+			.book-name {
+				font-style: normal;
+				font-weight: 600;
+				font-size: 15px;
+				line-height: 18px;
+				letter-spacing: 0;
+				overflow: hidden;
+				position: relative;
+				max-height: 36px;
+
+				&:before {
+					content: "";
+					text-align: right;
+					position: absolute;
+					bottom: 0;
+					right: 0;
+					width: 30%;
+					height: 1.2em;
+					background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 90%);
+				}
+
+			}
+
+			.book-price {
+				font-style: normal;
+				font-weight: 500;
+				font-size: 14px;
+				line-height: 16px;
+				letter-spacing: 0;
+			}
+		}
+	}
+
+	@media (max-width: 1200px) {
+		// grid-template-columns: none;
+		// grid-auto-flow: row;
+	}
+}
 
 
 

@@ -4440,6 +4440,8 @@ body.sidebar-opened .copyright {
   width: 100%;
   padding: 50px 100px;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-transition: none 0s ease 0s !important;
+  transition: none 0s ease 0s !important;
 }
 
 #adverts .advert.bg-1 {
@@ -4567,6 +4569,70 @@ body.sidebar-opened .copyright {
 .flickity-slider {
   -webkit-transition: none 0s ease 0s !important;
   transition: none 0s ease 0s !important;
+}
+
+.books-in-bundle {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 30px;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.books-in-bundle .book-in-bundle {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+  -ms-grid-columns: max-content 1fr;
+      grid-template-columns: -webkit-max-content 1fr;
+      grid-template-columns: max-content 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.books-in-bundle .book-in-bundle .book-image img {
+  width: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+}
+
+.books-in-bundle .book-in-bundle .details {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: row;
+  grid-gap: 10px;
+}
+
+.books-in-bundle .book-in-bundle .details .book-name {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0;
+  overflow: hidden;
+  position: relative;
+  max-height: 36px;
+}
+
+.books-in-bundle .book-in-bundle .details .book-name:before {
+  content: "";
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 30%;
+  height: 1.2em;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(90%, white));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white 90%);
+}
+
+.books-in-bundle .book-in-bundle .details .book-price {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0;
 }
 
 #disqus_thread .nav-tab > a {

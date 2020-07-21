@@ -24,7 +24,7 @@ if ( $related_products ) : ?>
 	<section class="related products section-grid">
 
 		<?php
-		$heading = apply_filters( 'woocommerce_product_related_products_heading', __( 'Other Books', 'woocommerce' ) );
+		$heading = apply_filters( 'woocommerce_product_related_products_heading', __( 'Other eBooks', 'woocommerce' ) );
 
 		if ( $heading ) :
 			?>

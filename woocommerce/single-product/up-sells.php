@@ -23,11 +23,11 @@ if ( $upsells ) : ?>
 
 	<section class="up-sells upsells products section-grid">
 		<?php
-		$heading = apply_filters( 'woocommerce_product_upsells_products_heading', __( 'Related Books', 'woocommerce' ) );
+		$heading = apply_filters( 'woocommerce_product_upsells_products_heading', __( 'Related eBooks', 'woocommerce' ) );
 
 		if ( $heading ) :
 			?>
-			<h2 class="lined-heading"><?php echo esc_html( $heading ); ?></h2>
+			<h3 class="lined-heading"><?php echo esc_html( $heading ); ?></h3>
 		<?php endif; ?>
 
 		<?php woocommerce_product_loop_start(); ?>
