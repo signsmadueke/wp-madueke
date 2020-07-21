@@ -229,3 +229,98 @@ return false;
 
 
 remove_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_price', 10 );
+
+
+
+
+
+
+
+
+
+
+
+add_action( 'woocommerce_product_meta_end', 'pharmacy_extra_info' );
+function pharmacy_extra_info()
+{
+	if ( $meta = rwmb_meta( 'unit' ) )
+	{
+	echo '<strong>' . __( 'Unit:', 'pharmacy' ) . "</strong> $meta<br>";
+	}
+	if ( $meta = rwmb_meta( 'dosage_form' ) )
+	{
+	echo '<strong>' . __( 'Dosage form:', 'pharmacy' ) . "</strong> $meta<br>";
+	}
+	if ( $meta = rwmb_meta( 'specification' ) )
+	{
+	echo '<strong>' . __( 'Specification:', 'pharmacy' ) . "</strong> $meta<br>";
+	}
+	if ( $meta = rwmb_meta( 'manufacturer' ) )
+	{
+	echo '<strong>' . __( 'Manufacturer:', 'pharmacy' ) . "</strong> $meta<br>";
+	}
+	if ( $meta = rwmb_meta( 'distributor' ) )
+	{
+	echo '<strong>' . __( 'Distributor:', 'pharmacy' ) . "</strong> $meta<br>";
+	}
+	if ( $meta = rwmb_meta( 'expiry_date' ) )
+	{
+				echo '<strong>' . __( 'Expiry date:', 'pharmacy' ) . "</strong> $meta<br>";
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+add_filter( 'rwmb_meta_boxes', 'your_prefix_register_meta_boxes' );
+
+function your_prefix_register_meta_boxes( $meta_boxes ) {
+    $prefix = 'prefix-';
+
+    $meta_boxes[] = [
+        'title'      => esc_html__( 'Untitled', 'online-generator' ),
+        'id'         => 'untitled',
+        'post_types' => ['product'],
+        'context'    => 'normal',
+        'priority'   => 'high',
+        'fields'     => [
+            [
+                'type'        => 'text',
+                'id'          => $prefix . 'book-image',
+                'name'        => esc_html__( 'Book in bundle image', 'online-generator' ),
+                'desc'        => esc_html__( 'Book Image of the book in this bundle', 'online-generator' ),
+                'std'         => '<?php bloginfo(\'template_directory\');?>/assets/images/books/book6.jpg\'; ?>',
+                'placeholder' => esc_html__( 'Book Image Link', 'online-generator' ),
+                'clone'       => true,
+            ],
+            [
+                'type'        => 'text',
+                'id'          => $prefix . 'book-name',
+                'name'        => esc_html__( 'Book in bundle name', 'online-generator' ),
+                'desc'        => esc_html__( 'Book Name of the book in this bundle', 'online-generator' ),
+                'std'         => '21/40 Nights of Decrees and Your Enemies Will Surrender',
+                'placeholder' => esc_html__( 'Book Name', 'online-generator' ),
+                'clone'       => true,
+            ],
+            [
+                'type'        => 'text',
+                'id'          => $prefix . 'Book Price',
+                'name'        => esc_html__( 'Book in bundle price', 'online-generator' ),
+                'desc'        => esc_html__( 'Book Price of the book in this bundle', 'online-generator' ),
+                'std'         => 20.0,
+                'placeholder' => esc_html__( 'Book Price', 'online-generator' ),
+                'clone'       => true,
+            ],
+        ],
+    ];
+
+    return $meta_boxes;
