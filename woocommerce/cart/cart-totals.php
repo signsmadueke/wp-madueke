@@ -22,12 +22,12 @@ defined( 'ABSPATH' ) || exit;
 
 	<?php do_action( 'woocommerce_before_cart_totals' ); ?>
 
-	<h2><?php esc_html_e( 'Cart totals', 'woocommerce' ); ?></h2>
+	<!-- <h2><?php esc_html_e( 'Cart totals', 'woocommerce' ); ?></h2> -->
 
 	<table cellspacing="0" class="shop_table shop_table_responsive">
 
 		<tr class="cart-subtotal">
-			<th><?php esc_html_e( 'Subtotal', 'woocommerce' ); ?></th>
+			<td><?php esc_html_e( 'Subtotal', 'woocommerce' ); ?></td>
 			<td data-title="<?php esc_attr_e( 'Subtotal', 'woocommerce' ); ?>"><?php wc_cart_totals_subtotal_html(); ?></td>
 		</tr>
 

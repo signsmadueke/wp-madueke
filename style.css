@@ -195,10 +195,6 @@ Author: Prayer M. Madueke
 	fill: #222222!important;
 }
 
-.woocommerce-cart .cart-collaterals .cart_totals table {
-	margin-top: 30px;
-}
-
 /* .woocommerce table.shop_table th {
 	opacity: 0.3;
 } */
@@ -583,23 +579,55 @@ Author: Prayer M. Madueke
 	width: 100%;
 }
 
-.woocommerce table.shop_table .product-name a {
-	font-family: 'Playfair Display';
+.woocommerce table.shop_table td {
 	letter-spacing: -0.3px;
-	font-weight: 600;
-	font-size: 20px;
+	font-weight: 500;
+	font-size: 16px;
 	line-height: 30px;
 }
 
-.woocommerce table.shop_table td.product-price {
-	font-weight: 500;
-	font-size: 18px;
-	line-height: 27px;
+.woocommerce table.shop_table th {
+	letter-spacing: -0.3px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 30px;
 }
 
 /* .woocommerce-product-details__short-description {
 
 } */
+
+.woocommerce .cart-collaterals {
+	display: grid;
+	grid-template-columns: 0.5fr;
+	justify-content: right;
+}
+
+.woocommerce-cart .cart-collaterals .cart_totals table {
+	margin: 0;
+}
+
+.woocommerce-cart .wc-proceed-to-checkout {
+	padding: 0;
+}
+
+.woocommerce .cart-collaterals .cart_totals {
+	display: grid;
+	grid-gap: 20px;
+	width: 100%;
+	float: none;
+}
+
+
+@media only screen and (max-width: 768px) {
+	.woocommerce .cart-collaterals {
+		grid-template-columns: 1fr;
+	}
+}
+
+.woocommerce-cart .wc-proceed-to-checkout a.checkout-button {
+	margin: 0;
+}
 
 .woocommerce-cart .cart-collaterals .cart_totals table td {
 	text-align: right;
@@ -1083,6 +1111,7 @@ Author: Prayer M. Madueke
 	margin: 0;
 	width: 100%;
 	padding: 0;
+	margin-bottom: 20px;
 }
 
 #add_payment_method #payment div.payment_box, .woocommerce-cart #payment div.payment_box, .woocommerce-checkout #payment div.payment_box {
@@ -1129,9 +1158,17 @@ Author: Prayer M. Madueke
 	padding: 20px;
 }
 
-#add_payment_method #payment ul.payment_methods li img.stripe-icon, .woocommerce-checkout #payment ul.payment_methods li img.stripe-icon {
+.woocommerce-checkout #payment ul.payment_methods li .payment_method_name {
+	display: grid;
+	grid-gap: 5px;
+}
+
+.woocommerce-checkout #payment ul.payment_methods li img.stripe-icon {
 	max-width: 45px;
-	padding-left: 10px;
+	margin-right: 10px;
+	margin-left: 0;
+	filter: grayscale(1);
+	border-radius: 5px;
 }
 
 .wc-stripe-elements-field, .wc-stripe-iban-element-field {

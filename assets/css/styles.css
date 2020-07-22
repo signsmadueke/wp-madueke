@@ -2010,6 +2010,39 @@ body.sidebar-opened .copyright {
   font-size: none;
 }
 
+#all-books .form-inline.compact input:not([type="submit"]) {
+  padding: 10px 15px !important;
+  padding-top: 30px !important;
+}
+
+#all-books .form-inline.compact input:not([type="submit"]):focus + label {
+  padding-top: 10px;
+  padding-left: 5px;
+  font-size: inherit;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+#all-books .form-inline.compact input:not([type="submit"]):active + label {
+  padding-top: 10px;
+  padding-left: 5px;
+  font-size: inherit;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+#all-books .form-inline.compact input:not([type="submit"]):valid + label {
+  padding-top: 10px;
+  padding-left: 5px;
+  font-size: inherit;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+#all-books .form-inline.compact label {
+  padding: 22px 15px;
+}
+
 #all-books .form-inline .form-control {
   position: relative;
   display: -ms-grid;
@@ -2955,6 +2988,68 @@ body.sidebar-opened .copyright {
 #mc-embedded-subscribe-form input:not([type="submit"]):valid + label {
   padding-top: 15px;
   font-size: 14px;
+}
+
+#mc-embedded-subscribe-form input:not([type="submit"]).compact {
+  padding: 10px 15px !important;
+  padding-top: 30px;
+}
+
+#mc-embedded-subscribe-form input:not([type="submit"]).compact:focus + label {
+  padding-top: 10px;
+  padding-left: 5px;
+  font-size: inherit;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+#mc-embedded-subscribe-form input:not([type="submit"]).compact:active + label {
+  padding-top: 10px;
+  padding-left: 5px;
+  font-size: inherit;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+#mc-embedded-subscribe-form input:not([type="submit"]).compact:valid + label {
+  padding-top: 10px;
+  padding-left: 5px;
+  font-size: inherit;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+#mc-embedded-subscribe-form.compact input:not([type="submit"]) {
+  padding: 10px 15px !important;
+  padding-top: 30px !important;
+}
+
+#mc-embedded-subscribe-form.compact input:not([type="submit"]):focus + label {
+  padding-top: 10px;
+  padding-left: 5px;
+  font-size: inherit;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+#mc-embedded-subscribe-form.compact input:not([type="submit"]):active + label {
+  padding-top: 10px;
+  padding-left: 5px;
+  font-size: inherit;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+#mc-embedded-subscribe-form.compact input:not([type="submit"]):valid + label {
+  padding-top: 10px;
+  padding-left: 5px;
+  font-size: inherit;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+#mc-embedded-subscribe-form.compact label {
+  padding: 22px 15px;
 }
 
 #mc-embedded-subscribe-form label {
