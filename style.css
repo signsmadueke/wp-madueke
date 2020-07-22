@@ -1114,6 +1114,10 @@ Author: Prayer M. Madueke
 	margin-bottom: 20px;
 }
 
+.woocommerce .woocommerce-billing-fields::after, .woocommerce .woocommerce-billing-fields::before, .woocommerce .woocommerce-shipping-fields::after, .woocommerce .woocommerce-shipping-fields::before, .woocommerce-page .woocommerce-billing-fields::after, .woocommerce-page .woocommerce-billing-fields::before, .woocommerce-page .woocommerce-shipping-fields::after, .woocommerce-page .woocommerce-shipping-fields::before {
+	position: absolute;
+}
+
 #add_payment_method #payment div.payment_box, .woocommerce-cart #payment div.payment_box, .woocommerce-checkout #payment div.payment_box {
 	width: 100%;
 	padding: 0px;

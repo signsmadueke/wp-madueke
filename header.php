@@ -83,7 +83,7 @@
         <?php
             wp_nav_menu(
                 array(
-                    'theme_location' => 'top-menu',
+                    'theme_location' => 'mobile-menu',
                     'menu' => 'main-menu',
                     'container' => 'ul',
                     'menu_class' => '',
