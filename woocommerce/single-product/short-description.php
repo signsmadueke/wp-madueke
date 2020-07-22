@@ -35,43 +35,17 @@ if ( ! $short_description ) {
 <section class="section-grid animate reveal">
 	<h6 class="lined-title">Books in this Bundle</h6>
 	<div class="books-in-bundle">
-		<div class="book-in-bundle">
-			<div class="book-image">
-				<img src="<?php bloginfo('template_directory');?>/assets/images/books/book6.jpg'; ?>">
-			</div>
-			<div class="details">
-				<p class="book-name">21/40 Nights of Decrees and Your Enemies Will Surrender</p>
-				<p class="book-price">$20.00</p>
-			</div>
-		</div>
-		<div class="book-in-bundle">
-			<div class="book-image">
-				<img src="<?php bloginfo('template_directory');?>/assets/images/books/book6.jpg'; ?>">
-			</div>
-			<div class="details">
-				<p class="book-name">21/40 Nights of Decrees and Your Enemies Will Surrender</p>
-				<p class="book-price">$20.00</p>
-			</div>
-		</div>
-		<div class="book-in-bundle">
-			<div class="book-image">
-				<img src="<?php bloginfo('template_directory');?>/assets/images/books/book6.jpg'; ?>">
-			</div>
-			<div class="details">
-				<p class="book-name">21/40 Nights of Decrees and Your Enemies Will Surrender</p>
-				<p class="book-price">$20.00</p>
-			</div>
-		</div>
+		<?php echo $short_description; ?>
 	</div>
 </section>
 
 <?php else : ?>
 
-<section class="section-grid animate reveal">
+<!-- <section class="section-grid animate reveal">
 	<h6 class="lined-title">Book Description</h6>
 	<div class="woocommerce-product-details__short-description">
 		<?php echo $short_description; ?>
 	</div>
-</section>
+</section> -->
 
 <?php endif; ?>

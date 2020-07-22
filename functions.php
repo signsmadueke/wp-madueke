@@ -95,16 +95,16 @@ remove_action( 'woocommerce_before_shop_loop', 'woocommerce_result_count', 20 );
 
 
 
-remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20 );
+// remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20 );
 
-function woocommerce_template_single_excerpt() {
-        return;
-}
+// function woocommerce_template_single_excerpt() {
+//         return;
+// }
 
-function remove_short_description() {
-  remove_meta_box( 'postexcerpt', 'product', 'normal');
-}
-add_action('add_meta_boxes', 'remove_short_description', 999);
+// function remove_short_description() {
+//   remove_meta_box( 'postexcerpt', 'product', 'normal');
+// }
+// add_action('add_meta_boxes', 'remove_short_description', 999);
 
 
 
@@ -229,50 +229,6 @@ return false;
 
 
 remove_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_price', 10 );
-
-
-
-
-
-
-
-
-
-
-
-add_action( 'woocommerce_product_meta_end', 'pharmacy_extra_info' );
-function pharmacy_extra_info()
-{
-	if ( $meta = rwmb_meta( 'unit' ) )
-	{
-	echo '<strong>' . __( 'Unit:', 'pharmacy' ) . "</strong> $meta<br>";
-	}
-	if ( $meta = rwmb_meta( 'dosage_form' ) )
-	{
-	echo '<strong>' . __( 'Dosage form:', 'pharmacy' ) . "</strong> $meta<br>";
-	}
-	if ( $meta = rwmb_meta( 'specification' ) )
-	{
-	echo '<strong>' . __( 'Specification:', 'pharmacy' ) . "</strong> $meta<br>";
-	}
-	if ( $meta = rwmb_meta( 'manufacturer' ) )
-	{
-	echo '<strong>' . __( 'Manufacturer:', 'pharmacy' ) . "</strong> $meta<br>";
-	}
-	if ( $meta = rwmb_meta( 'distributor' ) )
-	{
-	echo '<strong>' . __( 'Distributor:', 'pharmacy' ) . "</strong> $meta<br>";
-	}
-	if ( $meta = rwmb_meta( 'expiry_date' ) )
-	{
-				echo '<strong>' . __( 'Expiry date:', 'pharmacy' ) . "</strong> $meta<br>";
-	}
-}
-
-
-
-
-
 
 
 
