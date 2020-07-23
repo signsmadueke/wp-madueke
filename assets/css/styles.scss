@@ -1011,11 +1011,20 @@ body.dark {
 	.logo-icon {
 		display: none;
 	}
+
+	#footer {
+		#social {
+			span {
+				background-color: #ffffff;
+			}
+		}
+	}
 }
 
 body.container {
 	display: grid;
 	grid-row-gap: 50px;
+	grid-template-rows: auto 1fr;
 	padding: 30px;
 	width: 100%;
 	height: 100%;
@@ -1405,6 +1414,32 @@ body.sidebar-opened {
 
 	#social {
 		justify-self: end;
+		display: grid;
+		grid-auto-flow: column;
+		grid-gap: 10px;
+		align-items: center;
+
+		p {
+			line-height: 20px;
+			font-weight: 400;
+			font-size: 13px;
+			opacity: 0.7;
+
+			&:first-child {
+				padding-right: 15px;
+			}
+		}
+
+		span {
+			width: 25px;
+			height: 1px;
+			background-color: #222222;
+			opacity: 0.6;
+
+			&:first-child {
+				padding-right: 15px;
+			}
+		}
 
 		a {
 			padding: 15px;
@@ -1429,15 +1464,19 @@ body.sidebar-opened {
 			grid-gap: 0px;
 			-webkit-box-align: center;
 			align-items: center;
+
+			li {
+				line-height: 0;
+			}
 		}
 	}	
 }
 
 .copyright {
-	color: #444444;
+	color: #222222;
 	justify-self: start;
 	font-style: normal;
-	font-weight: 500;
+	font-weight: 400;
 	font-size: 12px;
 	line-height: 12px;
 	opacity: 0.6;
@@ -1450,8 +1489,8 @@ body.sidebar-opened {
 	height: 100px;
 	background: transparent;
 
-	@media (max-width: 1000px) {
-		height: 0;
+	@media (max-width: 800px) {
+		height: 100px;
 	}
 }
 
@@ -1459,31 +1498,32 @@ body.sidebar-opened {
 	display: grid;
 	grid-template-rows: auto auto;
 	grid-gap: 30px;
-	max-width: 58.333333%;
+	max-width: 60%;
 
-	@media (max-width: 1000px) {
+	@media (max-width: 800px) {
 		max-width: none;
-		grid-gap: 50px;
+		grid-gap: 30px;
 	}
 
 	.title {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		align-items: center;
+		grid-gap: 10px;
 
-		@media (max-width: 1000px) {
+		@media (max-width: 800px) {
 			grid-template-columns: none;
 			align-items: center;
 			grid-auto-flow: row;
 			grid-auto-rows: max-content;
 		}
 
-		h1 {
+		h2 {
 			justify-self: start;
 			font-size: 35px;
 			line-height: 45px;
 
-			// @media (max-width: 1000px) {
+			// @media (max-width: 800px) {
 			// 	font-size: 25px;
 			// 	line-height: 25px;
 			// }
@@ -1492,19 +1532,37 @@ body.sidebar-opened {
 		.btn-chevron {
 			justify-self: end;
 			
-			@media (max-width: 1000px) {
+			@media (max-width: 800px) {
 				justify-self: start;
+			}
+		}
+
+		.btn-link {
+			border-bottom: 1px dashed rgba(255, 255, 255, 0.3) !important;
+
+			&:hover {
+				border-bottom: 1px dashed rgba(255, 255, 255, 1) !important;
+			}
+
+			span {
+				color: #ffffff !important;
 			}
 		}
 	}
 
 	#books {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(230px, 30.6%));
+		grid-template-columns: repeat(4, minmax(150px, 100%));
 		grid-gap: 30px;
-		align-items: center;
+		align-items: top;
+
+		@media (max-width: 800px) {
+			grid-template-columns: repeat(2, minmax(130px, 100%));
+		}
 
 		.book {
+			box-shadow: 0px 9.10394px 22.7599px rgba(0, 0, 0, 0.5), inset 8px 0px 1.82079px rgba(255, 255, 255, 0.12), inset 3px -3px 4.55197px rgba(0, 0, 0, 0.5), inset -3px 3px 1.82079px rgba(255, 255, 255, 0.15) !important;
+
 			&:nth-child(1) {
 				animation-delay: .1s;
 			}
@@ -1515,6 +1573,10 @@ body.sidebar-opened {
 
 			&:nth-child(3) {
 				animation-delay: .3s;
+			}
+
+			&:nth-child(4) {
+				animation-delay: .4s;
 			}
 		}
 	}
@@ -4230,23 +4292,6 @@ body.sidebar-opened {
 					}
 				}
 			}
-
-			.btn-link {
-				padding: 10px 0px !important;
-				grid-gap: 10px !important;
-				border: none !important;
-				border-bottom: 1px dashed rgba(0, 0, 0, 0.3) !important;
-				background-color: transparent !important;
-				width: max-content;
-
-				&:hover {
-					border-bottom: 1px dashed rgba(0, 0, 0, 1) !important;
-				}
-
-				span {
-					color: #000000 !important;
-				}
-			}
 		}
 	}
 }
@@ -4450,11 +4495,11 @@ body.sidebar-opened {
 }
 
 @media (max-width: 576px) {
-	#bestsellers {
-		#books {
-			grid-template-columns: repeat(auto-fit, minmax(250px, 100%)) !important;
-		}
-	}
+	// #bestsellers {
+	// 	#books {
+	// 		grid-template-columns: repeat(auto-fit, minmax(250px, 100%)) !important;
+	// 	}
+	// }
 
 	#all-books {
 		#books {

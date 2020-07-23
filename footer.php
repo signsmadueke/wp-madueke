@@ -1,6 +1,8 @@
 <footer id="footer">
     <p class="copyright">&copy; 2020 Prayer Madueke. All rights reserved.</p>
     <div id="social">
+        <p>Connect with me</p>
+        <span></span>
         <ul>
 			<li>
                 <a href="https://facebook.com/prayermadueke">
