@@ -1145,6 +1145,12 @@ Author: Prayer M. Madueke
 	cursor: pointer;
 }
 
+.menu-item ._svg {
+	width: auto;
+	filter: brightness(0);
+	height: 16px;
+}
+
 #add_payment_method #payment ul.payment_methods, .woocommerce-cart #payment ul.payment_methods, .woocommerce-checkout #payment ul.payment_methods {
 	padding: 20px;
 	padding-bottom: 0;
@@ -1167,7 +1173,7 @@ Author: Prayer M. Madueke
 	grid-gap: 5px;
 }
 
-.woocommerce-checkout #payment ul.payment_methods li img.stripe-icon {
+#add_payment_method #payment ul.payment_methods li img.stripe-icon, .woocommerce-cart #payment ul.payment_methods li img.stripe-icon, .woocommerce-checkout #payment ul.payment_methods li img.stripe-icon {
 	max-width: 45px;
 	margin-right: 10px;
 	margin-left: 0;
