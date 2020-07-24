@@ -1768,6 +1768,7 @@ body.sidebar-opened {
 	.section-title {
 		font-size: 45px;
 		line-height: 45px;
+		font-family: 'Playfair Display';
 	}
 
 	.form-inline {
@@ -3010,6 +3011,10 @@ body.sidebar-opened {
 		background: rgba(0, 0, 0, 0.5);
 		text-align: center;
 
+		h1 {
+			font-family: 'Playfair Display';
+		}
+
 		&:hover {
 			background: rgba(0, 0, 0, 0.8);
 			-webkit-backdrop-filter: blur(5px);
@@ -3148,6 +3153,12 @@ body.sidebar-opened {
 	width: 100%;
 	padding-bottom: 100px;
 
+	.section-title {
+		font-size: 45px;
+		line-height: 45px;
+		font-family: 'Playfair Display';
+	}
+
 	.devotionals {
 		display: grid;
 		grid-auto-flow: row;
@@ -3204,6 +3215,7 @@ body.sidebar-opened {
 			font-size: 25px;
 			line-height: 33px;
 			text-transform: capitalize;
+			font-family: 'Playfair Display';
 		}
 
 		.devotional-author {
@@ -3324,6 +3336,10 @@ body.sidebar-opened {
 	grid-gap: 10px;
 	grid-auto-flow: row;
 	grid-auto-rows: max-content;
+
+	.devotional-name {
+		font-family: 'Playfair Display';
+	}
 		
 	.devotional-author {
 		display: grid;
@@ -3420,6 +3436,9 @@ body.sidebar-opened {
 	h3 {
 		text-align: left;
 		line-height: 30px;
+		border-bottom: 1px solid rgba(68, 68, 68, 0.2);
+		padding-bottom: 20px;
+		font-family: 'Playfair Display';
 	}
 }
 
@@ -3430,6 +3449,14 @@ body.sidebar-opened {
 	.promotion {
 		display: grid;
 		grid-gap: 50px;
+
+		h1 {
+			font-family: 'Playfair Display';
+			border-bottom: 1px solid rgba(68, 68, 68, 0.2);
+			padding-bottom: 20px;
+			font-size: 40px;
+			line-height: 50px;
+		}
 	}
 }
 
@@ -3631,6 +3658,7 @@ body.sidebar-opened {
 				text-align: left;
 				
 				h3 {
+					font-family: 'Playfair Display';
 					text-overflow: ellipsis;
 					overflow: hidden;
 					line-height: 30px;
@@ -3723,6 +3751,7 @@ body.sidebar-opened {
 				text-align: right;
 
 				h3 {
+					font-family: 'Playfair Display';
 					text-overflow: ellipsis;
 					overflow: hidden;
 					line-height: 30px;
