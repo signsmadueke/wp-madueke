@@ -1538,7 +1538,12 @@ body.sidebar-opened {
 		}
 
 		.btn-link {
+			padding: 10px 0px !important;
+			grid-gap: 10px !important;
+			border: none !important;
 			border-bottom: 1px dashed rgba(255, 255, 255, 0.3) !important;
+			background-color: transparent !important;
+			width: max-content !important;
 
 			&:hover {
 				border-bottom: 1px dashed rgba(255, 255, 255, 1) !important;

@@ -1716,7 +1716,14 @@ body.sidebar-opened .copyright {
 }
 
 #bestsellers .title .btn-link {
+  padding: 10px 0px !important;
+  grid-gap: 10px !important;
+  border: none !important;
   border-bottom: 1px dashed rgba(255, 255, 255, 0.3) !important;
+  background-color: transparent !important;
+  width: -webkit-max-content !important;
+  width: -moz-max-content !important;
+  width: max-content !important;
 }
 
 #bestsellers .title .btn-link:hover {
