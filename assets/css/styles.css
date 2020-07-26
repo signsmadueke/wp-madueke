@@ -4747,6 +4747,25 @@ body.sidebar-opened .copyright {
   }
 }
 
+#adverts .advert .details .btn-link {
+  padding: 10px 0px !important;
+  grid-gap: 10px !important;
+  border: none !important;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.3) !important;
+  background-color: transparent !important;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+#adverts .advert .details .btn-link:hover {
+  border-bottom: 1px dashed black !important;
+}
+
+#adverts .advert .details .btn-link span {
+  color: #000000 !important;
+}
+
 .flickity-slider {
   -webkit-transition: none 0s ease 0s !important;
   transition: none 0s ease 0s !important;
