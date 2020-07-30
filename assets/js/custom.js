@@ -1,6 +1,6 @@
 "use strict";
 
-$(document).ready(function () {
+$(window).load(function () {
     $(".navbar-toggler").click(function () {
         $(".navbar-toggler").toggleClass("collapsed");
         $(".main-menu-collapse").toggleClass("show");
