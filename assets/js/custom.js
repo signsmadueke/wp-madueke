@@ -1,23 +1,5 @@
 "use strict";
 
-$(window).load(function () {
-    $(".navbar-toggler").click(function () {
-        $(".navbar-toggler").toggleClass("collapsed");
-        $(".main-menu-collapse").toggleClass("show");
-    });
-
-    var animate = new WOW({
-        boxClass: 'animate',
-        animateClass: 'animated',
-        offset: 0,
-        mobile: true,
-        scrollContainer: null,
-        resetAnimation: true,
-    });
-
-    animate.init();
-});
-
 $(document).ready(function () {
     $(".navbar-toggler").click(function () {
         $(".navbar-toggler").toggleClass("collapsed");
@@ -30,6 +12,18 @@ $(document).ready(function () {
     //         $('.header').css("height", "0");
     //     }
     // });
+
+    var animate = new WOW({
+        boxClass: 'animate',
+        animateClass: 'animated',
+        offset: 0,
+        mobile: true,
+        scrollContainer: null,
+        resetAnimation: true,
+    });
+
+    animate.init();
+
 $("#navigation .menu").click(function (openSidebar) {
     var $body = $('body');
     var $sidebar = $('#sidebar');
