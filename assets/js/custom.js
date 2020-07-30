@@ -5,6 +5,24 @@ $(document).ready(function () {
         $(".navbar-toggler").toggleClass("collapsed");
         $(".main-menu-collapse").toggleClass("show");
     });
+
+    var animate = new WOW({
+        boxClass: 'animate',
+        animateClass: 'animated',
+        offset: 0,
+        mobile: true,
+        scrollContainer: null,
+        resetAnimation: true,
+    });
+
+    animate.init();
+});
+
+$(document).ready(function () {
+    $(".navbar-toggler").click(function () {
+        $(".navbar-toggler").toggleClass("collapsed");
+        $(".main-menu-collapse").toggleClass("show");
+    });
     // $(window).scroll(function () {
     //     if ($(this).scrollTop() > 250) {
     //         $('.header').css("height", "150px");
@@ -162,17 +180,6 @@ $('.woocommerce-notices-wrapper:empty').hide();
         }
     });
 // Download Modal End
-
-var animate = new WOW({
-    boxClass: 'animate',
-    animateClass: 'animated',
-    offset: 0,
-    mobile: true,
-    scrollContainer: null,
-    resetAnimation: true,
-});
-
-animate.init();
 
     // $('#books').owlCarousel({
     //     loop: true,
