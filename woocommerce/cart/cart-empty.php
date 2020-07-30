@@ -24,7 +24,7 @@ do_action( 'woocommerce_cart_is_empty' );
 
 if ( wc_get_page_id( 'shop' ) > 0 ) : ?>
 	<p class="return-to-shop">
-		<a class="w-icon button btn btn-chevron wc-backward" href="<?php echo esc_url( apply_filters( 'woocommerce_return_to_shop_redirect', wc_get_page_permalink( 'shop' ) ) ); ?>">
+		<a class="w-icon button btn btn-chevron wc-backward" href="<?php echo esc_url( apply_filters( 'woocommerce_return_to_shop_redirect', wc_get_page_permalink( 'books' ) ) ); ?>">
 			<img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/chevron-left.svg">
 			<span><?php esc_html_e( 'Back to books', 'woocommerce' ); ?></span>
 		</a>

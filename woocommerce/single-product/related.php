@@ -25,11 +25,11 @@ if ( $related_products ) : ?>
 		<?php
 			if( has_term( array( 'eBook Bundles' ), 'product_cat' ) ) :
 
-			$heading = apply_filters( 'woocommerce_product_related_products_heading', __( 'Other eBook Bundles', 'woocommerce' ) );
+			$heading = apply_filters( 'woocommerce_product_related_products_heading', __( 'People who bought this eBook bundle also bought', 'woocommerce' ) );
 
 			else :
 
-			$heading = apply_filters( 'woocommerce_product_related_products_heading', __( 'Other eBooks', 'woocommerce' ) );
+			$heading = apply_filters( 'woocommerce_product_related_products_heading', __( 'People who bought this eBook also bought', 'woocommerce' ) );
 
 			endif;
 		?>
@@ -38,7 +38,7 @@ if ( $related_products ) : ?>
 
 		if ( $heading ) :
 			?>
-			<h3 class="lined-heading"><?php echo esc_html( $heading ); ?></h3>
+			<h4 class="lined-heading"><?php echo esc_html( $heading ); ?></h4>
 		<?php endif; ?>
 		
 		<?php woocommerce_product_loop_start(); ?>
