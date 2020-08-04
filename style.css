@@ -355,7 +355,7 @@ Author: Prayer M. Madueke
 .woocommerce ul.products li.product a img {
 	margin: 0;
 	margin-bottom: 20px;
-	border-radius: 10px;
+	border-radius: 7px;
 	box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.05);
 	border: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -544,10 +544,19 @@ Author: Prayer M. Madueke
 
 .woocommerce div.product .single_add_to_cart_button {
 	display: block !important;
+	float: none !important;
+	/* width: 100% !important; */
 }
 
 .woocommerce div.product .single_add_to_cart_button svg {
-	margin-right: 15px;
+	width: 19px !important;
+	height: auto !important;
+	margin-right: 10px;
+}
+
+.woocommerce div.product .single_add_to_cart_button span {
+	line-height: 0px !important;
+	min-height: 25px !important;
 }
 
 .woocommerce div.product form.cart {

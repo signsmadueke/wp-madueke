@@ -16,7 +16,7 @@
             </div>
             <div class="logo-text">
                 <h3 class="logo-name">Prayer M. Madueke</h3>
-                <p class="logo-tagline">CHRISTIAN AUTHOR</p>
+                <p class="logo-tagline">Bookstore</p>
             </div>
         </a>
     </div>
@@ -25,21 +25,58 @@
 
     <nav>
         <?php
-            wp_nav_menu(
-                array(
-                    'theme_location' => 'top-menu',
-                    'menu' => 'main-menu',
-                    'container' => 'ul',
-                    'menu_class' => '',
-                )
-            );
+            // wp_nav_menu(
+            //     array(
+            //         'theme_location' => 'top-menu',
+            //         'menu' => 'main-menu',
+            //         'container' => 'ul',
+            //         'menu_class' => '',
+            //     )
+            // );
         ?>
+
+        <ul>
+            <li>
+                <a href="/">
+                    <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/menu/home.svg'; ?>">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://store.madueke.com/contact">
+                    <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/menu/contact.svg'; ?>">
+                    <span>Contact</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://store.madueke.com/account">
+                    <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/menu/account.svg'; ?>">
+                    <span>Account</span>
+                </a>
+            </li>
+            <li>
+                <?php global $woocommerce; ?>
+                <a href="<?php echo $woocommerce->cart->get_cart_url(); ?>" class="bordered">
+                    <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/menu/cart.svg'; ?>">
+                    <span class="cart-total"> <?php echo sprintf(_n('%d item', '%d items', $woocommerce->cart->cart_contents_count, 'woothemes'),
+                    $woocommerce->cart->cart_contents_count);?> — <?php echo $woocommerce->cart->get_cart_total(); ?></span>
+                </a>
+            </li>
+        </ul>
     </nav>
 
-    <button class="menu" type="button">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+    <a class="mobile-nav-item" href="<?php echo $woocommerce->cart->get_cart_url(); ?>">
+        <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/cart.svg'; ?>">
+        <span class="text">Cart</span>
+    </a>
+
+    <button class="menu mobile-nav-item" type="button">
+        <div>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </div>
+        <span class="text">Menu</span>
     </button>
 </section>
 
@@ -52,17 +89,25 @@
                 </div>
                 <div class="logo-text">
                     <h3 class="logo-name">Prayer M. Madueke</h3>
-                    <p class="logo-tagline">CHRISTIAN AUTHOR</p>
+                    <p class="logo-tagline">Bookstore</p>
                 </div>
             </a>
         </div>
 
         <div class="nav-space"></div>
 
-        <button class="menu" type="button">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+        <a class="mobile-nav-item" href="<?php echo $woocommerce->cart->get_cart_url(); ?>">
+            <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/cart.svg'; ?>">
+            <span class="text">Cart</span>
+        </a>
+
+        <button class="menu mobile-nav-item" type="button" style="margin-top: 13px;grid-gap: 15px;">
+            <div>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </div>
+            <span class="text">Menu</span>
         </button>
     </section>
 
@@ -70,15 +115,31 @@
 
     <nav>
         <?php
-            wp_nav_menu(
-                array(
-                    'theme_location' => 'mobile-menu',
-                    'menu' => 'main-menu',
-                    'container' => 'ul',
-                    'menu_class' => '',
-                )
-            );
+            // wp_nav_menu(
+            //     array(
+            //         'theme_location' => 'mobile-menu',
+            //         'menu' => 'main-menu',
+            //         'container' => 'ul',
+            //         'menu_class' => '',
+            //     )
+            // );
         ?>
+
+        <ul>
+            <li class="<?php if ($title == "Home"){echo "active";} ?>">
+                <a href="/">Home</a>
+            </li>
+            <li class="<?php if ($title == "Contact"){echo "active";} ?>">
+                <a href="https://store.madueke.com/contact">Contact</a>
+            </li>
+            <li class="<?php if ($title == "Account"){echo "active";} ?>">
+                <a href="https://store.madueke.com/account">Account</a>
+            </li>
+            <li class="<?php if ($title == "Account"){echo "active";} ?>">
+                <?php global $woocommerce; ?>
+                <a href="<?php echo $woocommerce->cart->get_cart_url(); ?>">Cart</a>
+            </li>
+        </ul>
     </nav>
     
     <div id="social">

@@ -791,13 +791,13 @@ input:not([type=checkbox]):not([type=radio]),
 textarea {
   padding: 15px 25px !important;
   border: 1px solid rgba(68, 68, 68, 0.2);
+  border-radius: 5px !important;
   color: #444444;
   font-size: 16px;
   line-height: 16px;
   font-weight: 500;
   outline: 0;
   -webkit-appearance: none;
-  border-radius: 0;
 }
 
 input:not([type=checkbox]):not([type=radio])::-webkit-input-placeholder,
@@ -880,7 +880,7 @@ button.button {
   letter-spacing: 0 !important;
   outline: 0 !important;
   border: 1px solid #222222 !important;
-  border-radius: 0 !important;
+  border-radius: 5px !important;
   cursor: pointer;
   -webkit-user-select: none !important;
   -moz-user-select: none !important;
@@ -1195,10 +1195,10 @@ body.container.contact {
 
 #sidebar ul a {
   font-weight: 700;
-  font-size: 25px;
-  line-height: 25px;
+  font-size: 30px;
+  line-height: 30px;
   display: block;
-  letter-spacing: -0.5px;
+  letter-spacing: -1px;
 }
 
 #sidebar ul li {
@@ -1240,8 +1240,9 @@ body.container.contact {
   display: block;
 }
 
-#sidebar .menu {
-  display: block;
+#sidebar .mobile-nav-item {
+  display: -ms-grid;
+  display: grid;
 }
 
 body.sidebar-opened {
@@ -1295,68 +1296,38 @@ body.sidebar-opened #sidebar nav li:nth-child(4) {
           animation-delay: 650ms;
 }
 
-body.sidebar-opened #sidebar nav li:nth-child(5) {
-  -webkit-animation-delay: 700ms;
-          animation-delay: 700ms;
-}
-
-body.sidebar-opened #sidebar nav li:nth-child(6) {
-  -webkit-animation-delay: 750ms;
-          animation-delay: 750ms;
-}
-
-body.sidebar-opened #sidebar nav li:nth-child(7) {
-  -webkit-animation-delay: 800ms;
-          animation-delay: 800ms;
-}
-
-body.sidebar-opened #sidebar nav li:nth-child(8) {
-  -webkit-animation-delay: 850ms;
-          animation-delay: 850ms;
-}
-
-body.sidebar-opened #sidebar nav li:nth-child(9) {
-  -webkit-animation-delay: 900ms;
-          animation-delay: 900ms;
-}
-
-body.sidebar-opened #sidebar nav li:nth-child(10) {
-  -webkit-animation-delay: 950ms;
-          animation-delay: 950ms;
-}
-
 body.sidebar-opened #social li {
-  -webkit-animation: slideIn 850ms cubic-bezier(0.7, 0, 0.3, 1) forwards;
-          animation: slideIn 850ms cubic-bezier(0.7, 0, 0.3, 1) forwards;
+  -webkit-animation: slideIn 700ms cubic-bezier(0.7, 0, 0.3, 1) forwards;
+          animation: slideIn 700ms cubic-bezier(0.7, 0, 0.3, 1) forwards;
   opacity: 0;
 }
 
 body.sidebar-opened #social li:nth-child(1) {
+  -webkit-animation-delay: 750ms;
+          animation-delay: 750ms;
+}
+
+body.sidebar-opened #social li:nth-child(2) {
+  -webkit-animation-delay: 800ms;
+          animation-delay: 800ms;
+}
+
+body.sidebar-opened #social li:nth-child(3) {
   -webkit-animation-delay: 850ms;
           animation-delay: 850ms;
 }
 
-body.sidebar-opened #social li:nth-child(2) {
+body.sidebar-opened #social li:nth-child(4) {
   -webkit-animation-delay: 900ms;
           animation-delay: 900ms;
 }
 
-body.sidebar-opened #social li:nth-child(3) {
+body.sidebar-opened .copyright {
+  -webkit-animation: slideIn 950ms cubic-bezier(0.7, 0, 0.3, 1) forwards;
+          animation: slideIn 950ms cubic-bezier(0.7, 0, 0.3, 1) forwards;
+  opacity: 0;
   -webkit-animation-delay: 950ms;
           animation-delay: 950ms;
-}
-
-body.sidebar-opened #social li:nth-child(4) {
-  -webkit-animation-delay: 1000ms;
-          animation-delay: 1000ms;
-}
-
-body.sidebar-opened .copyright {
-  -webkit-animation: slideIn 1050ms cubic-bezier(0.7, 0, 0.3, 1) forwards;
-          animation: slideIn 1050ms cubic-bezier(0.7, 0, 0.3, 1) forwards;
-  opacity: 0;
-  -webkit-animation-delay: 1050ms;
-          animation-delay: 1050ms;
 }
 
 #sidebar-space {
@@ -1373,8 +1344,8 @@ body.sidebar-opened .copyright {
   width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto 1fr auto;
-      grid-template-columns: auto 1fr auto;
+  -ms-grid-columns: auto 1fr auto auto;
+      grid-template-columns: auto 1fr auto auto;
   grid-gap: 15px;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1413,7 +1384,7 @@ body.sidebar-opened .copyright {
   display: -ms-grid;
   display: grid;
   grid-auto-flow: column;
-  grid-gap: 0px;
+  grid-gap: 10px;
   -webkit-box-align: center;
   -ms-flex-align: center;
       align-items: center;
@@ -1424,14 +1395,24 @@ body.sidebar-opened .copyright {
 }
 
 #navigation nav a {
-  padding: 15px 20px;
+  padding: 12.5px 20px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   color: #222222;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1.5px solid rgba(255, 255, 255, 0);
+  border-radius: 5px !important;
 }
 
 #navigation nav a:hover {
-  opacity: 0.6;
+  background-color: rgba(34, 34, 34, 0.05);
+  border: 1.5px solid rgba(34, 34, 34, 0.05);
 }
 
 #navigation nav a.with-icon {
@@ -1454,6 +1435,14 @@ body.sidebar-opened .copyright {
 #navigation nav a.with-icon svg,
 #navigation nav a.with-icon img {
   height: 16px;
+}
+
+#navigation nav a.bordered {
+  border: 1.5px solid rgba(34, 34, 34, 0.05);
+}
+
+#navigation nav a span {
+  line-height: normal;
 }
 
 #navigation nav .active a {
@@ -1512,15 +1501,35 @@ body.sidebar-opened .copyright {
   white-space: nowrap;
 }
 
-.menu {
-  padding: 6.25px 12.5px;
+.mobile-nav-item {
   display: none;
+  grid-gap: 10px;
+  grid-auto-flow: row;
+  justify-items: center;
+}
+
+.mobile-nav-item .text {
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: normal;
+  color: #222222;
+}
+
+.mobile-nav-item .svg {
+  height: 20px;
+  width: auto;
+}
+
+.menu {
+  padding: 0;
   z-index: 2;
 }
 
 .menu .icon-bar {
   display: block;
-  width: 35px;
+  width: 25px;
   height: 1px;
   -webkit-transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1) !important;
   transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1) !important;
@@ -1532,7 +1541,7 @@ body.sidebar-opened .copyright {
 .menu .icon-bar + .icon-bar {
   -webkit-transform: none;
           transform: none;
-  margin-top: 7px;
+  margin-top: 8px;
 }
 
 .menu.collapsed .icon-bar + .icon-bar {
@@ -2994,7 +3003,7 @@ body.sidebar-opened .copyright {
   outline: 0;
   padding-top: 40px !important;
   -webkit-appearance: none;
-  border-radius: 0;
+  border-radius: 5px !important;
 }
 
 #mc-embedded-subscribe-form input:not([type="submit"])::-webkit-input-placeholder {
@@ -3360,7 +3369,7 @@ body.sidebar-opened .copyright {
 
 #now-playing .details .image img {
   width: 100%;
-  border-radius: 5px;
+  border-radius: 5px !important;
 }
 
 #now-playing .details .image .shadow {
@@ -4060,7 +4069,7 @@ body.sidebar-opened .copyright {
 #other-devotionals .prev-devotional .prev-devotional-details img {
   width: 100px;
   border: 1px solid rgba(68, 68, 68, 0.2);
-  border-radius: 5px;
+  border-radius: 5px !important;
 }
 
 #other-devotionals .next-devotional {
@@ -4171,7 +4180,7 @@ body.sidebar-opened .copyright {
 #other-devotionals .next-devotional .next-devotional-details img {
   width: 100px;
   border: 1px solid rgba(68, 68, 68, 0.2);
-  border-radius: 5px;
+  border-radius: 5px !important;
 }
 
 #devotional-subscription {
@@ -4186,6 +4195,7 @@ body.sidebar-opened .copyright {
           align-items: center;
   grid-gap: 100px;
   border: 1px solid rgba(68, 68, 68, 0.2);
+  border-radius: 5px !important;
 }
 
 #devotional-subscription .text {
@@ -4886,12 +4896,13 @@ body.sidebar-opened .copyright {
 }
 
 @media (max-width: 1300px) {
-  .menu {
-    display: block !important;
+  .mobile-nav-item {
+    display: -ms-grid !important;
+    display: grid !important;
   }
   #navigation {
-    -ms-grid-columns: 1fr auto !important;
-        grid-template-columns: 1fr auto !important;
+    -ms-grid-columns: 1fr auto auto !important;
+        grid-template-columns: 1fr auto auto !important;
   }
   #navigation nav {
     display: none !important;
@@ -4972,7 +4983,7 @@ body.sidebar-opened .copyright {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 400px) {
   .logo-text {
     display: none !important;
     -ms-grid-columns: (minmax(calc(100%), calc(100%)))[auto-fit] !important;

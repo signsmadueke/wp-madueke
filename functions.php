@@ -83,8 +83,6 @@ remove_action( 'woocommerce_no_products_found', 'wc_no_products_found' );
 
 remove_action( 'woocommerce_before_shop_loop', 'woocommerce_result_count', 20 );
 
-
-
 // add_filter( 'woocommerce_get_order_item_totals', 'adjust_woocommerce_get_order_item_totals' );
 
 // add_filter( 'woocommerce_get_order_item_totals', 'remove_subtotal_from_orders_total_lines', 100, 1 );
@@ -163,48 +161,6 @@ function enqueue_font_awesome() {
 
 }
 
-/**
- * Place a cart icon with number of items and total cost in the menu bar.
- *
- * Source: http://wordpress.org/plugins/woocommerce-menu-bar-cart/
- */
-add_filter('wp_nav_menu_items','sk_wcmenucart', 10, 2);
-function sk_wcmenucart($menu, $args) {
-
-	// Check if WooCommerce is active and add a new item to a menu assigned to Primary Navigation Menu location
-	if ( !in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) || 'primary' !== $args->theme_location )
-		return $menu;
-
-	ob_start();
-		global $woocommerce;
-		$viewing_cart = __('View your shopping cart', 'your-theme-slug');
-		$start_shopping = __('Start shopping', 'your-theme-slug');
-		$cart_url = $woocommerce->cart->get_cart_url();
-		$shop_page_url = get_permalink( woocommerce_get_page_id( 'shop' ) );
-		$cart_contents_count = $woocommerce->cart->cart_contents_count;
-		$cart_contents = sprintf(_n('%d item', '%d items', $cart_contents_count, 'your-theme-slug'), $cart_contents_count);
-		$cart_total = $woocommerce->cart->get_cart_total();
-		// Uncomment the line below to hide nav menu cart item when there are no items in the cart
-		if ( $cart_contents_count > 0 ) {
-			if ($cart_contents_count == 0) {
-				$menu_item = '<li class="right"><a class="wcmenucart-contents" href="'. $shop_page_url .'" title="'. $start_shopping .'">';
-			}
-			else {
-				$menu_item = '<li class="right"><a class="wcmenucart-contents" href="'. $cart_url .'" title="'. $viewing_cart .'">';
-			}
-
-			$menu_item .= '<i class="fa fa-shopping-cart"></i> ';
-
-			$menu_item .= $cart_contents.' - '. $cart_total;
-			$menu_item .= '</a></li>';
-		// Uncomment the line below to hide nav menu cart item when there are no items in the cart
-		}
-		echo $menu_item;
-	$social = ob_get_clean();
-	return $menu . $social;
-
-}
-
 
 
 
@@ -221,8 +177,39 @@ return false;
 
 
 
+// add_filter( 'woocommerce_loop_add_to_cart_link', 'ts_replace_add_to_cart_button', 10, 2 );
+// function ts_replace_add_to_cart_button( $button, $product ) {
+// 	// if (is_product_category() || is_shop()) {
+// 	// 	$button_text = __("View Product", "woocommerce");
+// 	// 	$button_link = $product->get_permalink();
+// 	// 	$button = '<a href="' . $button_link . '">' . $button_text . '</a>';
+// 	// 	return $button;
+// 	// }
+// }
 
 
+
+
+
+
+
+// /*STEP 1 - REMOVE ADD TO CART BUTTON ON PRODUCT ARCHIVE (SHOP) */
+
+// function remove_loop_button(){
+// remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10 );
+// }
+// add_action('init','remove_loop_button');
+
+
+
+// /*STEP 2 -ADD NEW BUTTON THAT LINKS TO PRODUCT PAGE FOR EACH PRODUCT */
+
+// add_action('woocommerce_after_shop_loop_item','replace_add_to_cart');
+// function replace_add_to_cart() {
+// global $product;
+// $link = $product->get_permalink();
+// echo do_shortcode('<br>[button link="' . esc_attr($link) . '"]Read more[/button]');
+// }
 
 
 

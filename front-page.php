@@ -2,7 +2,7 @@
 	get_header();
 ?>
 
-<section id="adverts">
+<!-- <section id="adverts">
     <div class="advert bg-1">
         <div class="details">
             <div class="text">
@@ -26,7 +26,7 @@
             </a>
         </div>
     </div>
-</section>
+</section> -->
 
 <div id="space-50"></div>
 
