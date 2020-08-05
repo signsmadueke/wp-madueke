@@ -38,26 +38,26 @@
         <ul>
             <li>
                 <a href="/">
-                    <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/menu/home.svg'; ?>">
+                    <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/menu/home-circled.svg'; ?>">
                     <span>Home</span>
                 </a>
             </li>
             <li>
                 <a href="https://store.madueke.com/contact">
-                    <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/menu/contact.svg'; ?>">
+                    <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/menu/contact-circled.svg'; ?>">
                     <span>Contact</span>
                 </a>
             </li>
             <li>
                 <a href="https://store.madueke.com/account">
-                    <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/menu/account.svg'; ?>">
+                    <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/menu/account-circled.svg'; ?>">
                     <span>Account</span>
                 </a>
             </li>
             <li>
                 <?php global $woocommerce; ?>
                 <a href="<?php echo $woocommerce->cart->get_cart_url(); ?>" class="bordered">
-                    <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/menu/cart.svg'; ?>">
+                    <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/menu/cart-circled.svg'; ?>">
                     <span class="cart-total"> <?php echo sprintf(_n('%d item', '%d items', $woocommerce->cart->cart_contents_count, 'woothemes'),
                     $woocommerce->cart->cart_contents_count);?> — <?php echo $woocommerce->cart->get_cart_total(); ?></span>
                 </a>
