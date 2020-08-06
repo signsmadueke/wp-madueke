@@ -1012,6 +1012,13 @@ body.dark {
 		display: none;
 	}
 
+	.logo-text {
+		@media (max-width: 400px) {
+			display: grid !important;
+			grid-template-columns: repeat(auto-fit, minmax(calc(100%), calc(100%))) !important;
+		}
+	}
+
 	#footer {
 		#social {
 			span {
@@ -1305,6 +1312,13 @@ body.sidebar-opened {
 	}
 }
 
+body.dark {
+	#navigation nav a.bordered,
+	#navigation nav a:hover {
+		border: 1.5px solid rgba(255, 255, 255, 0.05);
+	}
+}
+
 #logo {
 	a {
 		display: grid;
@@ -1318,6 +1332,11 @@ body.sidebar-opened {
 		grid-template-rows: auto auto;
 		grid-gap: 8px;
 		padding: 6px 0;
+
+		@media (max-width: 400px) {
+			display: none !important;
+			grid-template-columns: repeat(auto-fit, minmax(calc(100%), calc(100%))) !important;
+		}
 	}
 
 	.logo-icon {
@@ -1346,7 +1365,7 @@ body.sidebar-opened {
 	font-size: 14px;
 	font-weight: 700;
 	line-height: 14px;
-	letter-spacing: 0.5em;
+	letter-spacing: 0.3em;
 	text-transform: uppercase;
 	white-space: nowrap;
 }
@@ -1379,7 +1398,7 @@ body.sidebar-opened {
 	.icon-bar {
 		display: block;
 		width: 25px;
-		height: 1px;
+		height: 1.5px;
 		transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1) !important;
 		background: #444;
 		text-align: center;
@@ -3024,15 +3043,18 @@ body.sidebar-opened {
 		width: 100%;
 		padding-top: 50%;
 		padding-bottom: 50%;
-		background: rgba(0, 0, 0, 0.5);
+		background: rgba(255, 255, 255, 1);
+		border: 1px solid rgba(0, 0, 0, 0.1);
 		text-align: center;
+		align-self: center;
+
 
 		// h1 {
 		// 	font-family: 'Playfair Display';
 		// }
 
 		&:hover {
-			background: rgba(0, 0, 0, 0.8);
+			background: rgba(0, 0, 0, 0.05);
 			-webkit-backdrop-filter: blur(5px);
 			backdrop-filter: blur(5px);
 		}
@@ -4596,6 +4618,7 @@ body.sidebar-opened {
 
 	h1 {
 		font-size: 40px;
+		line-height: 50px;
 	}
 
 	h4 {
@@ -4613,12 +4636,5 @@ body.sidebar-opened {
 	p {
 		font-size: 15px;
 		line-height: 30px;
-	}
-}
-
-@media (max-width: 400px) {
-	.logo-text {
-		display: none !important;
-		grid-template-columns: repeat(auto-fit, minmax(calc(100%), calc(100%))) !important;
 	}
 }

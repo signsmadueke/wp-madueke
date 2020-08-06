@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<?php $customdata = get_field('customdata');?>
+
 <head>
 	<title></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class('container' . $extraBodyClasses);?>>
+<body <?php body_class('container');?>>
 <section id="navigation">
     <div id="logo">
         <a href="https://madueke.com">

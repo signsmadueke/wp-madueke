@@ -51,7 +51,12 @@ register_nav_menus(
 );
 
 // Add Image Sizes
-add_image_size('post_image', 1500, 600, false);
+add_image_size('post_image', 100, 100, false);
+add_image_size('post_image', 200, 200, false);
+add_image_size('post_image', 500, 500, false);
+add_image_size('post_image', 800, 800, false);
+add_image_size('post_image', 1000, 1000, false);
+
 
 // Allow Woocomerce
 function mytheme_add_woocommerce_support() {
