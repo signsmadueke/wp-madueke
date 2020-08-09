@@ -12,7 +12,7 @@
 <body <?php body_class('container');?>>
 <section id="navigation">
     <div id="logo">
-        <a href="https://madueke.com">
+        <a href="<?php echo get_home_url(); ?>">
             <div class="logo-icon">
                 <img src="<?php bloginfo('template_directory');?>/assets/images/madueke/icon.png'; ?>" alt="Prayer M. Madueke">
             </div>
@@ -39,19 +39,19 @@
 
         <ul>
             <li>
-                <a href="/">
+                <a href="<?php echo get_home_url(); ?>">
                     <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/menu/home-circled.svg'; ?>">
                     <span>Home</span>
                 </a>
             </li>
             <li>
-                <a href="https://store.madueke.com/contact">
+                <a href="<?php echo get_home_url(); ?>/contact">
                     <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/menu/contact-circled.svg'; ?>">
                     <span>Contact</span>
                 </a>
             </li>
             <li>
-                <a href="https://store.madueke.com/account">
+                <a href="<?php echo get_home_url(); ?>/account">
                     <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/menu/account-circled.svg'; ?>">
                     <span>Account</span>
                 </a>
@@ -85,7 +85,7 @@
 <section id="sidebar">
     <section id="navigation">
         <div id="logo">
-            <a href="https://madueke.com">
+            <a href="<?php echo get_home_url(); ?>">
                 <div class="logo-icon">
                     <img src="<?php bloginfo('template_directory');?>/assets/images/madueke/icon.png'; ?>" alt="Prayer M. Madueke">
                 </div>
@@ -129,13 +129,13 @@
 
         <ul>
             <li class="<?php if ($title == "Home"){echo "active";} ?>">
-                <a href="/">Home</a>
+                <a href="<?php echo get_home_url(); ?>">Home</a>
             </li>
             <li class="<?php if ($title == "Contact"){echo "active";} ?>">
-                <a href="https://store.madueke.com/contact">Contact</a>
+                <a href="<?php echo get_home_url(); ?>/contact">Contact</a>
             </li>
             <li class="<?php if ($title == "Account"){echo "active";} ?>">
-                <a href="https://store.madueke.com/account">Account</a>
+                <a href="<?php echo get_home_url(); ?>/account">Account</a>
             </li>
             <li class="<?php if ($title == "Account"){echo "active";} ?>">
                 <?php global $woocommerce; ?>
