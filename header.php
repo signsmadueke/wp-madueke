@@ -161,11 +161,6 @@
                     <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/social/twitter.svg'; ?>" height="15px" alt="Twitter">
                 </a>
             </li>
-            <li>
-                <a href="https://amazon.com/author/prayermadueke">
-                    <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/social/amazon.svg'; ?>" height="15px" alt="Amazon">
-                </a>
-            </li>
         </ul>
     </div>
 
