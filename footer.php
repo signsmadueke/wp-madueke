@@ -22,6 +22,7 @@
         </ul>
     </div>
 </footer>
+<script src="//code.tidio.co/cvaez7z6kxqicsb0vraidxlffyunqzvu.js" async></script>
 <?php wp_footer(); ?>
 </body>
 
