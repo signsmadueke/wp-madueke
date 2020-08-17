@@ -202,6 +202,7 @@ Author: Prayer M. Madueke
 .woocommerce table.shop_table th,
 .woocommerce table.shop_table td {
 	padding: 15px;
+	/* padding-left: 30px; */
 }
 
 .woocommerce-error,.woocommerce-info,.woocommerce-message {
@@ -565,7 +566,13 @@ Author: Prayer M. Madueke
 
 .woocommerce table.shop_table {
 	margin: 0 0px 50px 0;
-	/* border-radius: 0px; */
+}
+
+.shop_table.woocommerce-checkout-review-order-table {
+    background: rgba(0,0,0,.05);
+    padding: 20px 0;
+    border: none !important;
+    background-color: rgba(0,0,0,0.05);
 }
 
 .woocommerce table.shop_table td.product-price,
@@ -1281,4 +1288,8 @@ Author: Prayer M. Madueke
 
 .wc-facebook-pixel-event-placeholder {
 	display: none;
+}
+
+#tidio-chat {
+	position: absolute;
 }

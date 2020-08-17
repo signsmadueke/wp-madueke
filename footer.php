@@ -22,7 +22,33 @@
         </ul>
     </div>
 </footer>
-<script src="//code.tidio.co/cvaez7z6kxqicsb0vraidxlffyunqzvu.js" async></script>
+<!-- <script src="//code.tidio.co/cvaez7z6kxqicsb0vraidxlffyunqzvu.js" async></script> -->
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+    <script>
+    window.fbAsyncInit = function() {
+        FB.init({
+        xfbml            : true,
+        version          : 'v8.0'
+        });
+    };
+
+    (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat"
+    attribution=setup_tool
+    page_id="312645492269355"
+    theme_color="#222222"
+    logged_in_greeting="Hi there 👋 If you need any assistance, I'm always here."
+    logged_out_greeting="Hi there 👋 If you need any assistance, I'm always here.">
+</div>
 <?php wp_footer(); ?>
 </body>
 

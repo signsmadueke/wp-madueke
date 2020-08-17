@@ -267,3 +267,43 @@ function wc_change_number_related_products( $args ) {
  $args['columns'] = 3; //change number of upsells here
  return $args;
 }
+
+
+
+
+
+/*
+ * Change button text on product pages
+ */
+add_filter( 'woocommerce_product_single_add_to_cart_text', 'misha_add_to_cart_text_2' );
+ 
+function misha_add_to_cart_text_2( $product ){
+	return 'Buy now';
+}
+
+add_filter( 'woocommerce_add_to_cart_redirect', 'misha_skip_cart_redirect_checkout' );
+ 
+function misha_skip_cart_redirect_checkout( $url ) {
+    return wc_get_checkout_url();
+}
+
+
+add_filter( 'woocommerce_product_add_to_cart_url', 'misha_fix_for_individual_products', 10, 2 );
+function misha_fix_for_individual_products( $add_to_cart_url, $product ){
+ 
+	if( $product->get_sold_individually() // if individual product
+	&& WC()->cart->find_product_in_cart( WC()->cart->generate_cart_id( $product->id ) ) // if in the cart
+	&& $product->is_purchasable() // we also need these two conditions
+	&& $product->is_in_stock() ) {
+		$add_to_cart_url = wc_get_checkout_url();
+	}
+ 
+	return $add_to_cart_url;
+ 
+}
+
+add_filter( 'wc_add_to_cart_message_html', 'misha_remove_add_to_cart_message' );
+ 
+function misha_remove_add_to_cart_message( $message ){
+	return '';
+}

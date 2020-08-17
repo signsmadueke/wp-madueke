@@ -125,9 +125,7 @@
 	transition: all .2s ease-in 0s !important;
 
 	&::selection {
-		background-color: rgba(0, 0, 0, 0.1) !important;
-		color: #222222 !important;
-		
+		background-color: rgb(229, 229, 229) !important;
 	}
 }
 

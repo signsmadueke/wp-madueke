@@ -189,13 +189,11 @@
 }
 
 *::-moz-selection {
-  background-color: rgba(0, 0, 0, 0.1) !important;
-  color: #222222 !important;
+  background-color: #e5e5e5 !important;
 }
 
 *::selection {
-  background-color: rgba(0, 0, 0, 0.1) !important;
-  color: #222222 !important;
+  background-color: #e5e5e5 !important;
 }
 
 html {
@@ -1159,7 +1157,7 @@ body.container {
   display: grid;
   grid-row-gap: 50px;
   -ms-grid-rows: auto 1fr;
-      grid-template-rows: auto 1fr;
+  /* grid-template-rows: auto 1fr; */
   padding: 30px;
   width: 100%;
   height: 100%;

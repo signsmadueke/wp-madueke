@@ -48,8 +48,8 @@ global $product;
 		?>
 
 		<button type="submit" name="add-to-cart" value="<?php echo esc_attr( $product->get_id() ); ?>" class="w-icon single_add_to_cart_button button alt">
-			<img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/add.svg">
-			<span>Add to Cart</span>
+			<!-- <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/add.svg"> -->
+			<span>Buy Now</span>
 		</button>
 		
 		<?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>
