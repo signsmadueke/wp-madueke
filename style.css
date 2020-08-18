@@ -1286,7 +1286,7 @@ Author: Prayer M. Madueke
 	cursor: pointer;
 }
 
-.wc-facebook-pixel-event-placeholder {
+.wc-facebook-pixel-event-placeholder, .fb_reset {
 	display: none;
 }
 

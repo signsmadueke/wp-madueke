@@ -2617,6 +2617,7 @@ body.dark {
 		overflow: auto;
 		cursor: default;
 		background: #FFFFFF;
+		border-radius: 10px;
 		margin: 50px auto;
 		display: grid;
 		grid-gap: 0px;
@@ -2626,28 +2627,44 @@ body.dark {
 		transition: all 0.5s cubic-bezier(0.51, 0.92, 0.24, 1.15) !important;
 
 		.modal-content {
-			padding: 100px;
+			padding: 50px;
 		}
 
 		.modal-header {
 			justify-self: end;
 
 			.close {
-				padding: 20px 22px;
-				background-color: transparent;
-				border-color: transparent;
-				color: #222222;
-				font-size: 20px;
-				font-weight: 600;
+				padding: 15px 20px !important;
+				margin: 10px;
+				background-color: #ffffff !important;
+				border: 1px solid rgba(0, 0, 0, 0.1) !important;
+				color: #222222 !important;
+				font-size: 15px !important;
+				font-weight: 600 !important;
 
 				&:hover {
-					background-color: rgba(0, 0, 0, 0.1);
-					border-color: transparent;
+					background-color: #222222 !important;
+					border-color: #222222 !important;
+					color: #ffffff !important;
 				}
 
 				@media (max-width: 768px) {
 					padding: 10px 15px;
 				}
+			}
+		}
+
+		.modal-hero {
+			display: grid;
+			grid-gap: 0px;
+			grid-auto-flow: row;
+			max-height: 200px;
+			height: 200px;
+    		justify-content: center;
+
+			img {
+				width: auto;
+				height: 100%;
 			}
 		}
 	}
@@ -2970,6 +2987,10 @@ body.dark {
 		display: grid;
 		grid-gap: 30px;
 
+		h1 {
+			text-align: center;
+		}
+
 		.form-use {
 			display: grid;
 			grid-gap: 20px;
@@ -2991,7 +3012,11 @@ body.dark {
 				.name {
 					display: grid;
 					grid-gap: 20px;
-					grid-auto-flow: row;
+					grid-auto-flow: column;
+
+					@media (max-width: 800px) {
+						grid-auto-flow: row;
+					}
 				}
 			}
 
@@ -3000,7 +3025,14 @@ body.dark {
 				grid-gap: 20px;
 
 				.button {
+					padding: 20px 60px !important;
 					display: block;
+					width: 100%;
+					justify-self: center;
+		
+					@media (max-width: 576px) {
+						padding: 18px 20px !important;
+					}
 				}
 			}
 		}
@@ -4066,33 +4098,88 @@ body.dark {
 
 
 
-
-#gift-title {
-	max-width: 800px;
+#boxset-hero {
+	min-height: 100vh;
+	padding: 50px;
+	padding-top: 150px;
+	text-align: center;
+	// max-width: 800px;
 	justify-self: center;
 	display: grid;
 	grid-auto-flow: row;
-	grid-gap: 30px;
+	grid-gap: 75px;
 	grid-auto-rows: max-content;
-	padding-top: 75px;
+
+	&:after {
+		content: '';
+		width: 100%;
+		height: 100%;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		position: absolute;
+		background-color: #FFF7E6;
+		clip-path: polygon(0 0, 100% 0%, 100% 60%, 0 45%);
+		z-index: -1;
+	}
 
 	.text {
 		display: grid;
 		grid-auto-flow: row;
-		grid-gap: 10px;
+		grid-gap: 20px;
 		text-align: center;
+		justify-items: center;
+
+		svg {
+			width: 100px;
+			justify-self: center;
+		}
+
+		h1 {
+			font-size: 45px;
+			line-height: 50px;
+		}
 
 		p {
 			line-height: 30px;
 		}
 	}
 
+	.cta {
+		.button {
+			padding: 20px 60px !important;
+			justify-self: center;
+
+			@media (max-width: 576px) {
+				width: 100%;
+				padding: 18px 20px !important;
+			}
+		}
+	}
+
 	@media (max-width: 576px) {
-		max-width: none;
 		justify-self: start;
+		grid-gap: 50px;
+		padding: 30px;
+		padding-top: 100px;
 
 		.text {
 			text-align: left;
+
+			svg {
+				justify-self: start;
+			}
+
+			h1 {
+				font-size: 30px;
+				line-height: 40px;
+				justify-self: start;
+			}
+		}
+
+		&:after {
+			clip-path: polygon(0 0, 100% 0%, 100% 70%, 0 50%);
 		}
 	}
 }
@@ -4108,6 +4195,10 @@ body.dark {
 		grid-template-columns: repeat(2, minmax(50px, 170px));
 		grid-gap: 30px;
 		width: 100%;
+	}
+
+	@media (max-width: 576px) {
+		grid-template-columns: repeat(2, minmax(50px, 100%));
 	}
 
 	.gift {
@@ -4130,11 +4221,7 @@ body.dark {
 				bottom: 0;
 				width: 100%;
 				height: 100%;
-				box-shadow: inset 13px 0px 2px rgba(255, 255, 255, 0.05),
-				inset 5px 0px 5px rgba(0, 0, 0, 0.3),
-				inset -5px 5px 2px rgba(255, 255, 255, 0.15),
-				inset 0px -3px 5px rgba(0, 0, 0, 0.1),
-				inset 0px 3px 5px rgba(0, 0, 0, 0.05);
+				box-shadow: inset -3px 3px 2px rgba(255, 255, 255, 0.2), inset 3px -2px 5px rgba(0, 0, 0, 0.2), inset 13px 0px 2px rgba(255, 255, 255, 0.12);
 				border-radius: 3px 5px 5px 3px;
 			}
 
@@ -4174,49 +4261,6 @@ body.dark {
 	}
 }
 
-#gift-form {
-	display: grid;
-	grid-gap: 20px;
-	max-width: 800px;
-	justify-self: center;
-
-	form {
-		display: grid;
-		grid-gap: 20px;
-
-		.form-inputs {
-			display: grid;
-			grid-gap: 20px;
-
-			.name {
-				display: grid;
-				grid-gap: 20px;
-				grid-template-columns: 1fr 1fr;
-
-				@media (max-width: 800px) {
-					grid-template-columns: none;
-					grid-auto-flow: row;
-				}
-			}
-		}
-
-		.form-bottom {
-			display: grid;
-			grid-gap: 20px;
-
-			.button {
-				display: block;
-			}
-		}
-	}
-
-	.disclaimer {
-		font-size: 12px;
-		line-height: 20px;
-		opacity: 0.5;
-		text-align: center;
-	}
-}
 
 
 
