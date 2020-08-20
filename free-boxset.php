@@ -56,11 +56,119 @@
             </div>
         </div>
     </div>
-
-    <div class="cta animate reveal"><button data-open="download-book-modal" class="button">Send my free book!</button></div>
 </section>
 
-<div id="download-book-modal" class="modal">
+<section id="sticky-cta">
+    <h3 class="">Get this Life-Changing Boxset today!</h3>
+    <button data-open="download-boxset" class="button cta">Get boxset now!</button>
+</section>
+
+<section id="about-author">
+    <div class="text animate reveal">
+        <h1>About the Author</h1>
+        <img class="svg decor" src="<?php bloginfo('template_directory');?>/assets/images/icons/decor.svg">
+    </div>
+
+    <div class="about">
+        <img class="" src="<?php bloginfo('template_directory');?>/assets/images/madueke/madueke2.jpg">
+        <div class="content">
+            <h3>Prayer M. Madueke</h3>
+            <p>Prayer Madueke is a Spiritual Warrior in the Lord’s Vineyard and founder of Prayer Emancipation Missions. An accomplished author, speaker, and expert on spiritual warfare and deliverance, he has published well over 100 books on every area of successful Christian living.<br><br>He is an acclaimed family and relationship counselor with several titles dealing with those critical areas in the lives of the children of God. He is blessed with a beautiful wife and 5 God-fearing children.<br><br>He travels to several countries each year speaking and conducting deliverance, breaking the yokes of demonic oppression, and setting captives free.</p>
+            <div id="social">
+                <ul>
+                    <li>
+                        <a href="https://facebook.com/prayermadueke">
+                            <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/social/facebook.svg" height="15px" alt="Facebook">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com/prayermadueke">
+                            <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/social/instagram.svg" height="15px" alt="Instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/prayermadueke">
+                            <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/social/twitter.svg" height="15px" alt="Twitter">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="editorial-reviews">
+    <div class="text animate reveal">
+        <h1>Editorial Reviews</h1>
+        <img class="svg decor" src="<?php bloginfo('template_directory');?>/assets/images/icons/decor.svg">
+    </div>
+
+    <div id="reviews">
+        <div class="review animate reveal">
+            <img class="picture" src="<?php bloginfo('template_directory');?>/assets/images/reviewers/chris-akosa.jpg">
+            <div class="name">
+                <h6>Rev. Chris Akosa</h6>
+                <p>Founder, Abundant Life Global Outreach</p>
+            </div>
+            <img class="svg decor" src="<?php bloginfo('template_directory');?>/assets/images/icons/decor.svg">
+            <p class="comment">I cannot recommend Prayer M. Madueke's books highly enough. Of everything I've read on spiritual warfare and deliverance, these books are some of the best things I've encountered.</p>
+        </div>
+
+        <div class="review animate reveal">
+            <img class="picture" src="<?php bloginfo('template_directory');?>/assets/images/reviewers/ken-uloh.jpg">
+            <div class="name">
+                <h6>Bishop Ken Dominics Uloh</h6>
+                <p>Bishop, Divine Grace Liberation Assembly Worldwide</p>
+            </div>
+            <img class="svg decor" src="<?php bloginfo('template_directory');?>/assets/images/icons/decor.svg">
+            <p class="comment">I cannot recommend Prayer M. Madueke's books highly enough. Of everything I've read on spiritual warfare and deliverance, these books are some of the best things I've encountered.</p>
+        </div>
+
+        <div class="review animate reveal">
+            <img class="picture" src="<?php bloginfo('template_directory');?>/assets/images/reviewers/okey-mofunanya.jpg">
+            <div class="name">
+                <h6>Pastor Okey Mofunanya</h6>
+                <p>SATGO in charge of Security, RCCG Worldwide</p>
+            </div>
+            <img class="svg decor" src="<?php bloginfo('template_directory');?>/assets/images/icons/decor.svg">
+            <p class="comment">I cannot recommend Prayer M. Madueke's books highly enough. Of everything I've read on spiritual warfare and deliverance, these books are some of the best things I've encountered.</p>
+        </div>
+
+        <div class="review animate reveal">
+            <img class="picture" src="<?php bloginfo('template_directory');?>/assets/images/reviewers/robert-duru.jpg">
+            <div class="name">
+                <h6>Pastor Robert Duru</h6>
+                <p>General Overseer, JRC CHURCH</p>
+            </div>
+            <img class="svg decor" src="<?php bloginfo('template_directory');?>/assets/images/icons/decor.svg">
+            <p class="comment">I cannot recommend Prayer M. Madueke's books highly enough. Of everything I've read on spiritual warfare and deliverance, these books are some of the best things I've encountered.</p>
+        </div>
+    </div>
+</section>
+
+<section id="amazon-reviews">
+    <div class="text animate reveal">
+        <h1>What my readers on Amazon are saying</h1>
+        <img class="svg decor" src="<?php bloginfo('template_directory');?>/assets/images/icons/decor.svg">
+    </div>
+
+    <div id="reviews">
+        <img class="review animate reveal" src="<?php bloginfo('template_directory');?>/assets/images/reviews/1.png">
+
+        <img class="review animate reveal" src="<?php bloginfo('template_directory');?>/assets/images/reviews/2.png">
+
+        <img class="review animate reveal" src="<?php bloginfo('template_directory');?>/assets/images/reviews/3.png">
+
+        <img class="review animate reveal" src="<?php bloginfo('template_directory');?>/assets/images/reviews/4.png">
+    </div>
+</section>
+
+<section id="boxset-cta">
+    <h1 class="animate reveal">Get this Life-Changing<br>Bookset today!</h1>
+    <div class="cta animate reveal"><button data-open="download-boxset" class="button">Get boxset now!</button></div>
+</section>
+
+<div id="download-boxset" class="modal">
     <div class="modal-dialog">
         <header class="modal-header">
             <button title="Close" data-close class="close button">✕</button>
@@ -73,7 +181,7 @@
                 <h1>Tell me where to send them</h1>
             </div>
 
-            <form action="https://prayermaduekestore.us15.list-manage.com/subscribe/post?u=a1ded7fdc64b5e8e70cbf9c53&amp;id=33ca07b1a7" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <form action="https://prayermaduekestore.us15.list-manage.com/subscribe/post?u=a1ded7fdc64b5e8e70cbf9c53&amp;id=7956285b20" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                 <div class="form-inputs">
                     <div class="name">
                         <div class="mc-field-group">
@@ -93,8 +201,8 @@
                 </div>
 
                 <div class="form-bottom">
-                    <input type="submit" value="Send my free book!" name="subscribe" id="mc-embedded-subscribe" class="button">
-                    <p class="disclaimer">We're committed to your privacy. We use the information you provide to us to contact you about our relevant content, devotionals, and new book releases. You may unsubscribe from these communications at any time.</p>
+                    <input type="submit" value="Send my free boxset!" name="subscribe" id="mc-embedded-subscribe" class="button">
+                    <p class="disclaimer">We're committed to your privacy. We will not spam, rent or sell your information. We use the information you provide to us to contact you about our relevant content, devotionals, and new book releases. You may unsubscribe from these communications at any time.</p>
 
                     <div id="mce-responses" class="clear">
                         <div class="response" id="mce-error-response" style="display:none"></div>
@@ -108,55 +216,64 @@
             </form>
 
             <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-            <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+            <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text'; }(jQuery));var $mcj = jQuery.noConflict(true);</script>
         </div>
     </div>
 </div>
 
-<section id="gift-title">
-    <div class="text animate reveal">
-        <h1>Where do I send the books?</h1>
-        <p>Fill the form below and you’ll get the download link in your email.<br>So make sure your email address is correct.</p>
+
+<footer id="footer" class="container" style="padding: 30px;">
+    <p class="copyright">&copy; 2020 Prayer Madueke. All rights reserved.</p>
+    <div id="social">
+        <p>Connect with me</p>
+        <span></span>
+        <ul>
+			<li>
+                <a href="https://facebook.com/prayermadueke">
+                    <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/social/facebook.svg'; ?>" height="15px" alt="Facebook">
+                </a>
+            </li>
+            <li>
+                <a href="https://instagram.com/prayermadueke">
+                    <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/social/instagram.svg'; ?>" height="15px" alt="Instagram">
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/prayermadueke">
+                    <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/social/twitter.svg'; ?>" height="15px" alt="Twitter">
+                </a>
+            </li>
+        </ul>
     </div>
-</section>
+</footer>
+<!-- <script src="//code.tidio.co/cvaez7z6kxqicsb0vraidxlffyunqzvu.js" async></script> -->
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+    <script>
+    window.fbAsyncInit = function() {
+        FB.init({
+        xfbml            : true,
+        version          : 'v8.0'
+        });
+    };
 
-<section id="gift-form" class="animate reveal">
-    <form action="https://prayermaduekestore.us15.list-manage.com/subscribe/post?u=a1ded7fdc64b5e8e70cbf9c53&amp;id=7956285b20" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-        <div class="form-inputs">
-            <div class="name">
-                <div class="mc-field-group">
-                    <input type="text" required value="" name="FNAME" class="" id="mce-FNAME" placeholder="eg: John">
-                    <label for="mce-FNAME">First Name</label>
-                </div>
-                <div class="mc-field-group">
-                    <input type="text" required value="" name="LNAME" class="" id="mce-LNAME" placeholder="eg: Doe">
-                    <label for="mce-LNAME">Last Name</label>
-                </div>
-            </div>
+    (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
 
-            <div class="mc-field-group">
-                <input type="email" required value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="eg: johndoe@domain.com">
-                <label for="mce-EMAIL">Email Address</label>
-            </div>
-        </div>
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat"
+    attribution=setup_tool
+    page_id="312645492269355"
+    theme_color="#222222"
+    logged_in_greeting="Hi there 👋 If you need any assistance, I'm always here."
+    logged_out_greeting="Hi there 👋 If you need any assistance, I'm always here.">
+</div>
+<?php wp_footer(); ?>
+</body>
 
-        <div class="form-bottom">
-            <input type="submit" value="Download Now" name="subscribe" id="mc-embedded-subscribe" class="button">
-
-            <div id="mce-responses" class="clear">
-                <div class="response" id="mce-error-response" style="display:none"></div>
-                <div class="response" id="mce-success-response" style="display:none"></div>
-            </div>
-
-            <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                <input type="text" name="b_a1ded7fdc64b5e8e70cbf9c53_7956285b20" tabindex="-1" value="">
-            </div>
-        </div>
-    </form>
-
-    <p class="disclaimer">We're committed to your privacy. We use the information you provide to us to contact you about our relevant content, devotionals, and new book releases. You may unsubscribe from these communications at any time.</p>
-    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-    <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text'; }(jQuery));var $mcj = jQuery.noConflict(true);</script>
-</section>
-
-<?php get_footer(); ?>
+</html>
