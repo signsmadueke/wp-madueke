@@ -2,15 +2,23 @@
 <html lang="en">
 
 <?php $customdata = get_field('customdata');?>
-
+<script type="text/javascript"> //<![CDATA[ 
+        var tlJsHost = ((window.location.protocol == "https:") ? "https://secure.trust-provider.com/" : "http://www.trustlogo.com/");
+        document.write(unescape("%3Cscript src='" + tlJsHost + "trustlogo/javascript/trustlogo.js' type='text/javascript'%3E%3C/script%3E"));
+        //]]>
+    </script>
 <head>
 	<title></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <?php wp_head(); ?>
-    
 </head>
+<script language="JavaScript" type="text/javascript">
+    TrustLogo("https://store.madueke.com/wp-content/themes/madueke/assets/images/security/positivessl_trust_seal_md_167x42.png", "CL1", "none");
+</script>
+<a  href="https://ssl.comodo.com" id="comodoTL">SSL Certificates</a>
 
 <body <?php body_class('container');?>>
+
 <section id="navigation">
     <div id="logo">
         <a href="<?php echo get_home_url(); ?>">
