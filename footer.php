@@ -1,6 +1,6 @@
-<section>
+<section id="trust">
     <script language="JavaScript" type="text/javascript">
-        TrustLogo("https://store.madueke.com/wp-content/themes/madueke/assets/images/security/positivessl_trust_seal_lg.png", "CL1", "none");
+	    TrustLogo("https://sectigo.com/images/seals/sectigo_trust_seal_sm_2x.png", "SECDV", "none");
     </script>
 </section>
 <footer id="footer">

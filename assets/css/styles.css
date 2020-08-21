@@ -1586,6 +1586,51 @@ body.dark #navigation nav a:hover {
           transform: translate3d(0, -3px, 0) rotate(-135deg);
 }
 
+#trust {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#trust [onmousemove="tLXB(event)"] {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  place-self: center;
+}
+
+#trust [onmousemove="tLXB(event)"] img {
+  max-height: 40px;
+  min-height: 30px;
+  width: auto;
+  vertical-align: middle;
+}
+
+#trust [name="trustbadge"] {
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  place-self: center;
+}
+
+#trust [name="trustbadge"] img, #trust [name="trustbadge"] svg {
+  max-height: 40px;
+  min-height: 30px;
+  width: auto;
+  vertical-align: middle;
+  -webkit-filter: saturate(0) grayscale(1);
+          filter: saturate(0) grayscale(1);
+}
+
 #footer {
   display: -ms-grid;
   display: grid;
@@ -1594,6 +1639,8 @@ body.dark #navigation nav a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 #footer ul {
@@ -5505,8 +5552,9 @@ body.dark #navigation nav a:hover {
         grid-template-columns: auto !important;
   }
   #footer {
-    -ms-grid-columns: 1fr !important;
-        grid-template-columns: 1fr !important;
+    -ms-grid-columns: none !important;
+        grid-template-columns: none !important;
+    grid-auto-flow: row;
   }
   #footer #social {
     display: none;

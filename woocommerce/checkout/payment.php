@@ -54,6 +54,20 @@ if ( ! is_ajax() ) {
 
 		<?php wp_nonce_field( 'woocommerce-process_checkout', 'woocommerce-process-checkout-nonce' ); ?>
 	</div>
+	<!-- <script language="JavaScript" type="text/javascript">
+	TrustLogo("https://sectigo.com/images/seals/sectigo_trust_seal_lg_2x.png", "SECDV", "none");
+	</script> -->
+	<section id="trust" style="padding: 20px;border-top: 1px solid rgba(0, 0, 0, 0.1);">
+		<a name="trustbadge" href="https://trustlock.co">
+			<img name="trustseal" alt="Trust Badges" class="svg" src="<?php bloginfo('template_directory');?>/assets/images/security/powered-by-stripe.svg">
+		</a>
+		<a name="trustbadge" href="https://trustlock.co">
+			<img name="trustseal" alt="Trust Badges" class="svg" src="<?php bloginfo('template_directory');?>/assets/images/security/fully-secured-ssl-checkout.svg">
+		</a>
+		<a name="trustbadge" href="https://trustlock.co">
+			<img name="trustseal" alt="Trust Badges" class="svg" src="<?php bloginfo('template_directory');?>/assets/images/security/money-back.svg">
+		</a>
+	</section>
 </div>
 <?php
 if ( ! is_ajax() ) {
