@@ -275,16 +275,18 @@ function wc_change_number_related_products( $args ) {
 /*
  * Change button text on product pages
  */
-add_filter( 'woocommerce_product_single_add_to_cart_text', 'misha_add_to_cart_text_2' );
- 
-function misha_add_to_cart_text_2( $product ){
-	return 'Buy now';
+
+add_filter('add_to_cart_redirect', 'cw_redirect_add_to_cart');
+function cw_redirect_add_to_cart() {
+    global $woocommerce;
+    $cw_redirect_url_checkout = $woocommerce->cart->get_checkout_url();
+    return $cw_redirect_url_checkout;
 }
 
-add_filter( 'woocommerce_add_to_cart_redirect', 'misha_skip_cart_redirect_checkout' );
- 
-function misha_skip_cart_redirect_checkout( $url ) {
-    return wc_get_checkout_url();
+add_filter( 'woocommerce_product_single_add_to_cart_text', 'cw_btntext_cart' );
+add_filter( 'woocommerce_product_add_to_cart_text', 'cw_btntext_cart' );
+function cw_btntext_cart() {
+    return __( 'Buy now', 'woocommerce' );
 }
 
 

@@ -1208,7 +1208,7 @@ Author: Prayer M. Madueke
 	font-weight: 500;
 	outline: 0;
 	-webkit-appearance: none;
-	border-radius: 0;
+	border-radius: 5px;
 	cursor: text;
 }
 
