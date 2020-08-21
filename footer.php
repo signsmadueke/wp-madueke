@@ -1,5 +1,20 @@
+<section>
+    <script language="JavaScript" type="text/javascript">
+        TrustLogo("https://store.madueke.com/wp-content/themes/madueke/assets/images/security/positivessl_trust_seal_lg.png", "CL1", "none");
+    </script>
+</section>
 <footer id="footer">
+    <ul>
+        <li>
+            <a href="<?php echo get_home_url(); ?>/privacy-policy">Privacy Policy</a>
+        </li>
+        <li>
+            <a href="<?php echo get_home_url(); ?>/contact">Contact</a>
+        </li>
+    </ul>
+    
     <p class="copyright">&copy; 2020 Prayer Madueke. All rights reserved.</p>
+    
     <div id="social">
         <p>Connect with me</p>
         <span></span>

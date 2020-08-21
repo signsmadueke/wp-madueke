@@ -12,10 +12,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <?php wp_head(); ?>
 </head>
-<script language="JavaScript" type="text/javascript">
-    TrustLogo("https://store.madueke.com/wp-content/themes/madueke/assets/images/security/positivessl_trust_seal_md_167x42.png", "CL1", "none");
-</script>
-<a  href="https://ssl.comodo.com" id="comodoTL">SSL Certificates</a>
 
 <body <?php body_class('container');?>>
 

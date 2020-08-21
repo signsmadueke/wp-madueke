@@ -1589,11 +1589,48 @@ body.dark #navigation nav a:hover {
 #footer {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr auto 1fr;
+      grid-template-columns: 1fr auto 1fr;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#footer ul {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 15px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+  grid-auto-columns: -webkit-max-content;
+  grid-auto-columns: max-content;
+}
+
+#footer ul li {
+  font-weight: 500;
+}
+
+#footer ul li a {
+  padding: 15px 0px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  line-height: 20px;
+  font-weight: 400;
+  font-size: 13px;
+  opacity: 0.7;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#footer ul li a:hover {
+  opacity: 1;
 }
 
 #footer #social {
@@ -1668,9 +1705,9 @@ body.dark #navigation nav a:hover {
       justify-self: start;
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 12px;
-  opacity: 0.6;
+  font-size: 13px;
+  line-height: 20px;
+  opacity: 0.7;
 }
 
 #space {
