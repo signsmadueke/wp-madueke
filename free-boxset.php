@@ -111,7 +111,7 @@
                 <p>Founder, Abundant Life Global Outreach</p>
             </div>
             <img class="svg decor" src="<?php bloginfo('template_directory');?>/assets/images/icons/decor.svg">
-            <p class="comment">I cannot recommend Prayer M. Madueke's books highly enough. Of everything I've read on spiritual warfare and deliverance, these books are some of the best things I've encountered.</p>
+            <p class="comment">Great books from an amazing teacher. Prayer Madueke really brings to life the power we release into our lives and the world when we partner with the Creator to speak forth His word. So good! So empowering.</p>
         </div>
 
         <div class="review animate reveal">
@@ -121,7 +121,7 @@
                 <p>Bishop, Divine Grace Liberation Assembly Worldwide</p>
             </div>
             <img class="svg decor" src="<?php bloginfo('template_directory');?>/assets/images/icons/decor.svg">
-            <p class="comment">I cannot recommend Prayer M. Madueke's books highly enough. Of everything I've read on spiritual warfare and deliverance, these books are some of the best things I've encountered.</p>
+            <p class="comment">These magnificent books by Prayer Madueke, will empower believers with the tools to boldly release decrees that will unlock the blessings of heaven, align hearts with the Word of God, and bring change to their lives. Bravo!</p>
         </div>
 
         <div class="review animate reveal">
@@ -131,7 +131,7 @@
                 <p>SATGO in charge of Security, RCCG Worldwide</p>
             </div>
             <img class="svg decor" src="<?php bloginfo('template_directory');?>/assets/images/icons/decor.svg">
-            <p class="comment">I cannot recommend Prayer M. Madueke's books highly enough. Of everything I've read on spiritual warfare and deliverance, these books are some of the best things I've encountered.</p>
+            <p class="comment">Prayer Madueke has found the keys to releasing the blessing of the Father through the spoken Word to create supernatural breakthroughs in the name of Jesus and by the power of the Spirit. Get ready for the most dramatic answers to prayer ever!</p>
         </div>
 
         <div class="review animate reveal">
@@ -141,7 +141,7 @@
                 <p>General Overseer, JRC CHURCH</p>
             </div>
             <img class="svg decor" src="<?php bloginfo('template_directory');?>/assets/images/icons/decor.svg">
-            <p class="comment">I cannot recommend Prayer M. Madueke's books highly enough. Of everything I've read on spiritual warfare and deliverance, these books are some of the best things I've encountered.</p>
+            <p class="comment">Powerful books for those wishing to draw nearer to God and to see their lives transformed. I highly recommend these resources as you will never be the same again. Five stars for an excellently written book.</p>
         </div>
     </div>
 </section>
@@ -222,7 +222,7 @@
 </div>
 
 
-<footer id="footer" class="container" style="padding: 30px;">
+<footer id="footer" class="container" style="padding: 30px; grid-template-columns: 1fr 1fr;">
     <p class="copyright">&copy; 2020 Prayer Madueke. All rights reserved.</p>
     <div id="social">
         <p>Connect with me</p>

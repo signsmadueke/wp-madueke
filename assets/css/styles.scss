@@ -4732,10 +4732,9 @@ body.dark {
 }
 
 #sticky-cta {
-	position: fixed;
-	bottom: 0;
+	position: sticky;
+	top: 0;
 	width: 100%;
-	padding: 30px;
 	text-align: center;
 	justify-self: center;
 	justify-content: center;
@@ -4746,9 +4745,13 @@ body.dark {
 	grid-gap: 100px;
 	grid-auto-rows: max-content;
 	background: #FFFFFF;
-	box-shadow: 0px -10px 50px rgba(0, 0, 0, 0.05);
+	// box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.05);
 	z-index: 1;
-	border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+	backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px;
 
 	h3 {
 		font-size: 30px;
@@ -5139,6 +5142,10 @@ body.dark {
 	#footer {
 		#social {
 			display: none;
+		}
+
+		.copyright {
+			justify-self: center;
 		}
 
 		grid-template-columns: none !important;
