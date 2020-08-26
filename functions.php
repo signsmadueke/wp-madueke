@@ -290,22 +290,12 @@ function cw_btntext_cart() {
 }
 
 
-add_filter( 'woocommerce_product_add_to_cart_url', 'misha_fix_for_individual_products', 10, 2 );
-function misha_fix_for_individual_products( $add_to_cart_url, $product ){
- 
-	if( $product->get_sold_individually() // if individual product
-	&& WC()->cart->find_product_in_cart( WC()->cart->generate_cart_id( $product->id ) ) // if in the cart
-	&& $product->is_purchasable() // we also need these two conditions
-	&& $product->is_in_stock() ) {
-		$add_to_cart_url = wc_get_checkout_url();
-	}
- 
-	return $add_to_cart_url;
- 
-}
+add_filter( 'woocommerce_add_to_cart_sold_individually_found_in_cart', 'redirect_to_checkout' );
 
-add_filter( 'wc_add_to_cart_message_html', 'misha_remove_add_to_cart_message' );
- 
-function misha_remove_add_to_cart_message( $message ){
-	return '';
+function redirect_to_checkout( $found_in_cart ) {
+	if ( $found_in_cart ) {
+		wp_safe_redirect( wc_get_page_permalink( 'checkout' ) );
+		exit;
+	}
+	return $found_in_cart;
 }
