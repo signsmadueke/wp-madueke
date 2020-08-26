@@ -4657,6 +4657,7 @@ body.dark #navigation nav a:hover {
   #boxset-hero .cta .button {
     width: 100%;
     padding: 18px 20px !important;
+    display: block;
   }
 }
 
@@ -5117,26 +5118,40 @@ body.dark #navigation nav a:hover {
   display: -ms-grid;
   display: grid;
   grid-auto-flow: row;
-  grid-gap: 20px;
+  grid-gap: 50px;
   grid-auto-rows: -webkit-max-content;
   grid-auto-rows: max-content;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-#boxset-cta h1 {
+#boxset-cta .text {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: row;
+  grid-gap: 10px;
+  text-align: center;
+  justify-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+#boxset-cta .text svg {
+  width: 100px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+#boxset-cta .text h1 {
   font-size: 45px;
   line-height: 50px;
   text-align: center;
 }
 
-#boxset-cta .cta .button {
-  padding: 20px 60px !important;
-  -ms-grid-column-align: center;
-      justify-self: center;
-}
-
 @media (max-width: 576px) {
-  #boxset-cta .cta .button {
-    padding: 18px 54px !important;
+  #boxset-cta .text h1 {
+    font-size: 30px;
+    line-height: 40px;
   }
 }
 
@@ -5144,16 +5159,65 @@ body.dark #navigation nav a:hover {
   #boxset-cta {
     padding: 100px 30px 100px 30px;
   }
-  #boxset-cta h1 {
-    font-size: 30px;
-    line-height: 40px;
+}
+
+#boxset-cta form {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+}
+
+#boxset-cta form .form-inputs {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+}
+
+#boxset-cta form .form-inputs .name {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 800px) {
+  #boxset-cta form .form-inputs .name {
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+    grid-auto-flow: row;
   }
 }
 
+#boxset-cta form .form-bottom {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+}
+
+#boxset-cta form .form-bottom .button {
+  display: block;
+  width: 100%;
+  padding: 20px 40px !important;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+@media (max-width: 800px) {
+  #boxset-cta form .form-bottom .button {
+    padding: 18px 36px !important;
+  }
+}
+
+#boxset-cta .disclaimer {
+  font-size: 12px;
+  line-height: 20px;
+  opacity: 0.5;
+  text-align: center;
+}
+
 #sticky-cta {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+  position: relative;
   width: 100%;
   text-align: center;
   -ms-grid-column-align: center;

@@ -56,12 +56,14 @@
             </div>
         </div>
     </div>
+
+    <div class="cta"><a href="#boxset-cta" class="button">Get boxset now!</a></div>
 </section>
 
-<section id="sticky-cta">
+<!-- <section id="sticky-cta">
     <h3 class="">Get this Life-Changing Boxset today!</h3>
-    <button data-open="download-boxset" class="button cta">Get boxset now!</button>
-</section>
+    <a href="#boxset-cta" class="button cta">Get boxset now!</a>
+</section> -->
 
 <section id="about-author">
     <div class="text animate reveal">
@@ -164,62 +166,48 @@
 </section>
 
 <section id="boxset-cta">
-    <h1 class="animate reveal">Get this Life-Changing<br>Bookset today!</h1>
-    <div class="cta animate reveal"><button data-open="download-boxset" class="button">Get boxset now!</button></div>
-</section>
+    <div class="text animate reveal">
+        <h1>Get this Life-Changing<br>Bookset today!</h1>
+        <img class="svg decor" src="<?php bloginfo('template_directory');?>/assets/images/icons/decor.svg">
+    </div>
 
-<div id="download-boxset" class="modal">
-    <div class="modal-dialog">
-        <header class="modal-header">
-            <button title="Close" data-close class="close button">✕</button>
-        </header>
-        <div class="modal-hero">
-            <img class="svg decor" src="<?php bloginfo('template_directory');?>/assets/images/books/boxset1.png">
-        </div>
-        <div class="form modal-content">
-            <div class="form-use">
-                <h1>Tell me where to send them</h1>
+    <form action="https://prayermaduekestore.us15.list-manage.com/subscribe/post?u=a1ded7fdc64b5e8e70cbf9c53&amp;id=7956285b20" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <div class="form-inputs">
+            <div class="name">
+                <div class="mc-field-group">
+                    <input type="text" required value="" name="FNAME" class="" id="mce-FNAME" placeholder="eg: John">
+                    <label for="mce-FNAME">First Name</label>
+                </div>
+                <div class="mc-field-group">
+                    <input type="text" required value="" name="LNAME" class="" id="mce-LNAME" placeholder="eg: Doe">
+                    <label for="mce-LNAME">Last Name</label>
+                </div>
             </div>
 
-            <form action="https://prayermaduekestore.us15.list-manage.com/subscribe/post?u=a1ded7fdc64b5e8e70cbf9c53&amp;id=7956285b20" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                <div class="form-inputs">
-                    <div class="name">
-                        <div class="mc-field-group">
-                            <input type="text" required value="" name="FNAME" class="" id="mce-FNAME" placeholder="eg: John">
-                            <label for="mce-FNAME">First Name</label>
-                        </div>
-                        <div class="mc-field-group">
-                            <input type="text" required value="" name="LNAME" class="" id="mce-LNAME" placeholder="eg: Doe">
-                            <label for="mce-LNAME">Last Name</label>
-                        </div>
-                    </div>
-
-                    <div class="mc-field-group">
-                        <input type="email" required value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="eg: johndoe@domain.com">
-                        <label for="mce-EMAIL">Email Address</label>
-                    </div>
-                </div>
-
-                <div class="form-bottom">
-                    <input type="submit" value="Send my free boxset!" name="subscribe" id="mc-embedded-subscribe" class="button">
-                    <p class="disclaimer">We're committed to your privacy. We will not spam, rent or sell your information. We use the information you provide to us to contact you about our relevant content, devotionals, and new book releases. You may unsubscribe from these communications at any time.</p>
-
-                    <div id="mce-responses" class="clear">
-                        <div class="response" id="mce-error-response" style="display:none"></div>
-                        <div class="response" id="mce-success-response" style="display:none"></div>
-                    </div>
-
-                    <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                        <input type="text" name="b_a1ded7fdc64b5e8e70cbf9c53_7956285b20" tabindex="-1" value="">
-                    </div>
-                </div>
-            </form>
-
-            <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-            <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text'; }(jQuery));var $mcj = jQuery.noConflict(true);</script>
+            <div class="mc-field-group">
+                <input type="email" required value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="eg: johndoe@domain.com">
+                <label for="mce-EMAIL">Email Address</label>
+            </div>
         </div>
-    </div>
-</div>
+
+        <div class="form-bottom">
+            <input type="submit" value="Send my free boxset!" name="subscribe" id="mc-embedded-subscribe" class="button">
+            <p class="disclaimer">We're committed to your privacy. We will not spam, rent or sell your information. We use the information you provide to us to contact you about our relevant content, devotionals, and new book releases. You may unsubscribe from these communications at any time.</p>
+
+            <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+            </div>
+
+            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                <input type="text" name="b_a1ded7fdc64b5e8e70cbf9c53_7956285b20" tabindex="-1" value="">
+            </div>
+        </div>
+    </form>
+
+    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+    <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text'; }(jQuery));var $mcj = jQuery.noConflict(true);</script>
+</section>
 
 
 <footer id="footer" class="container" style="padding: 30px; grid-template-columns: 1fr 1fr;">

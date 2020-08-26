@@ -1287,7 +1287,7 @@ Author: Prayer M. Madueke
 }
 
 .wc-facebook-pixel-event-placeholder, .fb_reset {
-	display: none;
+	position: absolute;
 }
 
 #tidio-chat {
