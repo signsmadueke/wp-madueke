@@ -72,11 +72,11 @@ add_filter( 'woocommerce_is_sold_individually', 'woo_remove_all_quantity_fields'
 
 // First, remove Add to Cart Button
   
-remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10 );
+// remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10 );
   
 // Second, add View Product Button
   
-add_action( 'woocommerce_after_shop_loop_item', 'bbloomer_view_product_button', 10 );
+// add_action( 'woocommerce_after_shop_loop_item', 'bbloomer_view_product_button', 10 );
   
 function bbloomer_view_product_button() {
 global $product;
@@ -298,4 +298,42 @@ function redirect_to_checkout( $found_in_cart ) {
 		exit;
 	}
 	return $found_in_cart;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+add_filter( 'woocommerce_product_add_to_cart_text', 'bbloomer_archive_custom_cart_button_text' );
+  
+function bbloomer_archive_custom_cart_button_text() {
+global $product;
+ 
+$terms = get_the_terms( $product->ID, 'product_cat' );
+ foreach ($terms as $term) {
+            $product_cat = $term->name;
+            break;
+}
+ 
+switch($product_cat)
+{
+    case 'eBook Bundles';
+        return 'Buy Bundle'; break;
+    case 'eBooks';
+        return 'Buy eBook'; break;
+// case 'category3'; etc...
+// return 'Category 3 button text'; break;
+ 
+    default;
+        return 'Buy Now'; break;
+}
 }

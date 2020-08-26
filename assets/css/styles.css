@@ -789,7 +789,7 @@ input:not([type=checkbox]):not([type=radio]),
 textarea {
   padding: 15px 25px !important;
   border: 1px solid rgba(68, 68, 68, 0.2);
-  border-radius: 5px !important;
+  border-radius: 8px !important;
   color: #444444;
   font-size: 16px;
   line-height: 16px;
@@ -878,7 +878,7 @@ button.button {
   letter-spacing: 0 !important;
   outline: 0 !important;
   border: 1px solid #222222 !important;
-  border-radius: 5px !important;
+  border-radius: 8px !important;
   cursor: pointer;
   -webkit-user-select: none !important;
   -moz-user-select: none !important;
@@ -1220,7 +1220,7 @@ body.container.contact {
   position: absolute;
   width: 10px;
   height: 10px;
-  border-radius: 10px;
+  border-radius: 8px;
   background-color: white;
   right: 0;
   top: 50%;
@@ -1414,7 +1414,7 @@ body.sidebar-opened .copyright {
       -ms-flex-align: center;
           align-items: center;
   border: 1.5px solid rgba(255, 255, 255, 0);
-  border-radius: 5px !important;
+  border-radius: 8px !important;
 }
 
 #navigation nav a:hover {
@@ -3047,7 +3047,7 @@ body.dark #navigation nav a:hover {
   overflow: auto;
   cursor: default;
   background: #FFFFFF;
-  border-radius: 10px;
+  border-radius: 8px;
   margin: 50px auto;
   display: -ms-grid;
   display: grid;
@@ -3129,7 +3129,7 @@ body.dark #navigation nav a:hover {
   outline: 0;
   padding-top: 40px !important;
   -webkit-appearance: none;
-  border-radius: 5px !important;
+  border-radius: 8px !important;
 }
 
 #mc-embedded-subscribe-form input:not([type="submit"])::-webkit-input-placeholder {
@@ -3535,7 +3535,7 @@ body.dark #navigation nav a:hover {
 
 #now-playing .details .image img {
   width: 100%;
-  border-radius: 5px !important;
+  border-radius: 8px !important;
 }
 
 #now-playing .details .image .shadow {
@@ -3679,7 +3679,7 @@ body.dark #navigation nav a:hover {
 
 .devotional .image img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 .devotional .image .shadow {
@@ -3805,7 +3805,7 @@ body.dark #navigation nav a:hover {
 
 #devotional-header img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 #devotional-header .shadow {
@@ -4235,7 +4235,7 @@ body.dark #navigation nav a:hover {
 #other-devotionals .prev-devotional .prev-devotional-details img {
   width: 100px;
   border: 1px solid rgba(68, 68, 68, 0.2);
-  border-radius: 5px !important;
+  border-radius: 8px !important;
 }
 
 #other-devotionals .next-devotional {
@@ -4346,7 +4346,7 @@ body.dark #navigation nav a:hover {
 #other-devotionals .next-devotional .next-devotional-details img {
   width: 100px;
   border: 1px solid rgba(68, 68, 68, 0.2);
-  border-radius: 5px !important;
+  border-radius: 8px !important;
 }
 
 #devotional-subscription {
@@ -4361,7 +4361,7 @@ body.dark #navigation nav a:hover {
           align-items: center;
   grid-gap: 100px;
   border: 1px solid rgba(68, 68, 68, 0.2);
-  border-radius: 5px !important;
+  border-radius: 8px !important;
 }
 
 #devotional-subscription .text {
@@ -4739,7 +4739,7 @@ body.dark #navigation nav a:hover {
   width: 100%;
   max-width: 700px;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
+  border-radius: 8px;
   -webkit-filter: saturate(0);
           filter: saturate(0);
 }
@@ -4948,7 +4948,7 @@ body.dark #navigation nav a:hover {
   width: 100%;
   padding: 30px;
   background: #FFFFFF;
-  border-radius: 10px;
+  border-radius: 8px;
   -webkit-box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -5060,7 +5060,7 @@ body.dark #navigation nav a:hover {
   width: 100%;
   padding: 30px;
   background: #FFFFFF;
-  border-radius: 10px;
+  border-radius: 8px;
   -webkit-box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(0, 0, 0, 0.1);

@@ -155,12 +155,13 @@ Author: Prayer M. Madueke
 #add_payment_method table.cart img, .woocommerce-cart table.cart img, .woocommerce-checkout table.cart img {
 	border: 1px solid rgba(68, 68, 68, 0.2);
 	width: 75px;
+	border-radius: 7px;
 }
 
 .woocommerce a.remove svg,
 .woocommerce a.remove img {
-	height: 20px;
-	width: 20px;
+	height: 20px !important;
+	width: 20px !important;
 	border: none;
 }
 
@@ -273,11 +274,13 @@ Author: Prayer M. Madueke
 	}
 }
 
-@media (max-width: 700px){
+@media (max-width: 500px){
 	.woocommerce-page ul.products,
 	.woocommerce .products ul, .woocommerce ul.products {
 		/* grid-template-columns: repeat(auto-fit, minmax(calc(calc(100%/2) - 15px), calc(calc(100%/2)  - 15px))) !important; */
 		grid-template-columns: repeat(auto-fit, minmax(100%, 100%)) !important;
+		/* grid-column-gap: 15px; */
+		grid-row-gap: 50px;
 	}
 }
 
@@ -296,7 +299,7 @@ Author: Prayer M. Madueke
 	position: relative !important;
 	width: 100% !important;
 	display: grid;
-	grid-gap: 10px;
+	grid-gap: 20px;
 	align-items: start;
 	grid-auto-rows: max-content;
 }
@@ -309,12 +312,17 @@ Author: Prayer M. Madueke
 	padding: 0;
 	overflow: hidden;
 	position: relative;
-	max-height: 66px;
-	/* height: 66px; */
+	max-height: 33px;
+	/* height: 33px; */
+	text-align: center;
+	/* width: 250px; */
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .woocommerce ul.products li.product .woocommerce-loop-category__title:after, .woocommerce ul.products li.product .woocommerce-loop-product__title:after, .woocommerce ul.products li.product h3:after {
-	content: "";
+	/* content: ""; */
 	text-align: right;
 	position: absolute;
 	bottom: 0;
@@ -324,13 +332,14 @@ Author: Prayer M. Madueke
 	background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 90%);
 }
 
-@media (max-width: 700px){
+@media (max-width: 600px){
 	.woocommerce ul.products li.product .woocommerce-loop-category__title, .woocommerce ul.products li.product .woocommerce-loop-product__title, .woocommerce ul.products li.product h3 {
 		/* font-weight: 500;
 		letter-spacing: -0.5px;
 		font-style: italic; */
-		font-size: 25px;
-		line-height: 30px;
+		font-size: 17px;
+		line-height: 25px;
+		max-height: 50px !important;
 	}
 
 	.woocommerce ul.products li.product a {
@@ -345,6 +354,23 @@ Author: Prayer M. Madueke
 		line-height: 21px;
 		margin: 0;
 	}
+
+	.woocommerce ul.products li.product a.add_to_cart_button {
+		padding: 12px!important;
+		border-radius: 5px !important;
+	}
+
+	.woocommerce ul.products li.product a {
+		display: grid;
+		grid-auto-flow: row;
+		grid-row-gap: 10px !important;
+		grid-column-gap: 7px;
+		grid-auto-rows: max-content;
+	}
+
+	.woocommerce ul.products li.product {
+		grid-gap: 0;
+	}
 }
 
 
@@ -355,14 +381,16 @@ Author: Prayer M. Madueke
 
 .woocommerce ul.products li.product a img {
 	margin: 0;
-	margin-bottom: 20px;
+	/* margin-bottom: 20px; */
 	border-radius: 7px;
 	box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.05);
 	border: 1px solid rgba(0, 0, 0, 0.1);
+	filter: brightness(1);
 }
 
-.woocommerce ul.products li.product:hover a img {
-	box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.05);
+.woocommerce ul.products li.product a:hover img {
+	box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.1);
+	filter: brightness(0.9);
 }
 
 .woocommerce div.product .woocommerce-product-gallery__image a {
@@ -376,7 +404,7 @@ Author: Prayer M. Madueke
 	height: 100%;
 	width: 100%;
 	max-width: 100%;
-	border-radius: 10px;
+	border-radius: 8px;
 	box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.05);
 	border: 1px solid rgba(0, 0, 0, 0.05);
 }
@@ -384,9 +412,21 @@ Author: Prayer M. Madueke
 .woocommerce ul.products li.product a {
 	display: grid;
 	grid-auto-flow: row;
-	grid-row-gap: 10px;
+	grid-row-gap: 30px;
 	grid-column-gap: 7px;
 	grid-auto-rows: max-content;
+}
+
+.woocommerce ul.products li.product a.add_to_cart_button {
+	text-align: center;
+	background: transparent !important;
+	border: 1px solid rgba(0, 0, 0, 0.1) !important;
+	color: #222222 !important;
+	font-size: 14px !important;
+}
+
+.woocommerce ul.products li.product a.add_to_cart_button:hover {
+	background: rgba(0, 0, 0, 0.05) !important;
 }
 
 .woocommerce ul.products li.product .price {
@@ -407,7 +447,7 @@ Author: Prayer M. Madueke
 	opacity: 1;
 	padding: 0;
 	padding-top: 10px;
-	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	/* border-top: 1px solid rgba(0, 0, 0, 0.1); */
 }
 
 .woocommerce ul.products li.product:hover .btn-chevron {
@@ -1083,7 +1123,7 @@ Author: Prayer M. Madueke
 	padding: 10px 20px;
 	width: 100%;
 	display: block;
-	border-radius: 5px;
+	border-radius: 8px;
 }
 
 .woocommerce .woocommerce-MyAccount-navigation ul li a:hover,
@@ -1208,7 +1248,7 @@ Author: Prayer M. Madueke
 	font-weight: 500;
 	outline: 0;
 	-webkit-appearance: none;
-	border-radius: 5px;
+	border-radius: 8px;
 	cursor: text;
 }
 
