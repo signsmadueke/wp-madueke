@@ -16,7 +16,7 @@
     <div id="logo">
         <a href="<?php echo get_home_url(); ?>">
             <div class="logo-icon">
-                <img src="<?php bloginfo('template_directory');?>/assets/images/madueke/icon.png'; ?>" alt="Prayer M. Madueke">
+                <img src="<?php bloginfo('template_directory');?>/assets/images/madueke/icon.png" alt="Prayer M. Madueke">
             </div>
             <div class="logo-text">
                 <h3 class="logo-name">Prayer M. Madueke</h3>
@@ -42,26 +42,26 @@
         <ul>
             <li>
                 <a href="<?php echo get_home_url(); ?>">
-                    <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/menu/home-circled.svg'; ?>">
+                    <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/menu/home-circled.svg">
                     <span>Home</span>
                 </a>
             </li>
             <li>
                 <a href="<?php echo get_home_url(); ?>/contact">
-                    <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/menu/contact-circled.svg'; ?>">
+                    <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/menu/contact-circled.svg">
                     <span>Contact</span>
                 </a>
             </li>
             <li>
                 <a href="<?php echo get_home_url(); ?>/account">
-                    <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/menu/account-circled.svg'; ?>">
+                    <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/menu/account-circled.svg">
                     <span>Account</span>
                 </a>
             </li>
             <li>
                 <?php global $woocommerce; ?>
                 <a href="<?php echo $woocommerce->cart->get_cart_url(); ?>" class="bordered">
-                    <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/menu/cart-circled.svg'; ?>">
+                    <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/menu/cart-circled.svg">
                     <span class="cart-total"> <?php echo sprintf(_n('%d item', '%d items', $woocommerce->cart->cart_contents_count, 'woothemes'),
                     $woocommerce->cart->cart_contents_count);?> — <?php echo $woocommerce->cart->get_cart_total(); ?></span>
                 </a>
@@ -70,7 +70,7 @@
     </nav>
 
     <a class="mobile-nav-item" href="<?php echo $woocommerce->cart->get_cart_url(); ?>">
-        <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/cart.svg'; ?>">
+        <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/cart.svg">
         <span class="text">Cart</span>
     </a>
 
@@ -89,7 +89,7 @@
         <div id="logo">
             <a href="<?php echo get_home_url(); ?>">
                 <div class="logo-icon">
-                    <img src="<?php bloginfo('template_directory');?>/assets/images/madueke/icon.png'; ?>" alt="Prayer M. Madueke">
+                    <img src="<?php bloginfo('template_directory');?>/assets/images/madueke/icon.png" alt="Prayer M. Madueke">
                 </div>
                 <div class="logo-text">
                     <h3 class="logo-name">Prayer M. Madueke</h3>
@@ -101,7 +101,7 @@
         <div class="nav-space"></div>
 
         <a class="mobile-nav-item" href="<?php echo $woocommerce->cart->get_cart_url(); ?>">
-            <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/cart.svg'; ?>">
+            <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/cart.svg">
             <span class="text">Cart</span>
         </a>
 
@@ -150,17 +150,17 @@
         <ul>
             <li>
                 <a href="https://facebook.com/prayermadueke">
-                    <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/social/facebook.svg'; ?>" height="15px" alt="Facebook">
+                    <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/social/facebook.svg" height="15px" alt="Facebook">
                 </a>
             </li>
             <li>
                 <a href="https://instagram.com/prayermadueke">
-                    <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/social/instagram.svg'; ?>" height="15px" alt="Instagram">
+                    <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/social/instagram.svg" height="15px" alt="Instagram">
                 </a>
             </li>
             <li>
                 <a href="https://twitter.com/prayermadueke">
-                    <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/social/twitter.svg'; ?>" height="15px" alt="Twitter">
+                    <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/social/twitter.svg" height="15px" alt="Twitter">
                 </a>
             </li>
         </ul>

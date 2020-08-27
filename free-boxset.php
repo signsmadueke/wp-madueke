@@ -218,17 +218,17 @@
         <ul>
 			<li>
                 <a href="https://facebook.com/prayermadueke">
-                    <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/social/facebook.svg'; ?>" height="15px" alt="Facebook">
+                    <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/social/facebook.svg" height="15px" alt="Facebook">
                 </a>
             </li>
             <li>
                 <a href="https://instagram.com/prayermadueke">
-                    <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/social/instagram.svg'; ?>" height="15px" alt="Instagram">
+                    <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/social/instagram.svg" height="15px" alt="Instagram">
                 </a>
             </li>
             <li>
                 <a href="https://twitter.com/prayermadueke">
-                    <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/social/twitter.svg'; ?>" height="15px" alt="Twitter">
+                    <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/social/twitter.svg" height="15px" alt="Twitter">
                 </a>
             </li>
         </ul>
