@@ -1,4 +1,4 @@
-<a href="../" class="btn btn-chevron">
+<a href="../" class="btn btn-chevron bordered">
 	<img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/chevron-left.svg">
 	<span>All Books</span>
 </a>
