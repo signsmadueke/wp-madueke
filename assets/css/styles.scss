@@ -1604,6 +1604,16 @@ body.dark {
 	}
 }
 
+#space-50 {
+	width: 100%;
+	height: 50px;
+	background: transparent;
+
+	@media (max-width: 800px) {
+		height: 0px;
+	}
+}
+
 #bestsellers {
 	display: grid;
 	grid-template-rows: auto auto;
@@ -3144,37 +3154,102 @@ body.dark {
 
 
 
+#contact-hero {
+	display: grid;
+	grid-auto-flow: row;
+	grid-gap: 10px;
+	grid-auto-rows: max-content;
+	padding: 50px;
+	max-width: 800px;
+	justify-self: center;
+	text-align: center;
+	background: linear-gradient(135deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), #FFDE97;
+	box-shadow: 0px 20px 54px rgba(255, 222, 151, 0.35);
+	border-radius: 20px;
+	
+	@media (max-width: 700px) {
+		padding: 30px;
+		border-radius: 15px;
+	}
+}
+
 #contacts {
 	display: grid;
-	grid-auto-flow: column;
 	grid-gap: 50px;
 	grid-template-columns: 1fr 1fr;
+	max-width: 800px;
+	width: 100%;
+	justify-self: center;
 
-	@media (max-width: 800px) {
+	@media (max-width: 700px) {
 		grid-gap: 30px;
-		grid-template-columns: none;
-		grid-auto-flow: row;
-		grid-template-rows: 1fr 1fr;
 	}
 
-	a {
-		width: 100%;
-		padding-top: 50%;
-		padding-bottom: 50%;
-		background: rgba(255, 255, 255, 1);
-		border: 1px solid rgba(0, 0, 0, 0.1);
-		text-align: center;
-		align-self: center;
+	@media (max-width: 450px) {
+		grid-template-columns: 1fr;
+		grid-auto-flow: row;
+	}
 
+	.contact {
+		padding: 25% 50px;
+		display: grid;
+		grid-auto-flow: row;
+		grid-gap: 25px;
+		text-align: left;
+		// border: 1px solid rgba(0, 0, 0, 0.1);
+		color: #ffffff;
+		border-radius: 20px;
 
-		// h1 {
-		// 	font-family: 'Playfair Display';
-		// }
+		@media (max-width: 700px) {
+			padding: 25% 30px;
+			border-radius: 15px;
+		}
+
+		&.email {
+			background: linear-gradient(135deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%), #C39E1B;
+			box-shadow: 0px 20px 54px rgba(195, 158, 27, 0.35);
+		}
+		&.phone {
+			background: linear-gradient(135deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%), #FF5C00;
+			box-shadow: 0px 20px 54px rgba(255, 92, 0, 0.35);
+		}
+		&.messenger {
+			background: linear-gradient(135deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%), #006AFF;
+			box-shadow: 0px 20px 54px rgba(0, 106, 255, 0.35);
+		}
+		&.whatsapp {
+			background: linear-gradient(135deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%), #128C7E;
+			box-shadow: 0px 20px 54px rgba(18, 140, 126, 0.35);
+		}
 
 		&:hover {
-			background: rgba(0, 0, 0, 0.05);
-			-webkit-backdrop-filter: blur(5px);
-			backdrop-filter: blur(5px);
+			transform: scale(1.1);
+		}
+
+		.text {
+			display: grid;
+			grid-auto-flow: row;
+			grid-gap: 5px;
+
+			h1 {
+				color: #ffffff;
+				font-size: 40px;
+				line-height: 50px;
+
+				@media (max-width: 700px) {
+					font-size: 30px;
+					line-height: 40px;
+				}
+			}
+
+			p {
+				color: #ffffff;
+
+				@media (max-width: 600px) {
+					font-size: 13px;
+					line-height: 18px;
+				}
+			}
 		}
 	}
 }

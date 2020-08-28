@@ -1783,6 +1783,18 @@ body.dark #navigation nav a:hover {
   }
 }
 
+#space-50 {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+}
+
+@media (max-width: 800px) {
+  #space-50 {
+    height: 0px;
+  }
+}
+
 #bestsellers {
   display: -ms-grid;
   display: grid;
@@ -3474,42 +3486,133 @@ body.dark #navigation nav a:hover {
   }
 }
 
-#contacts {
+#contact-hero {
   display: -ms-grid;
   display: grid;
-  grid-auto-flow: column;
-  grid-gap: 50px;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  grid-auto-flow: row;
+  grid-gap: 10px;
+  grid-auto-rows: -webkit-max-content;
+  grid-auto-rows: max-content;
+  padding: 50px;
+  max-width: 800px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  text-align: center;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), #FFDE97;
+  -webkit-box-shadow: 0px 20px 54px rgba(255, 222, 151, 0.35);
+          box-shadow: 0px 20px 54px rgba(255, 222, 151, 0.35);
+  border-radius: 20px;
 }
 
-@media (max-width: 800px) {
-  #contacts {
-    grid-gap: 30px;
-    -ms-grid-columns: none;
-        grid-template-columns: none;
-    grid-auto-flow: row;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+@media (max-width: 700px) {
+  #contact-hero {
+    padding: 30px;
+    border-radius: 15px;
   }
 }
 
-#contacts a {
+#contacts {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 50px;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  max-width: 800px;
   width: 100%;
-  padding-top: 50%;
-  padding-bottom: 50%;
-  background: white;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  text-align: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
-#contacts a:hover {
-  background: rgba(0, 0, 0, 0.05);
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
+@media (max-width: 700px) {
+  #contacts {
+    grid-gap: 30px;
+  }
+}
+
+@media (max-width: 450px) {
+  #contacts {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-auto-flow: row;
+  }
+}
+
+#contacts .contact {
+  padding: 25% 50px;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: row;
+  grid-gap: 25px;
+  text-align: left;
+  color: #ffffff;
+  border-radius: 20px;
+}
+
+@media (max-width: 700px) {
+  #contacts .contact {
+    padding: 25% 30px;
+    border-radius: 15px;
+  }
+}
+
+#contacts .contact.email {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%), #C39E1B;
+  -webkit-box-shadow: 0px 20px 54px rgba(195, 158, 27, 0.35);
+          box-shadow: 0px 20px 54px rgba(195, 158, 27, 0.35);
+}
+
+#contacts .contact.phone {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%), #FF5C00;
+  -webkit-box-shadow: 0px 20px 54px rgba(255, 92, 0, 0.35);
+          box-shadow: 0px 20px 54px rgba(255, 92, 0, 0.35);
+}
+
+#contacts .contact.messenger {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%), #006AFF;
+  -webkit-box-shadow: 0px 20px 54px rgba(0, 106, 255, 0.35);
+          box-shadow: 0px 20px 54px rgba(0, 106, 255, 0.35);
+}
+
+#contacts .contact.whatsapp {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%), #128C7E;
+  -webkit-box-shadow: 0px 20px 54px rgba(18, 140, 126, 0.35);
+          box-shadow: 0px 20px 54px rgba(18, 140, 126, 0.35);
+}
+
+#contacts .contact:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#contacts .contact .text {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: row;
+  grid-gap: 5px;
+}
+
+#contacts .contact .text h1 {
+  color: #ffffff;
+  font-size: 40px;
+  line-height: 50px;
+}
+
+@media (max-width: 700px) {
+  #contacts .contact .text h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+#contacts .contact .text p {
+  color: #ffffff;
+}
+
+@media (max-width: 600px) {
+  #contacts .contact .text p {
+    font-size: 13px;
+    line-height: 18px;
+  }
 }
 
 #now-playing {
