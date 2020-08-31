@@ -530,6 +530,9 @@ Author: Prayer M. Madueke
 
 .woocommerce-page div.product .woocommerce-tabs {
 	grid-area: tabs;
+	width: 100%;
+	max-width: 800px;
+	/* margin: 0 auto; */
 }
 
 .woocommerce-page div.product .upsells {

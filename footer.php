@@ -4,22 +4,40 @@
     </script>
 </section>
 <footer id="footer">
-    <ul>
-        <li>
-            <a href="<?php echo get_home_url(); ?>/privacy-policy">Privacy Policy</a>
-        </li>
-        <li>
-            <a href="<?php echo get_home_url(); ?>/contact">Contact</a>
-        </li>
-    </ul>
+    <div class="contact">
+        <a href="<?php echo get_home_url(); ?>/contact">Contact us</a>
+
+        <span class="dash-sm"></span>
+
+        <a href="mailto:info@madueke.com" target="_blank">Send us an email</a>
+        <a href="tel:+1(973)536-2528" target="_blank">Call us on phone</a>
+        <a href="https://m.me/prayermadueke" target="_blank">Messenger Live Chat</a>
+        <a href="https://wa.link/461zux" target="_blank">WhatsApp Live Chat</a>
+    </div>
+
+    <div class="payments">
+        <img class="svg" src="<?php echo get_home_url(); ?>/wp-content/plugins/woocommerce-gateway-stripe/assets/images/visa.svg" height="20px">
+        <img class="svg" src="<?php echo get_home_url(); ?>/wp-content/plugins/woocommerce-gateway-stripe/assets/images/amex.svg" height="20px">
+        <img class="svg" src="<?php echo get_home_url(); ?>/wp-content/plugins/woocommerce-gateway-stripe/assets/images/mastercard.svg" height="20px">
+        <img class="svg" src="<?php echo get_home_url(); ?>/wp-content/plugins/woocommerce-gateway-stripe/assets/images/discover.svg" height="20px">
+        <img class="svg" src="<?php echo get_home_url(); ?>/wp-content/plugins/woocommerce-gateway-stripe/assets/images/jcb.svg" height="20px">
+        <!-- <img class="svg" src="<?php echo get_home_url(); ?>/wp-content/plugins/woocommerce-gateway-stripe/assets/images/diners.svg" height="20px"> -->
+    </div>
+
+    <div class="border-line"></div>
+
+    <div class="legal">
+        <a href="<?php echo get_home_url(); ?>/privacy">Privacy</a>
+        <a href="<?php echo get_home_url(); ?>/terms">Terms</a>
+    </div>
     
     <p class="copyright">&copy; 2020 Prayer Madueke. All rights reserved.</p>
     
-    <div id="social">
+    <div class="social">
         <p>Connect with me</p>
-        <span></span>
+        <span class="dash-sm"></span>
         <ul>
-			<li>
+            <li>
                 <a href="https://facebook.com/prayermadueke">
                     <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/social/facebook.svg" height="15px" alt="Facebook">
                 </a>
@@ -36,6 +54,7 @@
             </li>
         </ul>
     </div>
+    
 </footer>
 <!-- <script src="//code.tidio.co/cvaez7z6kxqicsb0vraidxlffyunqzvu.js" async></script> -->
 <!-- Load Facebook SDK for JavaScript -->
