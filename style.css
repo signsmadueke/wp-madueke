@@ -397,7 +397,7 @@ Author: Prayer M. Madueke
 	}
 
 	.woocommerce ul.products li.product {
-		grid-gap: 0;
+		grid-gap: 10px;
 	}
 }
 
