@@ -60,38 +60,37 @@ global $product;
 
 <?php if( has_term( array( 'eBook Bundles' ), 'product_cat' ) ) : ?>
 
-<!-- <section class="section-grid animate reveal">
-	<h6 class="lined-title">Books in this Bundle</h6>
-	<div class="books-in-bundle">
-		<div class="book-in-bundle">
-			<div class="book-image">
-				<img src="<?php bloginfo('template_directory');?>/assets/images/books/book6.jpg'; ?>">
-			</div>
-			<div class="details">
-				<p class="book-name">21/40 Nights of Decrees and Your Enemies Will Surrender</p>
-				<p class="book-price">$20.00</p>
-			</div>
-		</div>
-		<div class="book-in-bundle">
-			<div class="book-image">
-				<img src="<?php bloginfo('template_directory');?>/assets/images/books/book6.jpg'; ?>">
-			</div>
-			<div class="details">
-				<p class="book-name">21/40 Nights of Decrees and Your Enemies Will Surrender</p>
-				<p class="book-price">$20.00</p>
-			</div>
-		</div>
-		<div class="book-in-bundle">
-			<div class="book-image">
-				<img src="<?php bloginfo('template_directory');?>/assets/images/books/book6.jpg'; ?>">
-			</div>
-			<div class="details">
-				<p class="book-name">21/40 Nights of Decrees and Your Enemies Will Surrender</p>
-				<p class="book-price">$20.00</p>
-			</div>
-		</div>
-	</div>
-</section> -->
+	<?php $bitb = get_field('bitb'); ?>
+
+	<?php if( have_rows('bitb') ): ?>
+
+		<section class="section-grid animate reveal">
+
+			<div class="books-in-bundle">
+
+				<?php while( have_rows('bitb') ): the_row();
+					$image = get_sub_field('bitb_image');
+					$name = get_sub_field('bitb_name');
+					$price = get_sub_field('bitb_price');
+				?>
+
+				<div class="book-in-bundle">
+					<div class="book-image">
+						<img src="<?php echo $image['url']; ?>">
+					</div>
+					<div class="details">
+						<p class="book-name"><?php echo $name; ?></p>
+						<p class="book-price">$<?php echo $price; ?>.00</p>
+					</div>
+				</div> 
+
+				<?php endwhile; ?>
+
+			</div> 
+
+		</section>
+
+	<?php endif; ?>
 
 <?php else : ?>
 

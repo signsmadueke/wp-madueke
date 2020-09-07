@@ -47,18 +47,18 @@ $(document).ready(function () {
         }
     });
 
-    $('#adverts').flickity({
-        contain: true,
-        prevNextButtons: false,
-        pageDots: false,
-        wrapAround: true,
-        autoPlay: 5000,
-        pauseAutoPlayOnHover: false,
-        dragThreshold: 10,
-        bgLazyLoad: true
+    // $('#adverts').flickity({
+    //     contain: true,
+    //     prevNextButtons: false,
+    //     pageDots: false,
+    //     wrapAround: true,
+    //     autoPlay: 5000,
+    //     pauseAutoPlayOnHover: false,
+    //     dragThreshold: 10,
+    //     bgLazyLoad: true
 
 
-    });
+    // });
 
     // $('#reviews').flickity({
     //     contain: true,

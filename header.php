@@ -13,6 +13,15 @@
 <body <?php body_class('container');?>>
 
 <section id="navigation">
+
+    <button class="menu mobile-nav-item" type="button">
+        <div class=bar-icons>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </div>
+        <span class="text">Menu</span>
+    </button>
     <div id="logo">
         <a href="<?php echo get_home_url(); ?>">
             <div class="logo-icon">
@@ -70,50 +79,13 @@
     </nav>
 
     <a class="mobile-nav-item" href="<?php echo $woocommerce->cart->get_cart_url(); ?>">
-        <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/cart.svg">
+        <div class="cart-icon"><img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/cart.svg"></div>
         <span class="text">Cart</span>
     </a>
 
-    <button class="menu mobile-nav-item" type="button">
-        <div>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </div>
-        <span class="text">Menu</span>
-    </button>
 </section>
 
 <section id="sidebar">
-    <section id="navigation">
-        <div id="logo">
-            <a href="<?php echo get_home_url(); ?>">
-                <div class="logo-icon">
-                    <img src="<?php bloginfo('template_directory');?>/assets/images/madueke/icon.png" alt="Prayer M. Madueke">
-                </div>
-                <div class="logo-text">
-                    <h3 class="logo-name">Prayer M. Madueke</h3>
-                    <p class="logo-tagline">Bookstore</p>
-                </div>
-            </a>
-        </div>
-
-        <div class="nav-space"></div>
-
-        <a class="mobile-nav-item" href="<?php echo $woocommerce->cart->get_cart_url(); ?>">
-            <img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/icons/cart.svg">
-            <span class="text">Cart</span>
-        </a>
-
-        <button class="menu mobile-nav-item" type="button" style="margin-top: 13px;grid-gap: 15px;">
-            <div>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </div>
-            <span class="text">Menu</span>
-        </button>
-    </section>
 
     <div id="sidebar-space"></div>
 

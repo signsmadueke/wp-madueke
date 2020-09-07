@@ -34,13 +34,54 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 	<?php if ( $checkout->get_checkout_fields() ) : ?>
 
 		
-	<div class="checkout-form-row">
+	<div class="checkout-form-row section-grid">
 		<section class="" id="customer_details">
 			<?php do_action( 'woocommerce_checkout_before_customer_details' ); ?>
 
 			<?php do_action( 'woocommerce_checkout_billing' ); ?>
 		
 			<?php do_action( 'woocommerce_checkout_after_customer_details' ); ?>
+
+		<div id="video-reviews" class="section-grid">
+			<h3 class="lined-heading">Video Reviews</h3>
+			<div class="videos">
+				<video id="js-player" playsinline loop>
+					<source src="<?php bloginfo('template_directory');?>/assets/videos/cathy.mp4" type="video/mp4" />
+					<source src="<?php bloginfo('template_directory');?>/assets/videos/cathy.webm" type="video/webm" />
+				</video>
+
+				<video id="js-player" playsinline loop>
+					<source src="<?php bloginfo('template_directory');?>/assets/videos/andre.mp4" type="video/mp4" />
+					<source src="<?php bloginfo('template_directory');?>/assets/videos/andre.webm" type="video/webm" />
+				</video>
+
+				<link rel="stylesheet" type="text/css" href="https://unpkg.com/plyr@3/dist/plyr.css">
+				<script src="https://unpkg.com/plyr@3"></script>
+				<script>
+					// Change the second argument to your options:
+					// https://github.com/sampotts/plyr/#options
+					// const cathyVideo = new Plyr('#cathy');
+					// const andreVideo = new Plyr('#andre');
+
+					const players = Plyr.setup('#js-player', {
+						controls: [
+							'play-large', // The large play button in the center
+							'play', // Play/pause playback
+							'progress', // The progress bar and scrubber for playback and buffering
+							'current-time', // The current time of playback
+							'volume', // Volume control
+							'fullscreen', // Toggle fullscreen
+						]
+					});
+
+
+
+				</script>
+
+				
+			</div>
+		</div>
+
 		</section>
 
 
