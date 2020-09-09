@@ -1213,6 +1213,10 @@ Author: Prayer M. Madueke
 	margin-bottom: 20px;
 }
 
+#add_payment_method #payment div.payment_box .form-row, .woocommerce-cart #payment div.payment_box .form-row, .woocommerce-checkout #payment div.payment_box .form-row-last {
+	margin-bottom: 0px;
+}
+
 .woocommerce .woocommerce-billing-fields::after, .woocommerce .woocommerce-billing-fields::before, .woocommerce .woocommerce-shipping-fields::after, .woocommerce .woocommerce-shipping-fields::before, .woocommerce-page .woocommerce-billing-fields::after, .woocommerce-page .woocommerce-billing-fields::before, .woocommerce-page .woocommerce-shipping-fields::after, .woocommerce-page .woocommerce-shipping-fields::before {
 	position: absolute;
 }
@@ -1251,10 +1255,15 @@ Author: Prayer M. Madueke
 }
 
 #add_payment_method #payment ul.payment_methods, .woocommerce-cart #payment ul.payment_methods, .woocommerce-checkout #payment ul.payment_methods {
+	padding: 0px !important;
+    margin-bottom: 20px !important;
+    margin: 0;
+}
+
+#add_payment_method #payment ul.payment_methods, .woocommerce-cart #payment ul.payment_methods, .woocommerce-checkout #payment ul.payment_methods .wc_payment_method {
 	padding: 20px;
-	padding-bottom: 0;
-	margin: 0;
-	border-bottom: none;
+    margin: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
 }
 
 #add_payment_method #payment, .woocommerce-cart #payment, .woocommerce-checkout #payment {
@@ -1265,10 +1274,11 @@ Author: Prayer M. Madueke
 
 #add_payment_method #payment div.form-row.place-order, .woocommerce-cart #payment div.form-row.place-order, .woocommerce-checkout #payment div.form-row.place-order {
 	padding: 20px;
+	margin-bottom: 0px;
 }
 
 .woocommerce-checkout #payment ul.payment_methods li .payment_method_name {
-	display: grid;
+	display: inline;
 	grid-gap: 5px;
 }
 
