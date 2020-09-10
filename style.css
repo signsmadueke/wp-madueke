@@ -1256,7 +1256,8 @@ Author: Prayer M. Madueke
 
 #add_payment_method #payment ul.payment_methods, .woocommerce-cart #payment ul.payment_methods, .woocommerce-checkout #payment ul.payment_methods {
 	padding: 0px !important;
-    margin-bottom: 20px !important;
+	margin-bottom: 0px;
+    border-bottom: none;
     margin: 0;
 }
 

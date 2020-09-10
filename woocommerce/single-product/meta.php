@@ -21,3 +21,43 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 global $product;
 ?>
+
+<?php if( has_term( array( 'eBook Bundles' ), 'product_cat' ) ) : ?>
+
+	<?php $bitb = get_field('bitb'); ?>
+
+	<?php if( have_rows('bitb') ): ?>
+
+		<section class="section-grid animate reveal">
+
+			<h6 class="lined-title">Books in this Bundle</h6>
+
+			<div class="books-in-bundle">
+
+				<?php while( have_rows('bitb') ): the_row();
+					$image = get_sub_field('bitb_image');
+					$name = get_sub_field('bitb_name');
+					$price = get_sub_field('bitb_price');
+				?>
+
+				<div class="book-in-bundle">
+					<div class="book-image">
+						<img src="<?php echo $image['url']; ?>">
+					</div>
+					<div class="details">
+						<p class="book-name"><?php echo $name; ?></p>
+						<p class="book-price">$<?php echo $price; ?>.00</p>
+					</div>
+				</div> 
+
+				<?php endwhile; ?>
+
+			</div> 
+
+		</section>
+
+	<?php endif; ?>
+
+	<?php else : ?>
+
+<?php endif; ?>

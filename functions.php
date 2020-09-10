@@ -150,13 +150,13 @@ return $fields;
 remove_action( 'woocommerce_cart_collaterals', 'woocommerce_cross_sell_display');
 
 
-add_filter( 'wc_stripe_hide_payment_request_on_product_page', '__return_true' );
-add_action( 'init', 'remove_stripe_payment_request_from_cart_20200608', 99 );
+// add_filter( 'wc_stripe_hide_payment_request_on_product_page', '__return_true' );
+// add_action( 'init', 'remove_stripe_payment_request_from_cart_20200608', 99 );
 
-function remove_stripe_payment_request_from_cart_20200608() {
-	remove_action( 'woocommerce_proceed_to_checkout', array( WC_Stripe_Payment_Request::instance(), 'display_payment_request_button_html' ), 1 );
-	remove_action( 'woocommerce_proceed_to_checkout', array( WC_Stripe_Payment_Request::instance(), 'display_payment_request_button_separator_html' ), 2 );
-}
+// function remove_stripe_payment_request_from_cart_20200608() {
+// 	remove_action( 'woocommerce_proceed_to_checkout', array( WC_Stripe_Payment_Request::instance(), 'display_payment_request_button_html' ), 1 );
+// 	remove_action( 'woocommerce_proceed_to_checkout', array( WC_Stripe_Payment_Request::instance(), 'display_payment_request_button_separator_html' ), 2 );
+// }
 
 //* Make Font Awesome available
 add_action( 'wp_enqueue_scripts', 'enqueue_font_awesome' );

@@ -32,12 +32,12 @@ if ( ! $short_description ) {
 	
 <?php if( has_term( array( 'eBook Bundles' ), 'product_cat' ) ) : ?>
 
-<section class="section-grid animate reveal">
+<!-- <section class="section-grid animate reveal">
 	<h6 class="lined-title">Books in this Bundle</h6>
 	<div class="books-in-bundle">
 		<?php echo $short_description; ?>
 	</div>
-</section>
+</section> -->
 
 <?php else : ?>
 
