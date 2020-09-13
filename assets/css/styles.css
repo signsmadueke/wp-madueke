@@ -1780,6 +1780,7 @@ body.dark #navigation nav a:hover {
       -ms-flex-align: center;
           align-items: center;
   place-self: center;
+  width: 100%;
 }
 
 #trust [name="trustbadge"] img, #trust [name="trustbadge"] svg {
