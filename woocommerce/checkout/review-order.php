@@ -103,6 +103,13 @@ defined( 'ABSPATH' ) || exit;
 			<th><?php esc_html_e( 'Total', 'woocommerce' ); ?></th>
 			<td><?php wc_cart_totals_order_total_html(); ?></td>
 		</tr>
+		<tr>
+			<td colspan="2">
+				<a class="btn btn-chevron bordered" href="#" style="width: 100% !important;display: block !important;text-align: center;">
+					<span>Edit Cart</span>
+				</a>
+			</td>
+		</tr>
 
 		<?php do_action( 'woocommerce_review_order_after_order_total' ); ?>
 

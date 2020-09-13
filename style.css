@@ -61,7 +61,7 @@ Author: Prayer M. Madueke
 
 .woocommerce .checkout.woocommerce-checkout .checkout-form-row {
 	display: grid;
-	grid-gap: 50px;
+	grid-gap: 100px;
 	grid-auto-flow: column;
 }
 
@@ -105,8 +105,8 @@ Author: Prayer M. Madueke
 
 .woocommerce .checkout.woocommerce-checkout .woocommerce-billing-fields {
 	display: grid;
-	grid-gap: 30px;
-	margin-bottom: 50px;
+	grid-gap: 20px;
+	margin-bottom: 100px;
 }
 
 .woocommerce .woocommerce-checkout .woocommerce-billing-fields__field-wrapper {
@@ -654,7 +654,6 @@ Author: Prayer M. Madueke
     background: rgba(0,0,0,.05);
     padding: 20px 0;
     border: none !important;
-    background-color: rgba(0,0,0,0.05);
 }
 
 .woocommerce table.shop_table td.product-price,
@@ -689,6 +688,7 @@ Author: Prayer M. Madueke
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 30px;
+	text-align: left;
 }
 
 /* .woocommerce-product-details__short-description {
@@ -1391,8 +1391,8 @@ Author: Prayer M. Madueke
 .woocommerce .checkout.woocommerce-checkout #video-reviews .videos {
 	display: grid;
 	grid-gap: 30px;
-	grid-auto-columns: 1fr 1fr;
-	grid-auto-flow: column;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+	/* grid-auto-flow: column; */
 	/* width: 100%; */
 	/* max-width: 500px; */
 }
@@ -1410,4 +1410,29 @@ Author: Prayer M. Madueke
     padding: 18px 52px!important;
     border-radius: 10px!important;
     width: fit-content!important;
+}
+
+.woocommerce-checkout .woocommerce {
+	display: grid;
+	grid-row-gap: 50px;
+}
+
+.woocommerce-checkout .woocommerce form.login {
+	margin-top: -50px;
+}
+
+.woocommerce-checkout .woocommerce table.shop_table {
+	margin: 0 0 100px 0;
+	padding: 0px;
+	border-radius: 10px;
+	border: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+.woocommerce-checkout .woocommerce table.shop_table tr {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.woocommerce-checkout .woocommerce table.shop_table [colspan="2"] {
+	padding: 15px;
 }

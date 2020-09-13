@@ -43,7 +43,7 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 			<?php do_action( 'woocommerce_checkout_after_customer_details' ); ?>
 
 		<div id="video-reviews" class="section-grid">
-			<h3 class="lined-heading">Video Reviews</h3>
+			<h3 class="lined-heading">What others are saying</h3>
 			<div class="videos">
 				<video id="js-player" playsinline loop>
 					<source src="<?php bloginfo('template_directory');?>/assets/videos/cathy.mp4" type="video/mp4" />
