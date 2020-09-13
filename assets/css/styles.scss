@@ -139,8 +139,8 @@ html {
 
 	[type="button"] {
 		-webkit-appearance: button;
-		background: transparent;
-		border: 1px solid transparent;
+		// background: transparent;
+		// border: 1px solid transparent;
 		outline: 0;
 		cursor: pointer;
 	}
@@ -1503,6 +1503,18 @@ body.dark {
 			}
 		}
 	}
+
+	.bar-icons, .cart-icon {
+		background-color: rgba(34, 34, 34, 1);
+
+		.icon-bar {
+			background-color: #FFFFFF;
+		}
+
+		path {
+			fill: #FFFFFF;
+		}
+	}
 }
 
 #trust {
@@ -1535,7 +1547,7 @@ body.dark {
 		img, svg {
 			max-height: 40px;
 			min-height: 30px;
-			width: auto;
+			width: 100%;
 			vertical-align: middle;
 			filter: saturate(0) grayscale(1);
 		}

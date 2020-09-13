@@ -59,9 +59,6 @@ if ( ! is_ajax() ) {
 	</script> -->
 	<section id="trust" style="padding: 20px;border-top: 1px solid rgba(0, 0, 0, 0.1);">
 		<a name="trustbadge" href="https://trustlock.co">
-			<img name="trustseal" alt="Trust Badges" class="svg" src="<?php bloginfo('template_directory');?>/assets/images/security/powered-by-stripe.svg">
-		</a>
-		<a name="trustbadge" href="https://trustlock.co">
 			<img name="trustseal" alt="Trust Badges" class="svg" src="<?php bloginfo('template_directory');?>/assets/images/security/fully-secured-ssl-checkout.svg">
 		</a>
 		<a name="trustbadge" href="https://trustlock.co">

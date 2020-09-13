@@ -207,8 +207,6 @@ html {
 
 html [type="button"] {
   -webkit-appearance: button;
-  background: transparent;
-  border: 1px solid transparent;
   outline: 0;
   cursor: pointer;
 }
@@ -1736,6 +1734,18 @@ body.dark #navigation nav a:hover {
           transform: translate3d(0, -4px, 0) rotate(-135deg);
 }
 
+.menu.collapsed .bar-icons, .menu.collapsed .cart-icon {
+  background-color: #222222;
+}
+
+.menu.collapsed .bar-icons .icon-bar, .menu.collapsed .cart-icon .icon-bar {
+  background-color: #FFFFFF;
+}
+
+.menu.collapsed .bar-icons path, .menu.collapsed .cart-icon path {
+  fill: #FFFFFF;
+}
+
 #trust {
   display: -ms-grid;
   display: grid;
@@ -1775,7 +1785,7 @@ body.dark #navigation nav a:hover {
 #trust [name="trustbadge"] img, #trust [name="trustbadge"] svg {
   max-height: 40px;
   min-height: 30px;
-  width: auto;
+  width: 100%;
   vertical-align: middle;
   -webkit-filter: saturate(0) grayscale(1);
           filter: saturate(0) grayscale(1);
