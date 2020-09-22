@@ -1122,6 +1122,7 @@ button.button.btn-chevron img {
   padding: 10px 0px !important;
   grid-gap: 10px !important;
   border: none !important;
+  border-radius: 0 !important;
   border-bottom: 1px dashed rgba(0, 0, 0, 0.3) !important;
   background-color: transparent !important;
   width: -webkit-max-content;
@@ -2186,6 +2187,7 @@ body.dark #navigation nav a:hover {
   padding: 10px 0px !important;
   grid-gap: 10px !important;
   border: none !important;
+  border-radius: 0 !important;
   border-bottom: 1px dashed rgba(255, 255, 255, 0.3) !important;
   background-color: transparent !important;
   width: -webkit-max-content !important;
@@ -5902,6 +5904,7 @@ body.dark #navigation nav a:hover {
   padding: 10px 0px !important;
   grid-gap: 10px !important;
   border: none !important;
+  border-radius: 0 !important;
   border-bottom: 1px dashed rgba(0, 0, 0, 0.3) !important;
   background-color: transparent !important;
   width: -webkit-max-content;

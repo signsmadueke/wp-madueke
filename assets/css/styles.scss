@@ -914,6 +914,7 @@ button.button {
 	padding: 10px 0px !important;
 	grid-gap: 10px !important;
 	border: none !important;
+	border-radius: 0 !important;
 	border-bottom: 1px dashed rgba(0, 0, 0, 0.3) !important;
 	background-color: transparent !important;
 	width: max-content;
@@ -1884,6 +1885,7 @@ body.dark {
 			padding: 10px 0px !important;
 			grid-gap: 10px !important;
 			border: none !important;
+			border-radius: 0 !important;
 			border-bottom: 1px dashed rgba(255, 255, 255, 0.3) !important;
 			background-color: transparent !important;
 			width: max-content !important;
@@ -5307,6 +5309,7 @@ body.dark {
 				padding: 10px 0px !important;
 				grid-gap: 10px !important;
 				border: none !important;
+				border-radius: 0 !important;
 				border-bottom: 1px dashed rgba(0, 0, 0, 0.3) !important;
 				background-color: transparent !important;
 				width: max-content;
