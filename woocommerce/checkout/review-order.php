@@ -105,7 +105,7 @@ defined( 'ABSPATH' ) || exit;
 		</tr>
 		<tr>
 			<td colspan="2">
-				<a class="btn btn-chevron bordered" href="#" style="width: 100% !important;display: block !important;text-align: center;">
+				<a class="btn btn-chevron bordered" href="../cart" style="width: 100% !important;display: block !important;text-align: center;">
 					<span>Edit Cart</span>
 				</a>
 			</td>

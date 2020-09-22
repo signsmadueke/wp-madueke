@@ -43,16 +43,22 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 			<?php do_action( 'woocommerce_checkout_after_customer_details' ); ?>
 
 		<div id="video-reviews" class="section-grid">
-			<h3 class="lined-heading">What others are saying</h3>
+			<h3 class="lined-heading">Reader's Views</h3>
 			<div class="videos">
-				<video id="js-player" playsinline loop>
-					<source src="<?php bloginfo('template_directory');?>/assets/videos/cathy.mp4" type="video/mp4" />
-					<source src="<?php bloginfo('template_directory');?>/assets/videos/cathy.webm" type="video/webm" />
+				<video id="js-player" playsinline data-poster="<?php bloginfo('template_directory');?>/assets/videos/alicia.jpg">
+					<source src="<?php bloginfo('template_directory');?>/assets/videos/alicia.mp4" type="video/mp4" />
 				</video>
 
-				<video id="js-player" playsinline loop>
+				<video id="js-player" playsinline data-poster="<?php bloginfo('template_directory');?>/assets/videos/rachel.jpg">
+					<source src="<?php bloginfo('template_directory');?>/assets/videos/rachel.mp4" type="video/mp4" />
+				</video>
+
+				<video id="js-player" playsinline data-poster="<?php bloginfo('template_directory');?>/assets/videos/andre.jpg">
 					<source src="<?php bloginfo('template_directory');?>/assets/videos/andre.mp4" type="video/mp4" />
-					<source src="<?php bloginfo('template_directory');?>/assets/videos/andre.webm" type="video/webm" />
+				</video>
+
+				<video id="js-player" playsinline data-poster="<?php bloginfo('template_directory');?>/assets/videos/cathy.jpg">
+					<source src="<?php bloginfo('template_directory');?>/assets/videos/cathy.mp4" type="video/mp4" />
 				</video>
 
 				<link rel="stylesheet" type="text/css" href="https://unpkg.com/plyr@3/dist/plyr.css">
@@ -91,7 +97,7 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 		<section class="section-grid">
 			<?php do_action( 'woocommerce_checkout_before_order_review_heading' ); ?>
 			
-			<h3 class="lined-heading" id="order_review_heading"><?php esc_html_e( 'Your order', 'woocommerce' ); ?></h3>
+			<h3 class="lined-heading" id="order_review_heading"><?php esc_html_e( 'Your Order', 'woocommerce' ); ?></h3>
 			
 			<?php do_action( 'woocommerce_checkout_before_order_review' ); ?>
 

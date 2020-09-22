@@ -272,11 +272,13 @@ main {
 }
 
 hr {
-  border-style: solid;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
-  height: 0;
+  height: 1px;
+  width: 100%;
   overflow: visible;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 pre {
@@ -702,6 +704,18 @@ h6 {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+#page-title {
+  text-align: center;
+  padding: 100px 30px;
+  width: 100%;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-image: url(../images/icons/abcd-pattern.svg);
+  background-size: cover;
+  background-position: center;
+  background-color: antiquewhite;
+}
+
 .section-grid {
   display: -ms-grid;
   display: grid;
@@ -816,7 +830,7 @@ textarea {
   color: #444444;
   font-size: 16px;
   line-height: 16px;
-  font-weight: 600;
+  font-weight: 500;
   outline: 0;
   -webkit-appearance: none;
 }
@@ -1308,6 +1322,14 @@ body.container.contact {
   line-height: 30px;
   display: block;
   letter-spacing: -1px;
+  border-bottom: 1px dashed transparent !important;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  text-align: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin: 0 auto;
 }
 
 #sidebar ul li {
@@ -1315,7 +1337,8 @@ body.container.contact {
 }
 
 #sidebar ul li a:hover {
-  opacity: 0.5;
+  opacity: 0.6;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.6) !important;
 }
 
 #sidebar ul li.active a:before {
@@ -1788,8 +1811,8 @@ body.dark #navigation nav a:hover {
   min-height: 30px;
   width: 100%;
   vertical-align: middle;
-  -webkit-filter: saturate(0) grayscale(1);
-          filter: saturate(0) grayscale(1);
+  -webkit-filter: saturate(0) grayscale(1) opacity(0.7);
+          filter: saturate(0) grayscale(1) opacity(0.7);
 }
 
 .dash-sm {
@@ -1813,6 +1836,10 @@ body.dark #navigation nav a:hover {
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-areas: "contact	contact	payments" "borderline	borderline	borderline" "legal	copyright	social";
+  background-repeat: no-repeat;
+  background-image: url(../images/icons/abcd-pattern.svg);
+  background-size: cover;
+  background-position: center;
 }
 
 #footer .contact {
@@ -1891,10 +1918,18 @@ body.dark #navigation nav a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-bottom: 1px dashed transparent !important;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  text-align: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 #footer .contact a:hover {
   opacity: 1;
+  border-bottom: 1px dashed black !important;
 }
 
 #footer .payments {
@@ -1955,10 +1990,18 @@ body.dark #navigation nav a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-bottom: 1px dashed transparent !important;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  text-align: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 #footer .legal a:hover {
   opacity: 1;
+  border-bottom: 1px dashed black !important;
 }
 
 #footer .social {
@@ -3783,10 +3826,13 @@ body.dark #navigation nav a:hover {
   -ms-grid-column-align: center;
       justify-self: center;
   text-align: center;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), #FFDE97;
+  background: url(../images/icons/abcd-pattern.svg), linear-gradient(135deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), #FFDE97;
   -webkit-box-shadow: 0px 20px 54px rgba(255, 222, 151, 0.35);
           box-shadow: 0px 20px 54px rgba(255, 222, 151, 0.35);
   border-radius: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 @media (max-width: 700px) {
@@ -3831,6 +3877,9 @@ body.dark #navigation nav a:hover {
   text-align: left;
   color: #ffffff;
   border-radius: 20px;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
 }
 
 @media (max-width: 700px) {
@@ -3841,25 +3890,25 @@ body.dark #navigation nav a:hover {
 }
 
 #contacts .contact.email {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%), #C39E1B;
+  background: url(../images/icons/abcd-pattern.svg), linear-gradient(135deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%), #C39E1B;
   -webkit-box-shadow: 0px 20px 54px rgba(195, 158, 27, 0.35);
           box-shadow: 0px 20px 54px rgba(195, 158, 27, 0.35);
 }
 
 #contacts .contact.phone {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%), #FF5C00;
+  background: url(../images/icons/abcd-pattern.svg), linear-gradient(135deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%), #FF5C00;
   -webkit-box-shadow: 0px 20px 54px rgba(255, 92, 0, 0.35);
           box-shadow: 0px 20px 54px rgba(255, 92, 0, 0.35);
 }
 
 #contacts .contact.messenger {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%), #006AFF;
+  background: url(../images/icons/abcd-pattern.svg), linear-gradient(135deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%), #006AFF;
   -webkit-box-shadow: 0px 20px 54px rgba(0, 106, 255, 0.35);
           box-shadow: 0px 20px 54px rgba(0, 106, 255, 0.35);
 }
 
 #contacts .contact.whatsapp {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%), #128C7E;
+  background: url(../images/icons/abcd-pattern.svg), linear-gradient(135deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%), #128C7E;
   -webkit-box-shadow: 0px 20px 54px rgba(18, 140, 126, 0.35);
           box-shadow: 0px 20px 54px rgba(18, 140, 126, 0.35);
 }
@@ -5741,56 +5790,57 @@ body.dark #navigation nav a:hover {
   width: 100%;
   padding: 50px 100px;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
   -webkit-transition: none 0s ease 0s !important;
   transition: none 0s ease 0s !important;
 }
 
 #adverts .advert.bg-1 {
-  background-image: url(../images/adverts//bg-1.png);
+  background-image: url(../images/adverts/bg-1.png), url(../images/icons/abcd-pattern.svg);
   background-color: #F5E1FF;
   background-repeat: no-repeat;
-  background-size: 900px;
-  background-position: 600px -150px;
+  background-size: 900px, cover;
+  background-position: 600px -150px, center;
 }
 
 @media (max-width: 1200px) {
   #adverts .advert.bg-1 {
     padding: 60px;
-    background-size: 800px;
-    background-position: 400px -100px;
+    background-size: 800px, cover;
+    background-position: 400px -100px, center;
   }
 }
 
 @media (max-width: 700px) {
   #adverts .advert.bg-1 {
     padding: 60px 30px;
-    background-size: 800px;
-    background-position: -100px 200px;
+    background-size: 800px, cover;
+    background-position: -100px 200px, center;
     padding-bottom: 300px;
   }
 }
 
 #adverts .advert.bg-2 {
-  background-image: url(../images/adverts//bg-2.png);
+  background-image: url(../images/adverts/bg-2.png), url(../images/icons/abcd-pattern.svg);
   background-color: #EEFFE1;
   background-repeat: no-repeat;
-  background-size: 550px;
-  background-position: 650px 50px;
+  background-size: 550px, cover;
+  background-position: 650px 50px, center;
 }
 
 @media (max-width: 1200px) {
   #adverts .advert.bg-2 {
     padding: 60px;
-    background-size: 450px;
-    background-position: 550px 50px;
+    background-size: 450px, cover;
+    background-position: 550px 50px, center;
   }
 }
 
 @media (max-width: 700px) {
   #adverts .advert.bg-2 {
     padding: 60px 30px;
-    background-size: 400px;
-    background-position: center 200px;
+    background-size: 400px, cover;
+    background-position: center 200px, center;
     padding-bottom: 300px;
   }
 }

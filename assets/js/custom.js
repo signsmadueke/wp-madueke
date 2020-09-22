@@ -56,8 +56,6 @@ $(document).ready(function () {
     //     pauseAutoPlayOnHover: false,
     //     dragThreshold: 10,
     //     bgLazyLoad: true
-
-
     // });
 
     // $('#reviews').flickity({
@@ -70,19 +68,6 @@ $(document).ready(function () {
     //     dragThreshold: 15,
     //     adaptiveHeight: true,
     //     // bgLazyLoad: true,
-    // });
-
-    // $('#adverts').flickity({
-    //     contain: true,
-    //     prevNextButtons: false,
-    //     pageDots: false,
-    //     wrapAround: true,
-    //     autoPlay: 5000,
-    //     pauseAutoPlayOnHover: false,
-    //     dragThreshold: 10,
-    //     bgLazyLoad: true
-
-
     // });
 
     var wooMessage = $('.woocommerce-notices-wrapper');

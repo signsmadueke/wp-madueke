@@ -167,34 +167,44 @@ Author: Prayer M. Madueke
 }
 
 .woocommerce a.remove path {
-	fill: #222222;
+	fill: #ff4a4a;
 }
 
 .woocommerce a.remove {
-	display: block;
 	text-align: center;
-	border-radius: 0;
-	color: #222222 !important;
-	text-decoration: none;
-	font-weight: 500;
-	border: 0;
-	font-weight: 400!important;
-	font-size: 16px !important;
-	line-height: 24px !important;
-	letter-spacing: 0 !important;
-	padding: 15px 15px !important;
-	height: 100%;
-	width: 100%;
-	text-align: inherit;
+	background: transparent !important;
+	border: none !important;
+	    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+	color: #ff4a4a !important;
+	font-size: 14px !important;
+	width: fit-content;
+	justify-self: center;
+	padding: 13px 39px !important;
+	margin: 0 !important;
+	display: grid;
+	grid-auto-flow: column;
+	grid-row-gap: 0px;
+	grid-column-gap: 7px;
+	grid-auto-rows: max-content;
+	align-items: center;
+	height: auto;
 }
 
 .woocommerce a.remove:hover {
-	color: #222222!important;
-	background: transparent !important;
+	background: rgba(0, 0, 0, 0.03) !important;
+	border: 1px solid rgba(0, 0, 0, 0.15) !important;
 }
 
 .woocommerce a.remove:hover svg path {
-	fill: #222222!important;
+	fill: #a23030 !important;
+}
+
+.woocommerce a.remove span {
+	color: #ff4a4a !important;
+}
+
+.woocommerce a.remove:hover span {
+	color: #a23030 !important;
 }
 
 /* .woocommerce table.shop_table th {
@@ -210,26 +220,33 @@ Author: Prayer M. Madueke
 .woocommerce-error,.woocommerce-info,.woocommerce-message {
 	padding: 0;
 	margin: 0;
-	background-color: transparent;
+	background-color: #f5e5d3;
 	color: #222222;
 	border-top: none;
 	width: auto;
 	text-align: left;
 	line-height: 21px;
 	font-size: 14px;
-	padding-left: 30px;
-	margin: 20px 0;
+	padding-left: 60px;
+	/* margin: 20px 0; */
+	padding: 20px 20px 20px 60px;
 	position: relative;
 	font-family: "Gilroy", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	border-radius: 10px;
+	background-repeat: no-repeat;
+	background-image: url(assets/images/icons/abcd-pattern.svg);
+	background-size: cover;
+	background-position: center;
+	background-color: antiquewhite;
 }
 
 .woocommerce-error::before,.woocommerce-info::before,.woocommerce-message::before {
 	padding-left: 0;
 	position: absolute;
-	top: 0;
-	left: 0;
-	width: 21px;
-	height: 21px;
+	top: 20px;
+	left: 20px;
+	width: 20px;
+	height: 20px;
 }
 
 .woocommerce-error::before {
@@ -248,10 +265,16 @@ Author: Prayer M. Madueke
 	position: absolute;
 }
 
+.woocommerce-error,.woocommerce-info,.woocommerce-message a {
+	border-bottom: 1px dashed rgba(0, 0, 0, 1) !important;
+    background-color: transparent !important;
+}
+
 
 
 .woocommerce-page ul.products,
-.woocommerce .products ul, .woocommerce ul.products {
+.woocommerce .products ul, .woocommerce ul.products,
+.woocommerce-cart .woocommerce .woocommerce-cart-form__contents {
 	float: none;
 	margin: 0 !important;
 	padding: 0;
@@ -270,14 +293,16 @@ Author: Prayer M. Madueke
 
 @media (max-width: 1000px){
 	.woocommerce-page ul.products,
-	.woocommerce .products ul, .woocommerce ul.products {
+	.woocommerce .products ul, .woocommerce ul.products,
+	.woocommerce-cart .woocommerce .woocommerce-cart-form__contents {
 		grid-template-columns: repeat(auto-fit, minmax(calc(calc(100%/2) - 15px), calc(calc(100%/2)  - 15px))) !important;
 	}
 }
 
 @media (max-width: 500px){
 	.woocommerce-page ul.products,
-	.woocommerce .products ul, .woocommerce ul.products {
+	.woocommerce .products ul, .woocommerce ul.products,
+	.woocommerce-cart .woocommerce .woocommerce-cart-form__contents {
 		/* grid-template-columns: repeat(auto-fit, minmax(calc(calc(100%/2) - 15px), calc(calc(100%/2)  - 15px))) !important; */
 		grid-template-columns: repeat(auto-fit, minmax(100%, 100%)) !important;
 		/* grid-column-gap: 15px; */
@@ -534,7 +559,12 @@ Author: Prayer M. Madueke
 	grid-area: tabs;
 	width: 100%;
 	max-width: 800px;
-	/* margin: 0 auto; */
+	margin: 0 auto;
+	text-align: justify;
+}
+
+.woocommerce-page div.product .woocommerce-tabs .lined-heading {
+	text-align: center;
 }
 
 .woocommerce-page div.product .upsells {
@@ -698,7 +728,7 @@ Author: Prayer M. Madueke
 .woocommerce .cart-collaterals {
 	display: grid;
 	grid-template-columns: 0.5fr;
-	justify-content: right;
+	justify-content: center;
 }
 
 .woocommerce-cart .cart-collaterals .cart_totals table {
@@ -725,6 +755,10 @@ Author: Prayer M. Madueke
 
 .woocommerce-cart .wc-proceed-to-checkout a.checkout-button {
 	margin: 0;
+	padding: 20px 50px !important;
+	background-color: rgb(47, 180, 31) !important;
+	border: none !important;
+	font-weight: 600 !important;
 }
 
 .woocommerce-cart .cart-collaterals .cart_totals table td {
@@ -1314,6 +1348,15 @@ Author: Prayer M. Madueke
 	display: block;
 	width: 100%;
 	margin: 0;
+	padding: 20px 50px !important;
+	background-color: rgb(47, 180, 31) !important;
+	border: none !important;
+	font-weight: 600 !important;
+}
+
+.woocommerce #payment #place_order:hover,
+.woocommerce-cart .wc-proceed-to-checkout a.checkout-button:hover {
+    filter: brightness(0.9);
 }
 
 #add_payment_method #payment div.payment_box::before, .woocommerce-cart #payment div.payment_box::before, .woocommerce-checkout #payment div.payment_box::before {
@@ -1426,6 +1469,7 @@ Author: Prayer M. Madueke
 	padding: 0px;
 	border-radius: 10px;
 	border: 1px solid rgba(0, 0, 0, 0.1) !important;
+	background-color: #ffffff;
 }
 
 .woocommerce-checkout .woocommerce table.shop_table tr {
@@ -1435,4 +1479,82 @@ Author: Prayer M. Madueke
 
 .woocommerce-checkout .woocommerce table.shop_table [colspan="2"] {
 	padding: 15px;
+}
+
+form.woocommerce-cart-form {}
+
+.woocommerce-cart .woocommerce {
+    display: grid;
+    grid-gap: 100px;
+}
+
+.woocommerce-cart .woocommerce .woocommerce-cart-form__contents {
+    
+}
+
+.woocommerce-cart .woocommerce .woocommerce-cart-form__contents .cart_item .product-thumbnail a {
+    display: grid;
+    grid-auto-flow: row;
+    grid-row-gap: 0px;
+    grid-column-gap: 7px;
+    grid-auto-rows: max-content;
+    margin-bottom: 10px;
+}
+
+.woocommerce-cart .woocommerce .woocommerce-cart-form__contents .cart_item .product-thumbnail img {
+    margin: 0;
+    /* margin-bottom: 30px; */
+    border-radius: 7px;
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    filter: brightness(1);
+    width: 100%;
+}
+
+.woocommerce-cart .woocommerce .woocommerce-cart-form__contents .cart_item .product-thumbnail a:hover img {
+	box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.1);
+	filter: brightness(0.9);
+}
+
+.woocommerce-cart .woocommerce .woocommerce-cart-form__contents .cart_item {
+    display: grid;
+    grid-auto-flow: row;
+    grid-row-gap: 15px;
+    grid-column-gap: 7px;
+    grid-auto-rows: max-content;
+}
+
+.woocommerce-cart .woocommerce .woocommerce-cart-form__contents .cart_item .product-name h2 {
+    font-size: 25px;
+    line-height: 33px;
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.woocommerce-cart .woocommerce .woocommerce-cart-form__contents .cart_item .product-price,
+.woocommerce-cart .woocommerce .woocommerce-cart-form__contents .cart_item .product-remove {
+	justify-self: center;
+    text-align: center;
+}
+
+.woocommerce-cart .woocommerce .woocommerce-cart-form__contents .cart_item .product-price {
+	text-transform: uppercase;
+	font-weight: 600;
+	color: #444444;
+}
+
+.plyr__progress .plyr__tooltip {
+    transition: none !important;
+}
+
+#add_payment_method #payment ul.payment_methods li, .woocommerce-cart #payment ul.payment_methods li, .woocommerce-checkout #payment ul.payment_methods li {
+    font-weight: 500;
+}
+
+.woocommerce-cart {
+	grid-template-rows: auto auto 1fr !important;
 }

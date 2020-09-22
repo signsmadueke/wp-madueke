@@ -27,8 +27,8 @@
     <div class="border-line"></div>
 
     <div class="legal">
-        <a href="<?php echo get_home_url(); ?>/privacy">Privacy</a>
-        <a href="<?php echo get_home_url(); ?>/terms">Terms</a>
+        <a href="<?php echo get_home_url(); ?>/privacy">Privacy Policy</a>
+        <!-- <a href="<?php echo get_home_url(); ?>/terms">Terms</a> -->
     </div>
     
     <p class="copyright">&copy; 2020 Prayer Madueke. All rights reserved.</p>
@@ -79,7 +79,7 @@
     <div class="fb-customerchat"
     attribution=setup_tool
     page_id="312645492269355"
-    theme_color="#222222"
+    
     logged_in_greeting="Hi there 👋 If you need any assistance, I'm always here."
     logged_out_greeting="Hi there 👋 If you need any assistance, I'm always here.">
 </div>
