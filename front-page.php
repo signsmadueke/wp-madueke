@@ -2,7 +2,7 @@
 	get_header();
 ?>
 
-<section id="adverts" data-flickity='{ "contain": true, "prevNextButtons": false, "pageDots": false, "wrapAround": true, "autoPlay": "5000", "pauseAutoPlayOnHover": false, "dragThreshold": "10", "bgLazyLoad": true }'>
+<!-- <section id="adverts" data-flickity='{ "contain": true, "prevNextButtons": false, "pageDots": false, "wrapAround": true, "autoPlay": "5000", "pauseAutoPlayOnHover": false, "dragThreshold": "10", "bgLazyLoad": true }'>
     <div class="advert bg-1">
         <div class="details">
             <div class="text">
@@ -26,7 +26,7 @@
             </a>
         </div>
     </div>
-</section>
+</section> -->
 
 <div id="space-50"></div>
 
@@ -45,7 +45,7 @@
 
 <?php get_footer(); ?>
 
-<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<!-- <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> -->
 
 <!-- <script>
     $('#adverts').flickity({
