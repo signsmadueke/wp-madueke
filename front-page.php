@@ -2,7 +2,7 @@
 	get_header();
 ?>
 
-<section id="adverts">
+<section id="adverts" data-flickity='{ "contain": true, "prevNextButtons": false, "pageDots": false, "wrapAround": true, "autoPlay": "5000", "pauseAutoPlayOnHover": false, "dragThreshold": "10", "bgLazyLoad": true }'>
     <div class="advert bg-1">
         <div class="details">
             <div class="text">
@@ -47,15 +47,8 @@
 
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
-<script>
+<!-- <script>
     $('#adverts').flickity({
-        contain: true,
-        prevNextButtons: false,
-        pageDots: false,
-        wrapAround: true,
-        autoPlay: 5000,
-        pauseAutoPlayOnHover: false,
-        dragThreshold: 10,
-        bgLazyLoad: true
+        "contain": true, "prevNextButtons": false, "pageDots": false, "wrapAround": true, "autoPlay": "5000", "pauseAutoPlayOnHover": false, "dragThreshold": "10", "bgLazyLoad": true
     });
-</script>
+</script> -->
